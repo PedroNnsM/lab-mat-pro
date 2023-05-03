@@ -48,8 +48,8 @@ export function Header() {
     },
     {
       id: "9",
-      name: "contatos",
-      text: "Contatos",
+      name: "contato",
+      text: "Contato",
     },
   ];
 
