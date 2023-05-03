@@ -8,7 +8,7 @@ export function Header() {
   const navList = [
     {
       id: "1",
-      name: "home",
+      name: "",
       text: "Home",
     },
     {
