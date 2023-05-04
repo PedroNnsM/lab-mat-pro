@@ -12,24 +12,24 @@ const ItensServices = [
     title: "Análise de Materiais",
     description:
       "Descubra suas propriedades, características e possibilidades com nossas análises especializadas",
-    img: <FaMicroscope />,
-    color: "",
+    img: <FaMicroscope size={40} />,
+    color: "bg-blue-700",
   },
   {
     id: "2",
     title: "Cursos e treinamentos",
     description:
       "Habilidades e conhecimentos para melhorar a produtividade, qualidade e competitividade na indústria.",
-    img: <TbCertificate />,
-    color: "",
+    img: <TbCertificate size={40} />,
+    color: "bg-blue-600",
   },
   {
     id: "3",
     title: "Projetos de Pesquisa",
     description:
       "Soluções avançadas para atender às necessidades específicas da sua indústria.",
-    img: <BiSearchAlt />,
-    color: "",
+    img: <BiSearchAlt size={40} />,
+    color: "bg-blue-500",
   },
 ];
 
@@ -47,7 +47,7 @@ export default function Home() {
               Laboratório especializado em análise de materiais e capacitação
               para indústrias.
             </p>
-            <div>
+            <div className="flex gap-5 mt-16">
               {ItensServices.map((card) => {
                 return (
                   <CardServices
@@ -55,6 +55,7 @@ export default function Home() {
                     title={card.title}
                     description={card.description}
                     img={card.img}
+                    color={card.color}
                   />
                 );
               })}
