@@ -1,8 +1,10 @@
 import { Header } from "../components/Header";
-import LogoLAb from "../assets/VectorLAb.svg";
-import LogoCertificate from "../assets/Frame.svg";
-import LogoLupa from "../assets/FrameLupa.svg";
 import CardServices from "../components/CardServices";
+
+
+import {FaMicroscope } from 'react-icons/fa'
+import {TbCertificate } from 'react-icons/tb'
+import {BiSearchAlt } from 'react-icons/bi'
 
 const ItensServices = [
   {
@@ -10,7 +12,7 @@ const ItensServices = [
     title: "Análise de Materiais",
     description:
       "Descubra suas propriedades, características e possibilidades com nossas análises especializadas",
-    img: LogoLAb,
+    img: <FaMicroscope />,
     color: "",
   },
   {
@@ -18,7 +20,7 @@ const ItensServices = [
     title: "Cursos e treinamentos",
     description:
       "Habilidades e conhecimentos para melhorar a produtividade, qualidade e competitividade na indústria.",
-    img: LogoCertificate,
+    img: <TbCertificate />,
     color: "",
   },
   {
@@ -26,7 +28,7 @@ const ItensServices = [
     title: "Projetos de Pesquisa",
     description:
       "Soluções avançadas para atender às necessidades específicas da sua indústria.",
-    img: LogoLupa,
+    img: <BiSearchAlt />,
     color: "",
   },
 ];
