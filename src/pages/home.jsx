@@ -1,4 +1,35 @@
 import { Header } from "../components/Header";
+import LogoLAb from "../assets/VectorLAb.svg";
+import LogoCertificate from "../assets/Frame.svg";
+import LogoLupa from "../assets/FrameLupa.svg";
+import CardServices from "../components/CardServices";
+
+const ItensServices = [
+  {
+    id: "1",
+    title: "Análise de Materiais",
+    description:
+      "Descubra suas propriedades, características e possibilidades com nossas análises especializadas",
+    img: LogoLAb,
+    color: "",
+  },
+  {
+    id: "2",
+    title: "Cursos e treinamentos",
+    description:
+      "Habilidades e conhecimentos para melhorar a produtividade, qualidade e competitividade na indústria.",
+    img: LogoCertificate,
+    color: "",
+  },
+  {
+    id: "3",
+    title: "Projetos de Pesquisa",
+    description:
+      "Soluções avançadas para atender às necessidades específicas da sua indústria.",
+    img: LogoLupa,
+    color: "",
+  },
+];
 
 export default function Home() {
   return (
@@ -14,13 +45,21 @@ export default function Home() {
               Laboratório especializado em análise de materiais e capacitação
               para indústrias.
             </p>
-
-            
+            <div>
+              {ItensServices.map((card) => {
+                return (
+                  <CardServices
+                    key={card.id}
+                    title={card.title}
+                    description={card.description}
+                    img={card.img}
+                  />
+                );
+              })}
+            </div>
           </section>
         </div>
       </div>
     </div>
   );
 }
-
-

@@ -1,6 +1,7 @@
-export default function CardServices(img, title, description) {
+// eslint-disable-next-line react/prop-types
+export default function CardServices({img, title, description}) {
   return (
-    <div>
+    <div className=" flex flex-col border border-l-blue-500 p-5 rounded-lg">
       <img src={img} alt="" />
       <div>
         <h3>{title}</h3>
