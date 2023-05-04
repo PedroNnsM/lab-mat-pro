@@ -12,7 +12,7 @@ const ItensServices = [
     title: "Análise de Materiais",
     description:
       "Descubra suas propriedades, características e possibilidades com nossas análises especializadas",
-    img: <FaMicroscope size={40} />,
+    img: <FaMicroscope size={30} />,
     color: "bg-blue-700",
   },
   {
