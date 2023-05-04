@@ -1,10 +1,9 @@
 import { Header } from "../components/Header";
 import CardServices from "../components/CardServices";
 
-
-import {FaMicroscope } from 'react-icons/fa'
-import {TbCertificate } from 'react-icons/tb'
-import {BiSearchAlt } from 'react-icons/bi'
+import { FaMicroscope } from "react-icons/fa";
+import { TbCertificate } from "react-icons/tb";
+import { BiSearchAlt } from "react-icons/bi";
 
 const ItensServices = [
   {
@@ -47,7 +46,7 @@ export default function Home() {
               Laboratório especializado em análise de materiais e capacitação
               para indústrias.
             </p>
-            <div className="flex gap-5 mt-16">
+            <div className="flex gap-5 mt-16 max-w-4xl">
               {ItensServices.map((card) => {
                 return (
                   <CardServices

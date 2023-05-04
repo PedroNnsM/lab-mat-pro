@@ -2,7 +2,6 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    
     colors: {
       "black-900": "#323232",
       "blue-900": "#183A5E",
@@ -28,8 +27,8 @@ export default {
         lg: { min: "1024px", max: "1365px" },
       },
       boxShadow: {
-        '3xl': '0px 0px 30px  rgba(0, 0, 0, 0.3)',
-      }
+        "3xl": "0px 0px 30px  rgba(0, 0, 0, 0.3)",
+      },
     },
   },
   plugins: [],

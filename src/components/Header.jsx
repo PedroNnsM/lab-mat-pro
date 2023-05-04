@@ -58,17 +58,17 @@ export function Header() {
       <img className="w-[25rem]" src={Logo} alt="" />
       {open ? (
         <RiCloseFill
-          className="lg:hidden block h-8 w-8 text-WHITE cursor-pointer"
+          className="lg:hidden xl:hidden block h-8 w-8 text-WHITE cursor-pointer"
           onClick={() => setOpen(!open)}
         />
       ) : (
         <FiMenu
-          className="lg:hidden block h-8 w-8 text-WHITE cursor-pointer"
+          className="lg:hidden xl:hidden block h-8 w-8 text-WHITE cursor-pointer"
           onClick={() => setOpen(!open)}
         />
       )}
       <nav>
-        <ul className="flex gap-6 mt-[-20px] mb-10 sm:flex-col lg:flex-row md:flex-row ">
+        <ul className="flex gap-6 mt-[-20px] mb-10 sm:flex-col lg:flex-row md:flex-row xl:flex-row">
           {navList.map((item) => {
             return (
               <li key={item.id}>
