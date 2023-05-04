@@ -14,6 +14,8 @@ export default function Home() {
               Laboratório especializado em análise de materiais e capacitação
               para indústrias.
             </p>
+
+            
           </section>
         </div>
       </div>
