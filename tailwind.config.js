@@ -27,6 +27,9 @@ export default {
         md: { min: "768px", max: "1023px" },
         lg: { min: "1024px", max: "1365px" },
       },
+      boxShadow: {
+        '3xl': '0px 0px 30px  rgba(0, 0, 0, 0.3)',
+      }
     },
   },
   plugins: [],
