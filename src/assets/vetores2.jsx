@@ -2,59 +2,48 @@ export function Vetores2() {
   return (
     <>
       <svg
-        width="324"
-        height="426"
-        viewBox="0 0 324 426"
+        width="325"
+        height="520"
+        viewBox="0 0 325 520"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
-          d="M54 31L108 0L162 32V93.5L108 124.5L54 93.5V31Z"
-          fill="url(#paint0_linear_89_860)"
+          fillRule="evenodd"
+          clipRule="evenodd"
+          d="M108.694 95L135.54 110.5L162.387 126V157V188L135.54 203.5L108.694 219L81.8468 203.5L55 188V157V126L81.8468 110.5L108.694 95Z"
+          fill="#357ECB"
+          stroke="#CFE0F2"
+          strokeWidth="0.639873"
+          strokeMiterlimit="22.9256"
         />
         <path
-          d="M0 332L54 301L108 333V394.5L54 425.5L0 394.5V332Z"
-          fill="url(#paint1_linear_89_860)"
+          fillRule="evenodd"
+          clipRule="evenodd"
+          d="M53.6936 395L80.5403 410.5L107.387 426V457V488L80.5403 503.5L53.6936 519L26.8468 503.5L0 488V457V426L26.8468 410.5L53.6936 395Z"
+          fill="#357ECB"
+          stroke="#CFE0F2"
+          strokeWidth="0.639873"
+          strokeMiterlimit="22.9256"
         />
         <path
-          d="M216 145L270 114L324 146V207.5L270 238.5L216 207.5V145Z"
-          fill="url(#paint2_linear_89_860)"
+          fillRule="evenodd"
+          clipRule="evenodd"
+          d="M270.694 208L297.54 223.5L324.387 239V270V301L297.54 316.5L270.694 332L243.847 316.5L217 301V270V239L243.847 223.5L270.694 208Z"
+          fill="#357ECB"
+          stroke="#CFE0F2"
+          strokeWidth="0.639873"
+          strokeMiterlimit="22.9256"
         />
-        <defs>
-          <linearGradient
-            id="paint0_linear_89_860"
-            x1="55.1667"
-            y1="10.1918"
-            x2="177.634"
-            y2="91.5242"
-            gradientUnits="userSpaceOnUse"
-          >
-            <stop stopColor="#357ECB" />
-            <stop offset="1" stopColor="#2C6BAD" />
-          </linearGradient>
-          <linearGradient
-            id="paint1_linear_89_860"
-            x1="1.16667"
-            y1="311.192"
-            x2="123.634"
-            y2="392.524"
-            gradientUnits="userSpaceOnUse"
-          >
-            <stop stopColor="#357ECB" />
-            <stop offset="1" stopColor="#2C6BAD" />
-          </linearGradient>
-          <linearGradient
-            id="paint2_linear_89_860"
-            x1="217.167"
-            y1="124.192"
-            x2="339.634"
-            y2="205.524"
-            gradientUnits="userSpaceOnUse"
-          >
-            <stop stopColor="#357ECB" />
-            <stop offset="1" stopColor="#2C6BAD" />
-          </linearGradient>
-        </defs>
+        <path
+          fillRule="evenodd"
+          clipRule="evenodd"
+          d="M52.6936 1L79.5403 16.5L106.387 32V63V94L79.5403 109.5L52.6936 125L25.8468 109.5L-1 94V63V32L25.8468 16.5L52.6936 1Z"
+          fill="#fff"
+          stroke="#CFE0F2"
+          strokeWidth="0.639873"
+          strokeMiterlimit="22.9256"
+        />
       </svg>
     </>
   );

@@ -5,9 +5,8 @@ import { FaMicroscope } from "react-icons/fa";
 import { TbCertificate } from "react-icons/tb";
 import { BiSearchAlt } from "react-icons/bi";
 import { Vetores } from "../assets/vetores";
-import { Vetores2 } from "../assets/vetores2";
 
-const ItensServices = [
+const CardItens = [
   {
     id: "1",
     title: "Análise de Materiais",
@@ -34,21 +33,30 @@ const ItensServices = [
   },
 ];
 
+const itensBanner = [
+  {
+    id: "1",
+    title: "Serviços",
+    description:
+      "Os processos metalúrgicos produzem e transformam os metais em produtos para o nosso uso.",
+    img: <FaMicroscope size={30} />,
+    color: "bg-blue-500",
+  },
+];
+
 export default function Home() {
   return (
     <div className=" min-h-screen bg-slate-700 flex-col w-full  bg-opacity-40  ">
       <div className="flex flex-col items-center bg-gradient-to-br relative from-blue-500 from-10%  via-blue-800 to-blue-900 to-100% ">
-        <div className="absolute top-[-30px] right-[-20px]">
+        <div className="absolute top-[-30px] right-[-20px] ">
           <Vetores />
         </div>
-        <div className="absolute left-0 top-[500px]">
-              <Vetores2 />
-            </div>
+
         <div className="w-xl">
           <Header />
           <section className="text-WHITE text-center max-w-6xl  mx-4">
             <div className="mx-5">
-              <h2 className=" text-3xl font-bold mb-5 mx-4 ">
+              <h2 className=" text-4xl font-bold mb-5 mx-4 ">
                 Inovação através da pesquisa e tecnologia
               </h2>
               <p className=" text-xl font-semibold mx-4">
@@ -57,13 +65,13 @@ export default function Home() {
               </p>
             </div>
             <div
-              className="flex gap-10 mt-36 max-w-6xl mx-4
+              className="flex gap-10 mt-36 max-w-6xl mx-4 mb-[-80px]
              flex-col justify-center items-center  
              md:flex-row md:justify-start md:items-stretch 
              lg:flex-row lg:justify-start lg:items-stretch 
              xl:flex-row xl:justify-start xl:items-stretch "
             >
-              {ItensServices.map((card) => {
+              {CardItens.map((card) => {
                 return (
                   <CardServices
                     key={card.id}
@@ -76,11 +84,17 @@ export default function Home() {
               })}
             </div>
           </section>
-          <main className="h-full bg-WHITE mt-[-75px] relative">
-            
-          </main>
         </div>
       </div>
+      <section className="h-full max-w-4xl  text-center mx-auto bg-WHITE mt-[150px] relative">
+        <div className="max-w-xl flex flex-col mx-auto ">
+          <h2 className="mx-10 font-bold  text-2xl text-blue-900">
+            Especialização e treinamento em Engenharia de Materiais e
+            Metalurgica
+          </h2>
+          <div></div>
+        </div>
+      </section>
     </div>
   );
 }
