@@ -6,6 +6,7 @@ import { BiSearchAlt } from "react-icons/bi";
 import { Vetores } from "../assets/vetores";
 import CardHeader from "../components/CardHeader";
 import { CardBanner } from "../components/CardBanner";
+import { CardHorizontal } from "../components/CardHorizontal";
 
 const CardItensHeader = [
   {
@@ -55,11 +56,32 @@ const itensBanner = [
   },
 ];
 
+const itensHorizontal = [
+  {
+    id: "1",
+    title: "Engenharia Reversa",
+    description:
+      "A engenharia reversa é o processo de descobrir os princípios tecnológicos de um dispositivo ou equipamento.",
+  },
+  {
+    id: "2",
+    title: "Análise de elementos Finitos (MEF)",
+    description:
+      "Possibilita a determinação dos esforços em qualquer tipo de projeto e processo de fabricação.",
+  },
+  {
+    id: "3",
+    title: "Integridade Estrutural API 579 e BS 7910",
+    description:
+      "Nossos especialistas são altamente experientes no desenvolvimento e aplicações de técnicas FFS, particularmente para evitar fraturas frágeis e dúcteis.",
+  },
+]
+
 export default function Home() {
   return (
     <div className=" min-h-screen bg-slate-700 flex-col w-full  bg-opacity-40  ">
       <div className="flex flex-col items-center bg-gradient-to-br relative from-blue-500 from-10%  via-blue-800 to-blue-900 to-100% ">
-        <div className="absolute top-[-30px] right-[-20px] ">
+        <div className="absolute top-[-30px] right-0 ">
           <Vetores />
         </div>
 
@@ -105,7 +127,7 @@ export default function Home() {
           </h2>
         </div>{" "}
         <div className="flex mt-24 flex-col items-center justify-center mx-auto gap-4
-        md:flex-row md:gap-8 md:justify-between md:mx-0
+        md:flex-row md:gap-8 md:justify-between md:mx-6
 
         ">
           {itensBanner.map((banner) => {
@@ -119,6 +141,23 @@ export default function Home() {
           })}
         </div>
       </section>
+      <main>
+        <div className="flex flex-col items-center my-8">
+          <h3 className="mx-auto">Nosso serviços</h3>
+          <div className="mt-5 grid grid-cols-3">
+          {itensHorizontal.map(banner => {
+            return(
+              <CardHorizontal 
+                key={banner.id}
+                title={banner.title}
+                description={banner.description}
+              />
+            )
+          })}
+          </div>
+
+        </div>
+      </main>
     </div>
   );
 }
