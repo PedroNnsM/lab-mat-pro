@@ -1,12 +1,13 @@
 import { Header } from "../components/Header";
-import CardServices from "../components/CardServices";
 
 import { FaMicroscope } from "react-icons/fa";
 import { TbCertificate } from "react-icons/tb";
 import { BiSearchAlt } from "react-icons/bi";
 import { Vetores } from "../assets/vetores";
+import CardHeader from "../components/CardHeader";
+import { CardBanner } from "../components/CardBanner";
 
-const CardItens = [
+const CardItensHeader = [
   {
     id: "1",
     title: "Análise de Materiais",
@@ -36,11 +37,30 @@ const CardItens = [
 const itensBanner = [
   {
     id: "1",
-    title: "Serviços",
+    title: "Análise de materiais",
     description:
       "Os processos metalúrgicos produzem e transformam os metais em produtos para o nosso uso.",
-    img: <FaMicroscope size={30} />,
-    color: "bg-blue-500",
+
+    heigth: "h-[300px]",
+    width: "w-[280px]",
+  },
+  {
+    id: "2",
+    title: "Desenvolvimento de processos metalúrgicos",
+    description:
+      "Os processos metalúrgicos produzem e transformam os metais em produtos para o nosso uso.",
+
+    heigth: "h-[300px]",
+    width: "w-[280px]",
+  },
+  {
+    id: "3",
+    title: "Desenvolvimento de processos metalúrgicos",
+    description:
+      "Os processos metalúrgicos produzem e transformam os metais em produtos para o nosso uso.",
+
+    heigth: "h-[300px]",
+    width: "w-[280px]",
   },
 ];
 
@@ -71,9 +91,9 @@ export default function Home() {
              lg:flex-row lg:justify-start lg:items-stretch 
              xl:flex-row xl:justify-start xl:items-stretch "
             >
-              {CardItens.map((card) => {
+              {CardItensHeader.map((card) => {
                 return (
-                  <CardServices
+                  <CardHeader
                     key={card.id}
                     title={card.title}
                     description={card.description}
@@ -86,13 +106,25 @@ export default function Home() {
           </section>
         </div>
       </div>
-      <section className="h-full max-w-4xl  text-center mx-auto bg-WHITE mt-[150px] relative">
+      <section className="h-full max-w-6xl  text-center mx-auto bg-WHITE mt-[150px] relative">
         <div className="max-w-xl flex flex-col mx-auto ">
           <h2 className="mx-10 font-bold  text-2xl text-blue-900">
             Especialização e treinamento em Engenharia de Materiais e
             Metalurgica
           </h2>
-          <div></div>
+          <div className="flex">
+            {itensBanner.map((banner) => {
+              return (
+                <CardBanner
+                  key={banner.id}
+                  heigth={banner.heigth}
+                  width={banner.width}
+                  title={banner.title}
+                  description={banner.description}
+                />
+              );
+            })}
+          </div>
         </div>
       </section>
     </div>

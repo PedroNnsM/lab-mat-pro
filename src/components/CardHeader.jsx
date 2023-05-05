@@ -1,5 +1,5 @@
 // eslint-disable-next-line react/prop-types
-export default function CardServices({ img, title, description, color }) {
+export default function CardHeader({ img, title, description, color }) {
   return (
     <div className=" flex flex-col border items-center relative bg-WHITE p-5 rounded-lg w-[90%] shadow-3xl ">
       <div

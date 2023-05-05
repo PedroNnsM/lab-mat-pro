@@ -34,6 +34,10 @@ export default {
       '2xl': '1536px',
       // => @media (min-width: 1536px) { ... }
     },
+    backgroundImage: {
+        'banner-jpg': "url('/img/ImagemBanner.jpg')",
+        'banner-svg': "url('/img/ImagemBanner.svg')",
+      },
       boxShadow: {
         "3xl": "0px 0px 30px  rgba(0, 0, 0, 0.3)",
       },
