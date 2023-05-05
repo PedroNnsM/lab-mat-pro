@@ -40,27 +40,18 @@ const itensBanner = [
     title: "Análise de materiais",
     description:
       "Os processos metalúrgicos produzem e transformam os metais em produtos para o nosso uso.",
-
-    heigth: "h-[300px]",
-    width: "w-[280px]",
   },
   {
     id: "2",
     title: "Desenvolvimento de processos metalúrgicos",
     description:
       "Os processos metalúrgicos produzem e transformam os metais em produtos para o nosso uso.",
-
-    heigth: "h-[300px]",
-    width: "w-[280px]",
   },
   {
     id: "3",
     title: "Desenvolvimento de processos metalúrgicos",
     description:
       "Os processos metalúrgicos produzem e transformam os metais em produtos para o nosso uso.",
-
-    heigth: "h-[300px]",
-    width: "w-[280px]",
   },
 ];
 
@@ -106,25 +97,26 @@ export default function Home() {
           </section>
         </div>
       </div>
-      <section className="h-full max-w-6xl  text-center mx-auto bg-WHITE mt-[150px] relative">
+      <section className="h-full max-w-6xl flex flex-col text-center mx-auto bg-WHITE mt-[150px] relative">
         <div className="max-w-xl flex flex-col mx-auto ">
           <h2 className="mx-10 font-bold  text-2xl text-blue-900">
             Especialização e treinamento em Engenharia de Materiais e
             Metalurgica
           </h2>
-          <div className="flex">
-            {itensBanner.map((banner) => {
-              return (
-                <CardBanner
-                  key={banner.id}
-                  heigth={banner.heigth}
-                  width={banner.width}
-                  title={banner.title}
-                  description={banner.description}
-                />
-              );
-            })}
-          </div>
+        </div>{" "}
+        <div className="flex mt-24 flex-col items-center justify-center mx-auto gap-4
+        md:flex-row md:gap-8 md:justify-between md:mx-0
+
+        ">
+          {itensBanner.map((banner) => {
+            return (
+              <CardBanner
+                key={banner.id}
+                title={banner.title}
+                description={banner.description}
+              />
+            );
+          })}
         </div>
       </section>
     </div>
