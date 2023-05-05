@@ -4,6 +4,8 @@ import CardServices from "../components/CardServices";
 import { FaMicroscope } from "react-icons/fa";
 import { TbCertificate } from "react-icons/tb";
 import { BiSearchAlt } from "react-icons/bi";
+import { Vetores } from "../assets/vetores";
+import { Vetores2 } from "../assets/vetores2";
 
 const ItensServices = [
   {
@@ -35,10 +37,16 @@ const ItensServices = [
 export default function Home() {
   return (
     <div className=" min-h-screen bg-slate-700 flex-col w-full  bg-opacity-40  ">
-      <div className="flex flex-col items-center bg-gradient-to-br from-blue-500 from-10%  via-blue-800 to-blue-900 to-100% ">
+      <div className="flex flex-col items-center bg-gradient-to-br relative from-blue-500 from-10%  via-blue-800 to-blue-900 to-100% ">
+        <div className="absolute top-[-30px] right-[-20px]">
+          <Vetores />
+        </div>
+        <div className="absolute left-0 top-[500px]">
+              <Vetores2 />
+            </div>
         <div className="w-xl">
           <Header />
-          <section className="text-WHITE text-center max-w-6xl mx-4">
+          <section className="text-WHITE text-center max-w-6xl  mx-4">
             <div className="mx-5">
               <h2 className=" text-3xl font-bold mb-5 mx-4 ">
                 Inovação através da pesquisa e tecnologia
@@ -68,7 +76,9 @@ export default function Home() {
               })}
             </div>
           </section>
-          <main className="h-full bg-WHITE mt-[-75px]"></main>
+          <main className="h-full bg-WHITE mt-[-75px] relative">
+            
+          </main>
         </div>
       </div>
     </div>
