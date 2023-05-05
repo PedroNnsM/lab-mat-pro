@@ -12,7 +12,7 @@ const ItensServices = [
     description:
       "Descubra suas propriedades, características e possibilidades com nossas análises especializadas",
     img: <FaMicroscope size={30} />,
-    color: "bg-blue-700",
+    color: "bg-blue-500",
   },
   {
     id: "2",
@@ -38,15 +38,23 @@ export default function Home() {
       <div className="flex flex-col items-center bg-gradient-to-br from-blue-500 from-10%  via-blue-800 to-blue-900 to-100% ">
         <div className="w-xl">
           <Header />
-          <section className="text-WHITE text-center">
-            <h2 className=" text-3xl">
-              Inovação através da pesquisa e tecnologia
-            </h2>
-            <p className=" text-xl">
-              Laboratório especializado em análise de materiais e capacitação
-              para indústrias.
-            </p>
-            <div className="flex gap-5 mt-16 max-w-4xl">
+          <section className="text-WHITE text-center max-w-6xl mx-4">
+            <div className="mx-5">
+              <h2 className=" text-3xl font-bold mb-5 mx-4 ">
+                Inovação através da pesquisa e tecnologia
+              </h2>
+              <p className=" text-xl font-semibold mx-4">
+                Laboratório especializado em análise de materiais e capacitação
+                para indústrias.
+              </p>
+            </div>
+            <div
+              className="flex gap-10 mt-36 max-w-6xl mx-4
+             flex-col justify-center items-center  
+             md:flex-row md:justify-start md:items-stretch 
+             lg:flex-row lg:justify-start lg:items-stretch 
+             xl:flex-row xl:justify-start xl:items-stretch "
+            >
               {ItensServices.map((card) => {
                 return (
                   <CardServices
@@ -60,6 +68,7 @@ export default function Home() {
               })}
             </div>
           </section>
+          <main className="h-full bg-WHITE mt-[-75px]"></main>
         </div>
       </div>
     </div>
