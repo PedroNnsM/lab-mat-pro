@@ -75,7 +75,13 @@ const itensHorizontal = [
     description:
       "Nossos especialistas são altamente experientes no desenvolvimento e aplicações de técnicas FFS, particularmente para evitar fraturas frágeis e dúcteis.",
   },
-]
+  {
+    id: "4",
+    title: "Análise de falhas",
+    description:
+      "Nossos especialistas são altamente experientes no desenvolvimento e aplicações de técnicas FFS, particularmente para evitar fraturas frágeis e dúcteis.",
+  },
+];
 
 export default function Home() {
   return (
@@ -126,10 +132,12 @@ export default function Home() {
             Metalurgica
           </h2>
         </div>{" "}
-        <div className="flex mt-24 flex-col items-center justify-center mx-auto gap-4
+        <div
+          className="flex mt-24 flex-col items-center justify-center mx-auto gap-4
         md:flex-row md:gap-8 md:justify-between md:mx-6
 
-        ">
+        "
+        >
           {itensBanner.map((banner) => {
             return (
               <CardBanner
@@ -143,19 +151,20 @@ export default function Home() {
       </section>
       <main>
         <div className="flex flex-col items-center my-8">
-          <h3 className="mx-auto">Nosso serviços</h3>
-          <div className="mt-5 grid grid-cols-3">
-          {itensHorizontal.map(banner => {
-            return(
-              <CardHorizontal 
-                key={banner.id}
-                title={banner.title}
-                description={banner.description}
-              />
-            )
-          })}
+          <h3 className="mx-auto font-bold text-grey-700 text-2xl  tracking-wider ">
+            Nossos serviços
+          </h3>
+          <div className="mt-5 grid grid-cols-4 w-full">
+            {itensHorizontal.map((banner) => {
+              return (
+                <CardHorizontal
+                  key={banner.id}
+                  title={banner.title}
+                  description={banner.description}
+                />
+              );
+            })}
           </div>
-
         </div>
       </main>
     </div>

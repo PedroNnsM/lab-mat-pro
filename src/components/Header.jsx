@@ -59,14 +59,14 @@ export function Header() {
       {open ? (
         <RiCloseFill
           className="block h-8 w-8 text-WHITE cursor-pointer
-          md:hidden lg:hidden xl:hidden 
+          md:hidden 
           "
           onClick={() => setOpen(!open)}
         />
       ) : (
         <FiMenu
           className="block h-8 w-8 text-WHITE cursor-pointer
-          md:hidden lg:hidden xl:hidden 
+          md:hidden 
           "
           onClick={() => setOpen(!open)}
         />
@@ -78,7 +78,7 @@ export function Header() {
               <li key={item.id}>
                 <a
                   href={`/${item.name}`}
-                  className="text-WHITE hover:text-opacity-60 font-sans	"
+                  className="text-WHITE hover:text-opacity-60 font-bold font-sans	"
                 >
                   {item.text}
                 </a>
