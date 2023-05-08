@@ -72,7 +72,7 @@ export function Header() {
         />
       )}
       <nav>
-        <ul className="flex gap-6 mt-[-20px] mb-10 flex-col lg:flex-row md:flex-row xl:flex-row">
+        <ul className="flex gap-6 mt-[-20px] mb-10 flex-col lg:flex-row md:flex-row ">
           {navList.map((item) => {
             return (
               <li key={item.id}>
