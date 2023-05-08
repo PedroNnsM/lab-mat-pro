@@ -2,7 +2,7 @@
 export function CardHorizontal({ title, description }) {
   return (
     <div
-      className={`group bg-blue-800 bg-center p-8 hover:bg-banner-svg flex flex-col items-center justify-center transition-all relative text-WHITE
+      className={`group bg-blue-800 bg-center bg-cover  p-8 hover:bg-banner-svg flex hover:bg-opacity-75 flex-col items-center justify-center transition-all relative text-WHITE
       h-56
       `}
     >
