@@ -8,6 +8,8 @@ import CardHeader from "../components/CardHeader";
 import { CardBanner } from "../components/CardBanner";
 import { CardHorizontal } from "../components/CardHorizontal";
 
+import ImagemSolda from '../../img/ImagemBanner.jpg'
+
 const CardItensHeader = [
   {
     id: "1",
@@ -56,7 +58,33 @@ const itensBanner = [
   },
 ];
 
-const itensHorizontal = [
+const itensHorizontalServicos = [
+  {
+    id: "1",
+    title: "Engenharia Reversa",
+    description:
+      "A engenharia reversa é o processo de descobrir os princípios tecnológicos de um dispositivo ou equipamento.",
+  },
+  {
+    id: "2",
+    title: "Análise de elementos Finitos (MEF)",
+    description:
+      "Possibilita a determinação dos esforços em qualquer tipo de projeto e processo de fabricação.",
+  },
+  {
+    id: "3",
+    title: "Integridade Estrutural API 579 e BS 7910",
+    description:
+      "Nossos especialistas são altamente experientes no desenvolvimento e aplicações de técnicas FFS, particularmente para evitar fraturas frágeis e dúcteis.",
+  },
+  {
+    id: "4",
+    title: "Análise de falhas",
+    description:
+      "Nossos especialistas são altamente experientes no desenvolvimento e aplicações de técnicas FFS, particularmente para evitar fraturas frágeis e dúcteis.",
+  },
+];
+const itensHorizontalCursos = [
   {
     id: "1",
     title: "Engenharia Reversa",
@@ -155,7 +183,7 @@ export default function Home() {
             Nossos serviços
           </h3>
           <div className="mt-5 grid grid-cols-4 w-full">
-            {itensHorizontal.map((banner) => {
+            {itensHorizontalServicos.map((banner) => {
               return (
                 <CardHorizontal
                   key={banner.id}
@@ -165,6 +193,31 @@ export default function Home() {
               );
             })}
           </div>
+        </div>
+        <div className="flex flex-col items-center my-8">
+          <h3 className="mx-auto font-bold text-grey-700 text-2xl  tracking-wider ">
+            Nossos Cursos
+          </h3>
+          <div className="mt-5 grid grid-cols-4 w-full">
+            {itensHorizontalCursos.map((banner) => {
+              return (
+                <CardHorizontal
+                  key={banner.id}
+                  title={banner.title}
+                  description={banner.description}
+                />
+              );
+            })}
+          </div>
+        </div>
+        <div className="flex flex-col items-center my-8">
+            <div className="flex ">
+              <img className="w-52 h-52" src={ImagemSolda} alt="" />
+              <div>
+                <p>Ensaio de Materiais e Produtos</p>
+                <button className="bg-gradient-to-br relative from-blue-500 from-10%  via-blue-800 to-blue-900 to-100% "> Enviar</button>
+              </div>
+            </div>
         </div>
       </main>
     </div>
