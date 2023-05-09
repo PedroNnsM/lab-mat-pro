@@ -8,7 +8,11 @@ import CardHeader from "../components/CardHeader";
 import { CardBanner } from "../components/CardBanner";
 import { CardHorizontal } from "../components/CardHorizontal";
 
-import ImagemSolda from '../../img/ImagemBanner.jpg'
+import ImagemSolda from "../../img/microscopio.png";
+import ImagemAudax from "../../img/audax.png";
+import ImagemCaloi from "../../img/caloi.png";
+import ImagemEletronorte from "../../img/eletronorte.png";
+import ImagemEua from "../../img/eua.png";
 
 const CardItensHeader = [
   {
@@ -111,7 +115,31 @@ const itensHorizontalCursos = [
   },
 ];
 
+const parceiros = [
+  {
+    id: "1",
+    empresa: "Audax",
+    imag: `${ImagemAudax}`,
+  },
+  {
+    id: "2",
+    empresa: "Caloi",
+    imag: `${ImagemCaloi}`,
+  },
+  {
+    id: "3",
+    empresa: "Eletronorte",
+    imag: `${ImagemEletronorte}`,
+  },
+  {
+    id: "4",
+    empresa: "Eua",
+    imag: `${ImagemEua}`,
+  },
+];
+
 export default function Home() {
+  
   return (
     <div className=" min-h-screen bg-slate-700 flex-col w-full  bg-opacity-40  ">
       <div className="flex flex-col items-center bg-gradient-to-br relative from-blue-500 from-10%  via-blue-800 to-blue-900 to-100% ">
@@ -211,13 +239,33 @@ export default function Home() {
           </div>
         </div>
         <div className="flex flex-col items-center my-8">
-            <div className="flex gap-3 w-1/2 shadow-2.5xl">
-              <img className="w- h-52" src={ImagemSolda} alt="" />
-              <div className="p-3 flex flex-col items-center justify-between flex-1">
-                <p className="text-blue-700 font-bold text-xl ">Ensaio de Materiais e Produtos</p>
-                <button className="bg-gradient-to-br relative from-blue-500 from-10%  via-blue-800 to-blue-900 to-100% w-full text-WHITE font-semibold p-1"> Enviar</button>
-              </div>
+          <div className="flex gap-3 w-1/2 shadow-2.5xl">
+            <img className="w- h-56" src={ImagemSolda} alt="" />
+            <div className="p-3 flex flex-col items-center justify-between flex-1">
+              <p className="text-blue-700 font-bold text-xl ">
+                Ensaio de Materiais e Produtos
+              </p>
+              <button className="bg-gradient-to-br relative from-blue-500 from-10%  via-blue-800 to-blue-900 to-100% w-full text-WHITE font-semibold p-1">
+                Enviar
+              </button>
             </div>
+          </div>
+        </div>
+        <div className="flex flex-col items-center my-8">
+          <h3 className="mx-auto font-bold text-grey-700 text-2xl  tracking-wider ">
+            Nossos Parceiros
+          </h3>
+          <div className="flex gap-2 max-w-6xl h-24">
+            {parceiros.map((parceiro) => {
+              return (
+                <img className="w-full"
+                  key={parceiro.id}
+                  src={parceiro.imag}
+                  alt={parceiro.empresa}
+                />
+              );
+            })}
+          </div>
         </div>
       </main>
     </div>
