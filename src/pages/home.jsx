@@ -211,11 +211,11 @@ export default function Home() {
           </div>
         </div>
         <div className="flex flex-col items-center my-8">
-            <div className="flex ">
-              <img className="w-52 h-52" src={ImagemSolda} alt="" />
-              <div>
-                <p>Ensaio de Materiais e Produtos</p>
-                <button className="bg-gradient-to-br relative from-blue-500 from-10%  via-blue-800 to-blue-900 to-100% "> Enviar</button>
+            <div className="flex gap-3 w-1/2 shadow-2.5xl">
+              <img className="w- h-52" src={ImagemSolda} alt="" />
+              <div className="p-3 flex flex-col items-center justify-between flex-1">
+                <p className="text-blue-700 font-bold text-xl ">Ensaio de Materiais e Produtos</p>
+                <button className="bg-gradient-to-br relative from-blue-500 from-10%  via-blue-800 to-blue-900 to-100% w-full text-WHITE font-semibold p-1"> Enviar</button>
               </div>
             </div>
         </div>
