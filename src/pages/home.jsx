@@ -3,11 +3,11 @@ import { Header } from "../components/Header";
 import { FaMicroscope } from "react-icons/fa";
 import { TbCertificate } from "react-icons/tb";
 import { BiSearchAlt } from "react-icons/bi";
-import { Vetores } from "../assets/vetores";
 import CardHeader from "../components/CardHeader";
 import { CardBanner } from "../components/CardBanner";
 import { CardHorizontal } from "../components/CardHorizontal";
 
+import { Vetores } from "../assets/vetores";
 import ImagemSolda from "../../img/microscopio.png";
 import ImagemAudax from "../../img/audax.png";
 import ImagemCaloi from "../../img/caloi.png";
@@ -139,7 +139,8 @@ const parceiros = [
 ];
 
 export default function Home() {
-  
+  //TODO - Fazer useState + set interval pra fazer rodar os banners [ ]
+  //TODO -
   return (
     <div className=" min-h-screen bg-slate-700 flex-col w-full  bg-opacity-40  ">
       <div className="flex flex-col items-center bg-gradient-to-br relative from-blue-500 from-10%  via-blue-800 to-blue-900 to-100% ">
@@ -255,10 +256,10 @@ export default function Home() {
           <h3 className="mx-auto font-bold text-grey-700 text-2xl  tracking-wider ">
             Nossos Parceiros
           </h3>
-          <div className="flex gap-2 max-w-6xl h-24">
+          <div className="flex items-start gap-8 max-w-4xl h-44 mt-7">
             {parceiros.map((parceiro) => {
               return (
-                <img className="w-full"
+                <img className="w-"
                   key={parceiro.id}
                   src={parceiro.imag}
                   alt={parceiro.empresa}
