@@ -5,6 +5,7 @@ import { TbCertificate } from "react-icons/tb";
 import { BiSearchAlt } from "react-icons/bi";
 import CardHeader from "../components/CardHeader";
 import { CardBanner } from "../components/CardBanner";
+import { Footer } from "../components/Footer";
 import { CardHorizontal } from "../components/CardHorizontal";
 
 import { Vetores } from "../assets/vetores";
@@ -259,7 +260,8 @@ export default function Home() {
           <div className="flex items-start gap-8 max-w-4xl h-44 mt-7">
             {parceiros.map((parceiro) => {
               return (
-                <img className="w-"
+                <img
+                  className="w-"
                   key={parceiro.id}
                   src={parceiro.imag}
                   alt={parceiro.empresa}
@@ -268,7 +270,8 @@ export default function Home() {
             })}
           </div>
         </div>
-      </main>
+       </main>
+     <Footer />
     </div>
   );
 }
