@@ -261,7 +261,7 @@ export default function Home() {
             {parceiros.map((parceiro) => {
               return (
                 <img
-                  className="w-"
+                  className="w-1/4"
                   key={parceiro.id}
                   src={parceiro.imag}
                   alt={parceiro.empresa}
