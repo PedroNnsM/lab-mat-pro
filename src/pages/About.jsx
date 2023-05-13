@@ -1,3 +1,4 @@
+import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
 
 export default function About() {
@@ -13,6 +14,7 @@ export default function About() {
         
         <h1>Quem somos</h1>
       </section>
+      <Footer /> 
     </div>
   );
 }
