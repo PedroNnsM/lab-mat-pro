@@ -14,6 +14,7 @@ import ImagemAudax from "../../img/audax.png";
 import ImagemCaloi from "../../img/caloi.png";
 import ImagemEletronorte from "../../img/eletronorte.png";
 import ImagemEua from "../../img/eua.png";
+import { Caloi } from "../assets/Caloi";
 
 const CardItensHeader = [
   {
@@ -260,12 +261,7 @@ export default function Home() {
           <div className="flex items-start gap-8 max-w-4xl h-44 mt-7">
             {parceiros.map((parceiro) => {
               return (
-                <img
-                  className="w-1/4"
-                  key={parceiro.id}
-                  src={parceiro.imag}
-                  alt={parceiro.empresa}
-                />
+                <Caloi key={parceiro.id} width='150p' height='150px' />
               );
             })}
           </div>
