@@ -13,6 +13,7 @@ import ImagemSolda from "../../img/microscopio.png";
 import { Caloi } from "../assets/Caloi";
 import { Audax } from "../assets/audax";
 import { Eletronorte } from "../assets/Eletronorte";
+import { EUALogo } from "../assets/EUALogo";
 
 const CardItensHeader = [
   {
@@ -133,7 +134,7 @@ const parceiros = [
   {
     id: "4",
     empresa: "Eua",
-    imag: <Audax width='150px' height='150px' />,
+    imag: <EUALogo width='w-[70px]' height='h-[100px]' />,
   },
 ];
 
