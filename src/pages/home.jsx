@@ -10,10 +10,10 @@ import { CardHorizontal } from "../components/CardHorizontal";
 
 import { Vetores } from "../assets/vetores";
 import ImagemSolda from "../../img/microscopio.png";
-import ImagemAudax from "../../img/audax.png";
-import ImagemCaloi from "../../img/caloi.png";
-import ImagemEletronorte from "../../img/eletronorte.png";
-import ImagemEua from "../../img/eua.png";
+import { Caloi } from "../assets/Caloi";
+import { Audax } from "../assets/audax";
+import { Eletronorte } from "../assets/Eletronorte";
+import { EUALogo } from "../assets/EUALogo";
 
 const CardItensHeader = [
   {
@@ -119,23 +119,22 @@ const itensHorizontalCursos = [
 const parceiros = [
   {
     id: "1",
-    empresa: "Audax",
-    imag: `${ImagemAudax}`,
+    imag: <Audax width='150px' height='150px' />,
   },
   {
     id: "2",
     empresa: "Caloi",
-    imag: `${ImagemCaloi}`,
+    imag: <Caloi  width='150px' height='150px' />
   },
   {
     id: "3",
     empresa: "Eletronorte",
-    imag: `${ImagemEletronorte}`,
+    imag: <Eletronorte  width='w-[150px]' height='h-[70px]' />
   },
   {
     id: "4",
     empresa: "Eua",
-    imag: `${ImagemEua}`,
+    imag: <EUALogo width='w-[70px]' height='h-[100px]' />,
   },
 ];
 
@@ -257,15 +256,12 @@ export default function Home() {
           <h3 className="mx-auto font-bold text-grey-700 text-2xl  tracking-wider ">
             Nossos Parceiros
           </h3>
-          <div className="flex items-start gap-8 max-w-4xl h-44 mt-7">
+          <div className="flex items-center gap-8 max-w-4xl h-44 mt-7">
             {parceiros.map((parceiro) => {
               return (
-                <img
-                  className="w-1/4"
-                  key={parceiro.id}
-                  src={parceiro.imag}
-                  alt={parceiro.empresa}
-                />
+                <div key={parceiro.id} >
+                  {parceiro.imag}
+                </div>
               );
             })}
           </div>
