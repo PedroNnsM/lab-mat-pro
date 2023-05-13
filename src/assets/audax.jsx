@@ -1,9 +1,10 @@
-export function Audax() {
+// eslint-disable-next-line react/prop-types
+export function Audax({ width, height }) {
   return (
     <>
       <svg
-        width="314"
-        height="73"
+       width={width}
+        height={height}
         viewBox="0 0 314 73"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
