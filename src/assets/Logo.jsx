@@ -10,7 +10,7 @@ export function Logo({ width, height }) {
         viewBox="0 0 576 173"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        xmlns:xlink="http://www.w3.org/1999/xlink"
+       
       >
         <rect y="56" width="269" height="51" fill="url(#pattern0)" />
         <path

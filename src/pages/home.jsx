@@ -10,12 +10,9 @@ import { CardHorizontal } from "../components/CardHorizontal";
 
 import { Vetores } from "../assets/vetores";
 import ImagemSolda from "../../img/microscopio.png";
-import ImagemAudax from "../../img/audax.png";
-import ImagemCaloi from "../../img/caloi.png";
-import ImagemEletronorte from "../../img/eletronorte.png";
-import ImagemEua from "../../img/eua.png";
 import { Caloi } from "../assets/Caloi";
 import { Audax } from "../assets/audax";
+import { Eletronorte } from "../assets/Eletronorte";
 
 const CardItensHeader = [
   {
@@ -126,12 +123,12 @@ const parceiros = [
   {
     id: "2",
     empresa: "Caloi",
-    imag: <Caloi  width='150p' height='150px' />
+    imag: <Caloi  width='150px' height='150px' />
   },
   {
     id: "3",
     empresa: "Eletronorte",
-    imag: <Caloi  width='150p' height='150px' />
+    imag: <Eletronorte  width='w-[150px]' height='h-[70px]' />
   },
   {
     id: "4",
@@ -258,10 +255,10 @@ export default function Home() {
           <h3 className="mx-auto font-bold text-grey-700 text-2xl  tracking-wider ">
             Nossos Parceiros
           </h3>
-          <div className="flex items-start gap-8 max-w-4xl h-44 mt-7">
+          <div className="flex items-center gap-8 max-w-4xl h-44 mt-7">
             {parceiros.map((parceiro) => {
               return (
-                <div key={parceiro.id}>
+                <div key={parceiro.id} >
                   {parceiro.imag}
                 </div>
               );

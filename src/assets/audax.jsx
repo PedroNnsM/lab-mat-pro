@@ -3,13 +3,11 @@ export function Audax({ width, height }) {
   return (
     <>
       <svg
-       width={width}
+        width={width}
         height={height}
         viewBox="0 0 314 73"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        // eslint-disable-next-line react/no-unknown-property
-        xmlns:xlink="http://www.w3.org/1999/xlink"
       >
         <rect width="314" height="73" fill="url(#pattern0)" />
         <defs>
