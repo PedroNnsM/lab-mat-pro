@@ -54,45 +54,43 @@ export function Header() {
   ];
 
   return (
-    <header className="flex  flex-col  justify-center items-center max-w-6xl  bg-gradient-to-br w-full from-blue-500 from-10%  via-blue-800 to-blue-900 to-100%">
+    <header className="flex  flex-col  justify-center items-center max-w-6xl ">
       <img className="w-[25rem]" src={Logo} alt="" />
       <div className="block mb-8 ">
         {open ? (
           <RiCloseFill
-            className="block h-8 w-8 text-WHITE cursor-pointer absolute right-10 top-10
-          md:hidden 
+            className="block h-8 w-8 text-WHITE cursor-pointer absolute right-6 top-10
+          lg:hidden 
           "
             onClick={() => setOpen(!open)}
           />
         ) : (
           <FiMenu
-            className="block h-8 w-8 text-WHITE cursor-pointer absolute right-10 top-10
-          md:hidden 
+            className="block h-8 w-8 text-WHITE cursor-pointer absolute right-6 top-10
+          lg:hidden 
           "
             onClick={() => setOpen(!open)}
           />
         )}
       </div>
-      <nav className="translate-y-[-150]">
-        <ul
-          className={`flex gap-6 items-center lg:block mt-[-20px] mb-10 flex-col lg:flex-row md:flex-row  ${
-            open ? "block" : "hidden"
-          }`}
-        >
-          {navList.map((item) => {
-            return (
-              <li key={item.id}>
-                <a
-                  href={`/${item.name}`}
-                  className="text-WHITE hover:text-opacity-60 font-bold font-sans	"
-                >
-                  {item.text}
-                </a>
-              </li>
-            );
-          })}
-        </ul>
+      <nav
+        className={` gap-6 items-center  mt-[-20px] mb-10 flex-col transition-all duration-500 lg:flex-row delay-75 xl:flex-row wrap hidden lg:flex`}
+      >
+        {navList.map((item) => {
+          return (
+            <a
+              key={item.id}
+              href={`/${item.name}`}
+              className="text-WHITE p-3 hover:bg-blue-900 rounded-lg hover:text-opacity-80 font-bold font-sans transition-all duration-500	"
+            >
+              {item.text}
+            </a>
+          );
+        })}
       </nav>
+      <div>
+        
+      </div>
     </header>
   );
 }
