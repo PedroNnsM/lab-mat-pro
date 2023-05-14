@@ -240,8 +240,8 @@ export default function Home() {
           </div>
         </div>
         <div className="flex flex-col items-center my-8">
-          <div className="flex gap-3 w-1/2 shadow-2.5xl">
-            <img className="w- h-56" src={ImagemSolda} alt="" />
+          <div className="flex gap-3  shadow-2.5xl mx-4">
+            <img className=" h-56" src={ImagemSolda} alt="" />
             <div className="p-3 flex flex-col items-center justify-between flex-1">
               <p className="text-blue-700 font-bold text-xl ">
                 Ensaio de Materiais e Produtos
@@ -256,7 +256,7 @@ export default function Home() {
           <h3 className="mx-auto font-bold text-grey-700 text-2xl  tracking-wider ">
             Nossos Parceiros
           </h3>
-          <div className="flex items-center gap-8 max-w-4xl h-44 mt-7">
+          <div className="flex m-4 justify-center items-center  gap-8 max-w-4xl  mt-7 flex-wrap">
             {parceiros.map((parceiro) => {
               return (
                 <div key={parceiro.id} >
