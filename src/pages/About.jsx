@@ -46,6 +46,13 @@ export default function About() {
             tecnologia.
           </p>
         </div>
+
+        <div className="grid grid-rows-3 grid-flow-col gap-4 mx-6 max-w-4xl mt-7">
+            <img className="row-span-1 col-span-2 rounded-lg" src="https://images.unsplash.com/photo-1582489853490-cd3a53eb4530?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" />
+            <img className="row-span-2 col-span-2 rounded-lg" src="https://images.unsplash.com/photo-1582489853490-cd3a53eb4530?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" />
+            <img className="row-span-3 col-span-4 rounded-lg" src="https://images.unsplash.com/photo-1582489853490-cd3a53eb4530?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" />
+            <img className="row-span-4 col-span-4 rounded-lg" src="https://images.unsplash.com/photo-1582489853490-cd3a53eb4530?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" />
+        </div>
       </main>
       <Footer />
     </div>
