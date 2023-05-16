@@ -11,7 +11,7 @@ export default function Clients() {
       </div>
       <section className="flex items-center w-xl">
         
-        <h1>Clientes</h1>
+        <h1>Clientes.</h1>
       </section>
     </div>
   );
