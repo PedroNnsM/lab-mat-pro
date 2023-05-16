@@ -119,22 +119,22 @@ const itensHorizontalCursos = [
 const parceiros = [
   {
     id: "1",
-    imag: <Audax width='150px' height='150px' />,
+    imag: <Audax width="150px" height="150px" />,
   },
   {
     id: "2",
     empresa: "Caloi",
-    imag: <Caloi  width='150px' height='150px' />
+    imag: <Caloi width="150px" height="150px" />,
   },
   {
     id: "3",
     empresa: "Eletronorte",
-    imag: <Eletronorte  width='w-[150px]' height='h-[70px]' />
+    imag: <Eletronorte width="w-[150px]" height="h-[70px]" />,
   },
   {
     id: "4",
     empresa: "Eua",
-    imag: <EUALogo width='w-[70px]' height='h-[100px]' />,
+    imag: <EUALogo width="w-[70px]" height="h-[100px]" />,
   },
 ];
 
@@ -258,16 +258,12 @@ export default function Home() {
           </h3>
           <div className="flex m-4 justify-center items-center  gap-8 max-w-4xl  mt-7 flex-wrap">
             {parceiros.map((parceiro) => {
-              return (
-                <div key={parceiro.id} >
-                  {parceiro.imag}
-                </div>
-              );
+              return <div key={parceiro.id}>{parceiro.imag}</div>;
             })}
           </div>
         </div>
-       </main>
-     <Footer />
+      </main>
+      <Footer />
     </div>
   );
 }

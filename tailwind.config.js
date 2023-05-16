@@ -15,6 +15,7 @@ export default {
       "grey-500": "#98A9BB",
       "grey-400": "#A8C7E9",
       "grey-300": "#CDDFF2",
+      "green-300": "#25D366",
       WHITE: "#fff",
     },
     extend: {
