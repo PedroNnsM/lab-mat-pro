@@ -148,7 +148,7 @@ export default function Home() {
           <Vetores />
         </div>
 
-        <div className="w-xl">
+        <div className="">
           <Header />
           <section className="text-WHITE text-center max-w-6xl  mx-4">
             <div className="mx-5">

@@ -59,7 +59,7 @@ export function Header() {
   };
 
   return (
-    <header className="flex  flex-col  justify-center items-center max-w-6xl relative ">
+    <header className="flex  flex-col  justify-center items-center max-w-6xl  ">
       <img className="w-[65%] h-32 lg:w-[25rem]" src={Logo} alt="" />
       <div className="-mr-2 flex lg:hidden absolute top-6 right-6">
         <button
