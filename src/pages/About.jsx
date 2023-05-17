@@ -16,7 +16,7 @@ export default function About() {
           <div className="flex flex-col">
             <h1 className="font-bold text-4xl text-blue-900">Quem somos</h1>
             <p className="mt-3 text-sm  text-blue-900 font-semibold max-w-4xl">
-              Nosso laboratório foi fundado em XXX em Manaus pelo eng. XXXXXXX .
+              Nosso laboratório foi fundado em XXX em Manaus pelo eng. XXXXXXX .s
               Inicialmente formada a partir de parceiria entre a Universidade do
               Estado do Amazonas (UEA) e o Institusto XXX, onde foram
               contemplados amplo espaço físico com equipamentos de ponta para
