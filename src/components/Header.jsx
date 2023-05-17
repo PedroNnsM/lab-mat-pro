@@ -2,6 +2,7 @@ import { useState } from "react";
 import Logo from "../assets/Logo.svg";
 import { FiMenu } from "react-icons/fi";
 import { RiCloseFill } from "react-icons/ri";
+import { ImWhatsapp } from "react-icons/im";
 
 export function Header() {
   const [open, setOpen] = useState();
@@ -59,7 +60,10 @@ export function Header() {
   };
 
   return (
-    <header className="flex  flex-col  justify-center items-center max-w-6xl relative ">
+    <header className="flex  flex-col  justify-center items-center max-w-6xl  ">
+    <a href="https://api.whatsapp.com/send/?phone=48991505190&text&type=phone_number&app_absent=0" className="fixed top-[50%] right-2 bg-green-300 p-2 rounded-full shadow-2.5xl z-20">
+        <ImWhatsapp size={'25px'} fill="#fff" />
+      </a>
       <img className="w-[65%] h-32 lg:w-[25rem]" src={Logo} alt="" />
       <div className="-mr-2 flex lg:hidden absolute top-6 right-6">
         <button
