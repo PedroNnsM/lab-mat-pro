@@ -119,7 +119,7 @@ const itensHorizontalCursos = [
 const parceiros = [
   {
     id: "1",
-    imag: <Audax width="150px" height="150px" />,
+    imag: <Audax width="w-[150px]" height="h-[45px]" />,
   },
   {
     id: "2",
