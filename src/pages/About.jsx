@@ -5,20 +5,17 @@ import { Header } from "../components/Header";
 export default function About() {
   return (
     <div className=" min-h-screen bg-slate-700 flex-col w-full  bg-opacity-40 flex items-center  ">
-      
       <div className="flex flex-col items-center bg-gradient-to-br w-full from-blue-500 from-10%  via-blue-800 to-blue-900 to-100% ">
-        <div className=" ">
-          <Header />
-        </div>
+        <Header />
       </div>
       <main className="flex flex-col items-center w-xl mt-9">
         <div className="flex gap-7 max-w-4xl mx-6">
           <div className="flex flex-col">
             <h1 className="font-bold text-4xl text-blue-900">Quem somos</h1>
             <p className="mt-3 text-sm  text-blue-900 font-semibold max-w-4xl">
-              Nosso laboratório foi fundado em XXX em Manaus pelo eng. XXXXXXX .s
-              Inicialmente formada a partir de parceiria entre a Universidade do
-              Estado do Amazonas (UEA) e o Institusto XXX, onde foram
+              Nosso laboratório foi fundado em XXX em Manaus pelo eng. XXXXXXX
+              .s Inicialmente formada a partir de parceiria entre a Universidade
+              do Estado do Amazonas (UEA) e o Institusto XXX, onde foram
               contemplados amplo espaço físico com equipamentos de ponta para
               suprir demandas de serviços junto ao Distrito Industrial
             </p>
