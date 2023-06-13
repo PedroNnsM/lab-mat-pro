@@ -1,4 +1,5 @@
 import { Header } from "../components/Header";
+import { TitlePages } from "../components/TitlePages";
 
 export default function Contact() {
   return (
@@ -11,7 +12,7 @@ export default function Contact() {
       </div>
       <section className="flex items-center w-xl">
         
-        <h1>Contato</h1>
+        <TitlePages title='Contato' />
       </section>
     </div>
   );

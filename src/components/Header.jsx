@@ -67,7 +67,7 @@ export function Header() {
       >
         <BsWhatsapp size={"25px"} fill="#fff" />
       </a>
-      <img className="w-[65%] h-32 lg:w-[450px]" src={Logo} alt="" />
+      <img className="w-[65%] h-32 lg:w-[450px]" src={Logo} alt="" /> 
       <div className="-mr-2 flex lg:hidden absolute top-6 right-6">
         <button
           type="button"
