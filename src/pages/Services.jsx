@@ -9,6 +9,7 @@ import equipamento5 from "../../img/equipamento5.png";
 import equipamento6 from "../../img/equipamento6.png";
 
 import { Equipaments } from "../components/Equipaments";
+import { TitlePages } from "../components/TitlePages";
 
 export default function Services() {
   const servicos = [
@@ -76,8 +77,7 @@ export default function Services() {
         </div>
       </div>
       <section className="flex flex-col items-start max-w-4xl">
-        <h1 className="font-bold text-blue-800 text-3xl my-9">Serviços</h1>
-
+        <TitlePages title="Serviços" />
         {servicos.map((service) => {
           return (
             <Equipaments

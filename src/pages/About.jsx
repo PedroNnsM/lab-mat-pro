@@ -1,6 +1,7 @@
 import { Mapa } from "../assets/Mapa";
 import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
+import { TitlePages } from "../components/TitlePages";
 
 export default function About() {
   return (
@@ -11,7 +12,7 @@ export default function About() {
       <main className="flex flex-col items-center w-xl mt-9">
         <div className="flex gap-7 max-w-4xl mx-6">
           <div className="flex flex-col">
-            <h1 className="font-bold text-4xl text-blue-900">Quem somos</h1>
+            <TitlePages title="Quem somos" />
             <p className="mt-3 text-sm  text-blue-900 font-semibold max-w-4xl">
               Nosso laboratório foi fundado em XXX em Manaus pelo eng. XXXXXXX
               .s Inicialmente formada a partir de parceiria entre a Universidade
