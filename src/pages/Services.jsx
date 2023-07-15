@@ -78,7 +78,6 @@ export default function Services() {
       </div>
       <section className="flex flex-col items-start max-w-4xl">
         <TitlePages title="Serviços" />
-        Serviços
         {servicos.map((service) => {
           return (
             <Equipaments
