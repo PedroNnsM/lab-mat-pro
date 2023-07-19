@@ -1,12 +1,12 @@
 import { Header } from "../components/Header";
 import { TitlePages } from "../components/TitlePages";
-import imagemCosta from "../../public/imagem-costa.png";
+import ImagemCosta from "../../img/imagemCosta.png";
 export default function Team() {
   const team = [
     {
       id: "1",
       name: "Dr. José Costa de Macedo Neto",
-      imagem: `${imagemCosta}`,
+      imagem: `${ImagemCosta}`,
       description:
         "Coordenador do LabPeD e professor da Escola Superior de Tecnologia da Universidade do Estado do Amazonas (EST/UEA). Tem experiência na área de Engenharia de Materiais e Metalúrgica, atuando em temas como Solidificação rápida, nanocompósitos poliméricos e polimerização em emulsão. ",
       cv: "http://lattes.cnpq.br/7868540287547126",
@@ -27,7 +27,7 @@ export default function Team() {
               <img src={person.imagem} alt={` imagem ${person.name}`} />
               <div>
                 <h2>{person.name}</h2>
-                <a href="http://" target="_blank" rel="noopener noreferrer"></a>
+                <a href={person.cv} target="_blank" rel="noopener noreferrer"></a>
               </div>
             </div>
           );
