@@ -12,7 +12,9 @@ export default function Clients() {
       </div>
       <section className="flex items-center w-xl">
         
+
         <TitlePages title='Clientes' />
+
       </section>
     </div>
   );
