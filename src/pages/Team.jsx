@@ -1,6 +1,7 @@
 import { Header } from "../components/Header";
 import { TitlePages } from "../components/TitlePages";
 import ImagemCosta from "../../img/imagemCosta.png";
+import cvImagem from "../../img/logo-cv.png";
 export default function Team() {
   const team = [
     {
@@ -19,15 +20,20 @@ export default function Team() {
           <Header />
         </div>
       </div>
-      <section className="flex items-center w-xl">
+      <section className="flex w-4xl flex-col">
         <TitlePages title="Equipe" />
         {team.map((person) => {
           return (
-            <div key={person.id}>
+            <div
+              key={person.id}
+              className="flex items-center justify-between gap-4"
+            >
               <img src={person.imagem} alt={` imagem ${person.name}`} />
-              <div>
+              <div className="flex items-center gap-2">
                 <h2>{person.name}</h2>
-                <a href={person.cv} target="_blank" rel="noopener noreferrer"></a>
+                <a href={person.cv} target="_blank" rel="noopener noreferrer">
+                  <img src={cvImagem} />
+                </a>
               </div>
             </div>
           );
