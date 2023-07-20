@@ -63,9 +63,9 @@ export function Header() {
     <header className="flex  flex-col  justify-center items-center max-w-6xl  ">
       <a
         href="https://api.whatsapp.com/send/?phone=48991505190&text&type=phone_number&app_absent=0"
-        className="fixed top-[40%] right-2 bg-green-300 p-2.5 rounded-full shadow-2.5xl z-20"
+        className="fixed top-[40%] right-2 bg-green-300 p-2.5 rounded-full shadow-2.5xl z-20 hover:scale-110"
       >
-        <BsWhatsapp size={"25px"} fill="#fff" />
+        <BsWhatsapp size={"25px"} fill="#fff"  />
       </a>
       <img className="w-[65%] h-32 lg:w-[450px]" src={Logo} alt="" /> 
       <div className="-mr-2 flex lg:hidden absolute top-6 right-6">
