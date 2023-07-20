@@ -20,20 +20,23 @@ export default function Team() {
           <Header />
         </div>
       </div>
-      <section className="flex w-4xl flex-col">
+      <section className="flex max-w-5xl flex-col">
         <TitlePages title="Equipe" />
         {team.map((person) => {
           return (
             <div
               key={person.id}
-              className="flex items-center justify-between gap-4"
+              className="flex items-center justify-between gap-4 border-b pb-6 border-grey-700"
             >
-              <img src={person.imagem} alt={` imagem ${person.name}`} />
-              <div className="flex items-center gap-2">
-                <h2>{person.name}</h2>
-                <a href={person.cv} target="_blank" rel="noopener noreferrer">
-                  <img src={cvImagem} />
-                </a>
+              <img src={person.imagem} alt={` imagem ${person.name}`} />{" "}
+              <div className="flex flex-col ">
+                <div className="flex items-center gap-2">
+                  <h2 className="text-black text-lg font-semibold">{person.name}</h2>
+                  <a href={person.cv} target="_blank" rel="noopener noreferrer">
+                    <img src={cvImagem} />
+                  </a>
+                </div>
+                <p className="text-justify text-black text-lg font-normal">{person.description}</p>
               </div>
             </div>
           );
