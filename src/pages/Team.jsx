@@ -1,7 +1,11 @@
 import { Header } from "../components/Header";
 import { TitlePages } from "../components/TitlePages";
-import ImagemCosta from "../../img/imagemCosta.png";
 import cvImagem from "../../img/logo-cv.png";
+
+import ImagemCosta from "../../img/imagemCosta.png";
+import ImagemAntonio from "../../img/imagem-antonio.png";
+
+
 export default function Team() {
   const team = [
     {
@@ -11,6 +15,14 @@ export default function Team() {
       description:
         "Coordenador do LabPeD e professor da Escola Superior de Tecnologia da Universidade do Estado do Amazonas (EST/UEA). Tem experiência na área de Engenharia de Materiais e Metalúrgica, atuando em temas como Solidificação rápida, nanocompósitos poliméricos e polimerização em emulsão. ",
       cv: "http://lattes.cnpq.br/7868540287547126",
+    },
+    {
+      id: "2",
+      name: "Dr. Antônio Claudio Kieling ",
+      imagem: `${ImagemAntonio}`,
+      description:
+        "Coordenador do Laboratório Urutau Aerodesign de Estruturas Aeroespaciais da UEA e professor da Escola Superior de Tecnologia da Universidade do Estado do Amazonas (EST-UEA). Tem experiência nas áreas de Administração de Empresas e Engenharia de Materiais aplicada a Biotecnologia, atuando em temas como Materiais Compósitos, Empreendedorismo e Inovação e Gestão de Projetos Industriais. ",
+      cv: "http://lattes.cnpq.br/2276542034087411",
     },
   ];
   return (
