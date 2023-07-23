@@ -49,7 +49,7 @@ export default function Team() {
               key={person.id}
               className="flex items-center justify-between gap-4 border-b pb-6 border-grey-700"
             >
-              <img className="bg-bg-img-dr bg-no-repeat bg-bottom w-[210px] h-[235px]" src={person.imagem} alt={` imagem ${person.name}`} />{" "}
+              <img className="bg-bg-img-dr bg-no-repeat bg-bottom w-[225px] h-[240px] rounded-full" src={person.imagem} alt={` imagem ${person.name}`} />{" "}
               <div className="flex flex-col ">
                 <div className="flex items-center gap-2">
                   <h2 className="text-black text-lg font-semibold">{person.name}</h2>
