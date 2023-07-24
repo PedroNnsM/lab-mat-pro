@@ -1,7 +1,17 @@
 import { Header } from "../components/Header";
 import { TitlePages } from "../components/TitlePages";
-import ImagemCosta from "../../img/imagemCosta.png";
 import cvImagem from "../../img/logo-cv.png";
+
+import ImagemCosta from "../../img/imagemCosta.png";
+import ImagemAntonio from "../../img/imagem-antonio.png";
+import ImagemMarcos from "../../img/imagem-marcos.png";
+import ImagemRoger from "../../img/imagem-roger.png";
+import ImagemJoelma from "../../img/imagem-joelma.png";
+import ImagemGilberto from "../../img/imagem-gilberto.png";
+import ImagemKiki from "../../img/imagem-kiki.png";
+import ImagemAristides from "../../img/imagem-aristides.png";
+import ImagemJuda from "../../img/imagem-aristides.png";
+
 export default function Team() {
   const team = [
     {
@@ -11,6 +21,46 @@ export default function Team() {
       description:
         "Coordenador do LabPeD e professor da Escola Superior de Tecnologia da Universidade do Estado do Amazonas (EST/UEA). Tem experiência na área de Engenharia de Materiais e Metalúrgica, atuando em temas como Solidificação rápida, nanocompósitos poliméricos e polimerização em emulsão. ",
       cv: "http://lattes.cnpq.br/7868540287547126",
+    },
+    {
+      id: "2",
+      name: "Dr. Antônio Claudio Kieling ",
+      imagem: `${ImagemAntonio}`,
+      description:
+        "Coordenador do Laboratório Urutau Aerodesign de Estruturas Aeroespaciais da UEA e professor da Escola Superior de Tecnologia da Universidade do Estado do Amazonas (EST-UEA). Tem experiência nas áreas de Administração de Empresas e Engenharia de Materiais aplicada a Biotecnologia, atuando em temas como Materiais Compósitos, Empreendedorismo e Inovação e Gestão de Projetos Industriais. ",
+      cv: "http://lattes.cnpq.br/2276542034087411",
+    },
+    {
+      id: "3",
+      name: "Dr. Marcos Dantas dos Santos ",
+      imagem: `${ImagemMarcos}`,
+      description:
+        "Tem experiência na área de Engenharia Mecânica e Materiais, com ênfase em Processos de Fabricação atuando principalmente nos seguintes temas: seleção de materiais para processos de fabricação e projetos mecânicos, análise de falhas e danos em materiais, análise de desgaste atrito e lubrificação em tribosistemas.  ",
+      cv: "http://lattes.cnpq.br/6521766717113975",
+    },
+    {
+      id: "4",
+      name: "Dr. Roger Hoel Bello ",
+      imagem: `${ImagemRoger}`,
+      description:
+        "Professor da Escola Superior de Tecnologia da Universidade do Estado do Amazonas (EST/UEA). Tem experiência na área de Engenharia de Materiais, atuando principalmente na área de polímeros, bem como nanocompósitos poliméricos reforçados nanopartículas alotrópicas de carbono e com fibras amazônicas.   ",
+      cv: "http://lattes.cnpq.br/0479686945106210",
+    },
+    {
+      id: "5",
+      name: "Dra. Joelma Monteiro de Carvalho ",
+      imagem: `${ImagemJoelma}`,
+      description:
+        "Professora da Universidade do Estado do Amazonas (UEA) e da Secretaria de Educação – SEDUC. Tem experiência na área da Linguística, Sociolinguística, Etnolinguística, Letramento Digital e EAD. Tem formação multidisciplinar, atua nas seguintes áreas: Letramento, análise do discurso, semiótica das culturas, multilinguismo, Educação EJA, Turismo e Cultura Indígena do Amazonas e Cultura povo do Ártico Sámi. Tem experiência em Educação a distância: metodologia ativas, digitais e Ensino híbrido.",
+      cv: "http://lattes.cnpq.br/5095453162912989",
+    },
+    {
+      id: "6",
+      name: "Dr. Gilberto García del Pino",
+      imagem: `${ImagemGilberto}`,
+      description:
+        "Possui graduação em Engenharia Mecânica, Mestrado, Doutorado e Pós-doutorado em Engenharia pela Universidade de São Paulo. Atualmente é professor Associado da Universidade do Estado do Amazonas e coordenador do curso de pós-graduação Latos Sensu de “Processos e Tecnologias de Manufatura Mecânica”. Tem experiência na área de Engenharia Mecânica e Materiais, com ênfase em Processos de Fabricação atuando principalmente nas áreas de: Elementos Finitos, Biomecânica, Materiais para Ferramentas, materiais compósitos com fibras naturais, dispositivos para usinagem por CNC e Bio-materiais.",
+      cv: "http://lattes.cnpq.br/5604141021425108",
     },
   ];
   return (
@@ -28,15 +78,25 @@ export default function Team() {
               key={person.id}
               className="flex items-center justify-between gap-4 border-b pb-6 border-grey-700"
             >
-              <img src={person.imagem} alt={` imagem ${person.name}`} />{" "}
-              <div className="flex flex-col ">
+              <div className="max-w-[237px] flex justify-center bg-bg-img-dr bg-no-repeat bg-bottom w-[225px] h-[240px] rounded-full">
+                <img
+                  className=" rounded-full"
+                  src={person.imagem}
+                  alt={` imagem ${person.name}`}
+                />
+              </div>
+              <div className="flex flex-col max-w-[70%] ">
                 <div className="flex items-center gap-2">
-                  <h2 className="text-black text-lg font-semibold">{person.name}</h2>
+                  <h2 className="text-black text-lg font-semibold">
+                    {person.name}
+                  </h2>
                   <a href={person.cv} target="_blank" rel="noopener noreferrer">
                     <img src={cvImagem} />
                   </a>
                 </div>
-                <p className="text-justify text-black text-lg font-normal">{person.description}</p>
+                <p className="text-justify text-black text-lg font-normal">
+                  {person.description}
+                </p>
               </div>
             </div>
           );

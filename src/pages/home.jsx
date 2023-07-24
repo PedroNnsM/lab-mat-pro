@@ -139,8 +139,7 @@ const parceiros = [
 ];
 
 export default function Home() {
-  //TODO - Fazer useState + set interval pra fazer rodar os banners [ ]
-  //TODO -
+ 
   return (
     <div className=" min-h-screen bg-slate-700 flex-col w-full  bg-opacity-40  ">
       <div className="flex flex-col items-center bg-gradient-to-br relative from-blue-500 from-10%  via-blue-800 to-blue-900 to-100% ">

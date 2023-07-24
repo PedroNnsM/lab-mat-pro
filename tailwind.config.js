@@ -38,6 +38,7 @@ export default {
     backgroundImage: {
         'banner-jpg': "url('/img/ImagemBanner.jpg')",
         'banner-svg': "url('/img/ImagemBanner.svg')",
+        'bg-img-dr': "url('/img/bgImgDr.png')",
       },
       boxShadow: {
         "3xl": "0px 0px 30px  rgba(0, 0, 0, 0.3)",
