@@ -12,7 +12,6 @@ import ImagemKiki from "../../img/imagem-kiki.png";
 import ImagemAristides from "../../img/imagem-aristides.png";
 import ImagemJuda from "../../img/imagem-aristides.png";
 
-
 export default function Team() {
   const team = [
     {
@@ -47,6 +46,22 @@ export default function Team() {
         "Professor da Escola Superior de Tecnologia da Universidade do Estado do Amazonas (EST/UEA). Tem experiência na área de Engenharia de Materiais, atuando principalmente na área de polímeros, bem como nanocompósitos poliméricos reforçados nanopartículas alotrópicas de carbono e com fibras amazônicas.   ",
       cv: "http://lattes.cnpq.br/0479686945106210",
     },
+    {
+      id: "5",
+      name: "Dra. Joelma Monteiro de Carvalho ",
+      imagem: `${ImagemJoelma}`,
+      description:
+        "Professora da Universidade do Estado do Amazonas (UEA) e da Secretaria de Educação – SEDUC. Tem experiência na área da Linguística, Sociolinguística, Etnolinguística, Letramento Digital e EAD. Tem formação multidisciplinar, atua nas seguintes áreas: Letramento, análise do discurso, semiótica das culturas, multilinguismo, Educação EJA, Turismo e Cultura Indígena do Amazonas e Cultura povo do Ártico Sámi. Tem experiência em Educação a distância: metodologia ativas, digitais e Ensino híbrido.",
+      cv: "http://lattes.cnpq.br/5095453162912989",
+    },
+    {
+      id: "6",
+      name: "Dr. Gilberto García del Pino",
+      imagem: `${ImagemGilberto}`,
+      description:
+        "Possui graduação em Engenharia Mecânica, Mestrado, Doutorado e Pós-doutorado em Engenharia pela Universidade de São Paulo. Atualmente é professor Associado da Universidade do Estado do Amazonas e coordenador do curso de pós-graduação Latos Sensu de “Processos e Tecnologias de Manufatura Mecânica”. Tem experiência na área de Engenharia Mecânica e Materiais, com ênfase em Processos de Fabricação atuando principalmente nas áreas de: Elementos Finitos, Biomecânica, Materiais para Ferramentas, materiais compósitos com fibras naturais, dispositivos para usinagem por CNC e Bio-materiais.",
+      cv: "http://lattes.cnpq.br/5604141021425108",
+    },
   ];
   return (
     <div className=" min-h-screen bg-slate-700 flex-col w-full  bg-opacity-40 flex items-center ">
@@ -63,15 +78,25 @@ export default function Team() {
               key={person.id}
               className="flex items-center justify-between gap-4 border-b pb-6 border-grey-700"
             >
-              <img className="bg-bg-img-dr bg-no-repeat bg-bottom w-[225px] h-[240px] rounded-full" src={person.imagem} alt={` imagem ${person.name}`} />{" "}
-              <div className="flex flex-col ">
+              <div className="max-w-[237px] flex justify-center bg-bg-img-dr bg-no-repeat bg-bottom w-[225px] h-[240px] rounded-full">
+                <img
+                  className=" rounded-full"
+                  src={person.imagem}
+                  alt={` imagem ${person.name}`}
+                />
+              </div>
+              <div className="flex flex-col max-w-[70%] ">
                 <div className="flex items-center gap-2">
-                  <h2 className="text-black text-lg font-semibold">{person.name}</h2>
+                  <h2 className="text-black text-lg font-semibold">
+                    {person.name}
+                  </h2>
                   <a href={person.cv} target="_blank" rel="noopener noreferrer">
                     <img src={cvImagem} />
                   </a>
                 </div>
-                <p className="text-justify text-black text-lg font-normal">{person.description}</p>
+                <p className="text-justify text-black text-lg font-normal">
+                  {person.description}
+                </p>
               </div>
             </div>
           );
