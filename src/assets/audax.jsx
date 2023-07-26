@@ -1,4 +1,4 @@
-import AudaxImg from '../../img/audax.png'
+import AudaxImg from '../assets/img/audax.png'
 
 // eslint-disable-next-line react/prop-types
 export function Audax({ width, height }) {

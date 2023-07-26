@@ -9,7 +9,7 @@ import { Footer } from "../components/Footer";
 import { CardHorizontal } from "../components/CardHorizontal";
 
 import { Vetores } from "../assets/vetores";
-import ImagemSolda from "../../img/microscopio.png";
+import ImagemSolda from "../assets/img/microscopio.png";
 import { Caloi } from "../assets/Caloi";
 import { Audax } from "../assets/audax";
 import { Eletronorte } from "../assets/Eletronorte";

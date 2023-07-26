@@ -1,12 +1,12 @@
 import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
 
-import equipamento1 from "../../img/equipamento1.png";
-import equipamento2 from "../../img/equipamento2.png";
-import equipamento3 from "../../img/equipamento3.png";
-import equipamento4 from "../../img/equipamento4.png";
-import equipamento5 from "../../img/equipamento5.png";
-import equipamento6 from "../../img/equipamento6.png";
+import equipamento1 from "../assets/img/equipamento1.png";
+import equipamento2 from "../assets/img/equipamento2.png";
+import equipamento3 from "../assets/img/equipamento3.png";
+import equipamento4 from "../assets/img/equipamento4.png";
+import equipamento5 from "../assets/img/equipamento5.png";
+import equipamento6 from "../assets/img/equipamento6.png";
 
 import { Equipaments } from "../components/Equipaments";
 import { TitlePages } from "../components/TitlePages";

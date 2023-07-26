@@ -1,4 +1,4 @@
-import EletronorteImg from '../../img/eletronorte.png'
+import EletronorteImg from '../assets/img/eletronorte.png'
 
 // eslint-disable-next-line react/prop-types
 export function Eletronorte({ width, height }) {

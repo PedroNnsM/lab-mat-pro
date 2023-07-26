@@ -1,16 +1,16 @@
 import { Header } from "../components/Header";
 import { TitlePages } from "../components/TitlePages";
-import cvImagem from "../../img/logo-cv.png";
+import cvImagem from "../assets/img/logo-cv.png";
 
-import ImagemCosta from "../../img/imagemCosta.png";
-import ImagemAntonio from "../../img/imagem-antonio.png";
-import ImagemMarcos from "../../img/imagem-marcos.png";
-import ImagemRoger from "../../img/imagem-roger.png";
-import ImagemJoelma from "../../img/imagem-joelma.png";
-import ImagemGilberto from "../../img/imagem-gilberto.png";
-import ImagemKiki from "../../img/imagem-kiki.png";
-import ImagemAristides from "../../img/imagem-aristides.png";
-import ImagemJuda from "../../img/imagem-aristides.png";
+import ImagemCosta from "../assets/img/imagem-costa.png";
+import ImagemAntonio from "../assets/img/imagem-antonio.png";
+import ImagemMarcos from "../assets/img/imagem-marcos.png";
+import ImagemRoger from "../assets/img/imagem-roger.png";
+import ImagemJoelma from "../assets/img/imagem-joelma.png";
+import ImagemGilberto from "../assets/img/imagem-gilberto.png";
+import ImagemKiki from "../assets/img/imagem-kiki.png";
+import ImagemAristides from "../assets/img/imagem-aristides.png";
+import ImagemJuda from "../assets/img/imagem-aristides.png";
 
 export default function Team() {
   const team = [
@@ -91,7 +91,7 @@ export default function Team() {
                     {person.name}
                   </h2>
                   <a href={person.cv} target="_blank" rel="noopener noreferrer">
-                    <img src={cvImagem} />
+                    <img src={cvImagem} className="hover:scale-125" />
                   </a>
                 </div>
                 <p className="text-justify text-black text-lg font-normal">
