@@ -1,3 +1,4 @@
+import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
 import { TitlePages } from "../components/TitlePages";
 
@@ -134,7 +135,7 @@ export default function Trainings() {
           <Header />
         </div>
       </div>
-      <section className="flex items-center w-xl flex-col">
+      <main className="flex items-center w-xl flex-col">
         <div>
           <TitlePages title='Treinamentos' />
             
@@ -151,7 +152,8 @@ export default function Trainings() {
           <img src="" alt="" />
           <img src="" alt="" />
         </div>
-      </section>
+      </main>
+      <Footer />
     </div>
   );
 }
