@@ -9,72 +9,63 @@ export default function About() {
       <div className="flex flex-col items-center bg-gradient-to-br w-full from-blue-500 from-10%  via-blue-800 to-blue-900 to-100% ">
         <Header />
       </div>
-      <main className="flex flex-col items-center w-xl mt-9">
+      <main className="flex flex-col items-center w-xl mt-9 gap-4">
         <div className="flex gap-7 max-w-4xl mx-6">
           <div className="flex flex-col">
             <TitlePages title="Quem somos" />
             <p className="mt-3 text-sm  text-blue-900 font-semibold max-w-4xl">
-              Nosso laboratório foi fundado em XXX em Manaus pelo eng. XXXXXXX
-              .s Inicialmente formada a partir de parceiria entre a Universidade
-              do Estado do Amazonas (UEA) e o Institusto XXX, onde foram
-              contemplados amplo espaço físico com equipamentos de ponta para
-              suprir demandas de serviços junto ao Distrito Industrial
+              O Laboratório de Pesquisa e Desenvolvimento da Universidade do
+              Estado do Amazonas – P&D LAB/UEA, foi instituído pela Resolução Nº
+              27/2014 e está vinculado à Agência de Inovação – AGIN/UEA,
+              localizado na área da Escola Superior de Tecnologia (EST), na
+              cidade de Manaus, Amazonas. É formado por pesquisadores e
+              professores doutores em diversas áreas da engenharia, possuindo
+              assim amplo espectro de expertises para suprir as mais variadas
+              demandas da indústria e Institutos de tecnologia do estado do
+              Amazonas.
             </p>
           </div>
           <Mapa width={"350px"} />
         </div>
-        <div>
+        <div >
           <h2 className="font-bold text-4xl text-blue-900">Objetivo</h2>
           <p className="mt-3 text-sm  text-blue-900 font-semibold max-w-4xl">
-            Ser referencia em análises técnicas e treinamentos em engenharia de
-            materiais, desenvolvendo pesquisas e serviços sob padrões de
-            qualidade reconhecidos e oferecendo suporte e assistência técnica
-            com competência, sempre dentro de padrões de ética e respeito ao
-            meio ambiente.
+            Com objetivo geral de realizar treinamentos, pesquisas e prestação
+            de serviços de consultoria e assessoria nas áreas científicas e
+            tecnológicas, por meio da implementação de laboratórios tecnológicos
+            na UEA, para complementação da formação de profissionais nas áreas
+            da engenharia.
           </p>
+          <div className="flex max-w-4xl gap-2 pt-4">
+            <img className="w-1/2 h-auto"
+              src="https://i.ibb.co/0JyRpQm/Rectangle-298.png"
+              alt="Estudantes focados olhando suas anotações no notebook"
+            />
+            <img className="w-1/2 h-auto"
+              src="https://i.ibb.co/chbkwm1/Rectangle-299.png"
+              alt="dr. Costa na frente da instalação do laboratório"
+            />
+          </div>
         </div>
-        <div className="mt-9">
+        <div className="">
           <h2 className="font-bold text-4xl text-blue-900">Estrutura</h2>
           <p className="mt-3 text-sm  text-blue-900 font-semibold max-w-4xl">
-            Nossas instalações estão localizadas na Escola Superior de
-            Tecnolodia da UEA, e compreende dois laboratórios equipados com
-            diversos equipamentos para ensaios mecânicos, metalográficos,
-            climáticos e análises térmicas e químicas. Sendo os recursos
-            humanos: professores, pesquisadores doutores, técnicos e
-            colaboradores da universidade e de outras instituições de pesquisa e
-            tecnologia.
+            P&D LAB/UEA dispõe de equipamentos em distintas áreas da engenharia,
+            capaz de realizar inúmeras análises de matérias, tais como: análise
+            de metalografia, análise de ensaios mecânicos, analise de polímeros,
+            analises de biomateriais, analise de raios X 3D, analise de
+            calorimetria (displays, monitores, LCD, LED), análise de metrologia,
+            análise química, análise de corrosão, análise em vibrações, análise
+            modal, análise de ensaios climáticos, envelhecimento de materiais,
+            choque térmico, análise de superfícies, entre outros.
           </p>
         </div>
-
-        <div className="grid grid-rows-2 grid-flow-col gap-4 mx-6 max-w-4xl mt-7">
+        <div className="max-w-4xl py-6">
           <img
-            className="row-span-1 col-span-2 rounded-lg"
-            src="https://images.unsplash.com/photo-1582489853490-cd3a53eb4530?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+            className="w-full"
+            src="https://i.ibb.co/qp1KBLg/Rectangle-297.png"
+            alt="estrutura"
           />
-          <img
-            className="row-span-2 col-span-2 rounded-lg"
-            src="https://images.unsplash.com/photo-1582489853490-cd3a53eb4530?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
-          />
-          <img
-            className="row-span-3 col-span-4 rounded-lg"
-            src="https://images.unsplash.com/photo-1582489853490-cd3a53eb4530?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
-          />
-          <img
-            className="row-span-4 col-span-4 rounded-lg"
-            src="https://images.unsplash.com/photo-1582489853490-cd3a53eb4530?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
-          />
-        </div>
-        <div className="my-9">
-          <h2 className="font-bold text-4xl text-blue-900">Treinamentos</h2>
-          <p className="mt-3 text-sm  text-blue-900 font-semibold max-w-4xl">
-            Nossas instalações estão localizadas na Escola Superior de
-            Tecnolodia da UEA, e compreende dois laboratórios equipados com
-            diversos equipamentos para ensaios mecânicos, metalográficos,
-            climáticos e análises térmicas e químicas. Sendo os recursos
-            humanos: professores, pesquisadores doutores, técnicos e
-            colaboradores da universidade e de outras instituições de pesquisa e
-            tecnologia.
-          </p>
         </div>
       </main>
       <Footer />
