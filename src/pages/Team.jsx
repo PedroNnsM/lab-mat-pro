@@ -1,16 +1,17 @@
 import { Header } from "../components/Header";
 import { TitlePages } from "../components/TitlePages";
-import cvImagem from "../../img/logo-cv.png";
+import cvImagem from "../assets/img/logo-cv.png";
 
-import ImagemCosta from "../../img/imagemCosta.png";
-import ImagemAntonio from "../../img/imagem-antonio.png";
-import ImagemMarcos from "../../img/imagem-marcos.png";
-import ImagemRoger from "../../img/imagem-roger.png";
-import ImagemJoelma from "../../img/imagem-joelma.png";
-import ImagemGilberto from "../../img/imagem-gilberto.png";
-import ImagemKiki from "../../img/imagem-kiki.png";
-import ImagemAristides from "../../img/imagem-aristides.png";
-import ImagemJuda from "../../img/imagem-aristides.png";
+import ImagemCosta from "../assets/img/imagem-costa.png";
+import ImagemAntonio from "../assets/img/imagem-antonio.png";
+import ImagemMarcos from "../assets/img/imagem-marcos.png";
+import ImagemRoger from "../assets/img/imagem-roger.png";
+import ImagemJoelma from "../assets/img/imagem-joelma.png";
+import ImagemGilberto from "../assets/img/imagem-gilberto.png";
+import ImagemKiki from "../assets/img/imagem-kiki.png";
+import ImagemAristides from "../assets/img/imagem-aristides.png";
+import ImagemJuda from "../assets/img/imagem-juda.png";
+import { Footer } from "../components/Footer";
 
 export default function Team() {
   const team = [
@@ -62,6 +63,30 @@ export default function Team() {
         "Possui graduação em Engenharia Mecânica, Mestrado, Doutorado e Pós-doutorado em Engenharia pela Universidade de São Paulo. Atualmente é professor Associado da Universidade do Estado do Amazonas e coordenador do curso de pós-graduação Latos Sensu de “Processos e Tecnologias de Manufatura Mecânica”. Tem experiência na área de Engenharia Mecânica e Materiais, com ênfase em Processos de Fabricação atuando principalmente nas áreas de: Elementos Finitos, Biomecânica, Materiais para Ferramentas, materiais compósitos com fibras naturais, dispositivos para usinagem por CNC e Bio-materiais.",
       cv: "http://lattes.cnpq.br/5604141021425108",
     },
+    {
+      id: "7",
+      name: "Dra. Kiki Pinheiro Melo",
+      imagem: `${ImagemKiki}`,
+      description:
+        "Professora da Escola Superior de Tecnologia da Universidade do Estado do Amazonas (EST/UEA). Tem experiência na área de Engenharia Química, com ênfase em engenharia de processos, atuando principalmente nos seguintes temas: secagem, reaproveitamento de rejeitos da indústria, adsorção, análise e caracterização de partículas.",
+      cv: "http://lattes.cnpq.br/1508677540399600",
+    },
+    {
+      id: "8",
+      name: "Dr. Arístides Rivera Torres",
+      imagem: `${ImagemAristides}`,
+      description:
+        "Tem experiência na área de Engenharia Mecânica, com ênfase em Processos de Fabricação. Trabalha fundamentalmente o modelado de sólidos e o desenho assistido por computação, análises por elementos finitos, desenho gráfico, os sistemas CAD/CAM/CAE, e as tecnologias de fabricação de peças, ferramentas de corte e os processos tecnológicos de maquinado e medições 3D.",
+      cv: "http://lattes.cnpq.br/2906419737827733",
+    },
+    {
+      id: "9",
+      name: "Dr. Judá Izel Silva ",
+      imagem: `${ImagemJuda}`,
+      description:
+        "Servidor técnico da Escola Superior de Tecnologia da Universidade do Estado do Amazonas (EST/UEA), atuando como laboratorista responsável pelos LabP&D e LabMatPro.",
+      cv: "http://lattes.cnpq.br/7475009864268075",
+    },
   ];
   return (
     <div className=" min-h-screen bg-slate-700 flex-col w-full  bg-opacity-40 flex items-center ">
@@ -76,7 +101,7 @@ export default function Team() {
           return (
             <div
               key={person.id}
-              className="flex items-center justify-between gap-4 border-b pb-6 border-grey-700"
+              className="flex items-center justify-between gap-4 border-b pb-6 border-grey-700 mt-4"
             >
               <div className="max-w-[237px] flex justify-center bg-bg-img-dr bg-no-repeat bg-bottom w-[225px] h-[240px] rounded-full">
                 <img
@@ -91,10 +116,10 @@ export default function Team() {
                     {person.name}
                   </h2>
                   <a href={person.cv} target="_blank" rel="noopener noreferrer">
-                    <img src={cvImagem} />
+                    <img src={cvImagem} className="hover:scale-125" />
                   </a>
                 </div>
-                <p className="text-justify text-black text-lg font-normal">
+                <p className="text-justify text-black text-lg font-normal leading-5 ">
                   {person.description}
                 </p>
               </div>
@@ -102,6 +127,7 @@ export default function Team() {
           );
         })}
       </section>
+      <Footer />
     </div>
   );
 }

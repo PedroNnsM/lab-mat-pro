@@ -1,5 +1,5 @@
 
-import Eua from '../../img/eua.png'
+import Eua from '../assets/img/eua.png'
 
 // eslint-disable-next-line react/prop-types
 export function EUALogo({ width, height }) {
