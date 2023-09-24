@@ -4,7 +4,6 @@ import About from "../pages/About";
 import Team from "../pages/Team";
 import Services from "../pages/Services";
 import Trainings from "../pages/Trainings";
-import Projects from "../pages/projects";
 import Publications from "../pages/Publications";
 import Clients from "../pages/Clients";
 import Contact from "../pages/Contact";
@@ -17,7 +16,6 @@ export function AppRoutes() {
       <Route path="/equipe" element={<Team />} />
       <Route path="/servicos" element={<Services />} />
       <Route path="/treinamentos" element={<Trainings />} />
-      <Route path="/projetos" element={<Projects />} />
       <Route path="/publicacoes" element={<Publications />} />
       <Route path="/clientes" element={<Clients />} />
       <Route path="/contato" element={<Contact />} />
