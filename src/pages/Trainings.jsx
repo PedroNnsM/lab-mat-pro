@@ -137,9 +137,8 @@ export default function Trainings() {
       </div>
       <main className="flex items-center w-xl flex-col">
         <div>
-          <TitlePages title='Treinamentos' />
-            
-          
+          <TitlePages title="Treinamentos" />
+
           <div>
             {TrainingsItens.map((item) => {
               return <p key={item.id}> {item.title} </p>;
