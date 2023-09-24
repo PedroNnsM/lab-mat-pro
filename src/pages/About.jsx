@@ -1,4 +1,4 @@
-import { Mapa } from "../assets/Mapa";
+import mapa from '../assets/img/manaus.png'
 import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
 import { TitlePages } from "../components/TitlePages";
@@ -10,7 +10,7 @@ export default function About() {
         <Header />
       </div>
       <main className="flex flex-col items-center w-xl mt-9 gap-4">
-        <div className="flex gap-7 max-w-4xl mx-6">
+        <div className="flex flex-col items-center gap-7 max-w-4xl mx-6">
           <div className="flex flex-col">
             <TitlePages title="Quem somos" />
             <p className="mt-3 text-sm  text-blue-900 font-semibold max-w-4xl">
@@ -25,9 +25,9 @@ export default function About() {
               Amazonas.
             </p>
           </div>
-          <Mapa width={"350px"} />
+          <img src={mapa} width={"350px"} />
         </div>
-        <div >
+        <div className='max-w-4xl mx-6' >
           <h2 className="font-bold text-4xl text-blue-900">Objetivo</h2>
           <p className="mt-3 text-sm  text-blue-900 font-semibold max-w-4xl">
             Com objetivo geral de realizar treinamentos, pesquisas e prestação
@@ -47,7 +47,7 @@ export default function About() {
             />
           </div>
         </div>
-        <div className="">
+        <div className='max-w-4xl mx-6'>
           <h2 className="font-bold text-4xl text-blue-900">Estrutura</h2>
           <p className="mt-3 text-sm  text-blue-900 font-semibold max-w-4xl">
             P&D LAB/UEA dispõe de equipamentos em distintas áreas da engenharia,
@@ -60,7 +60,7 @@ export default function About() {
             choque térmico, análise de superfícies, entre outros.
           </p>
         </div>
-        <div className="max-w-4xl py-6">
+        <div className="max-w-4xl mx-6 py-6">
           <img
             className="w-full"
             src="https://i.ibb.co/qp1KBLg/Rectangle-297.png"
