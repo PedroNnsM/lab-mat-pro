@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { Logo } from "../assets/Logo";
 import Picote from "../assets/img/picoteWithe.png";
 export function Footer() {
@@ -11,6 +10,7 @@ export function Footer() {
           <a
             href="https://www.linkedin.com/company/picote-produ%C3%A7%C3%B5es/"
             target="_blank"
+            rel="noreferrer"
           >
             <img src={Picote} />
           </a>
