@@ -1,12 +1,29 @@
 import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
 import { TitlePages } from "../components/TitlePages";
+import ImagemSolda from "../assets/img/microscopio.png";
+import DegradacaoDoPlastico from "../assets/img/treinamentos/degradacaoDoPlastico.png";
 
 export default function Trainings() {
+  const treinamentosTeste = [
+    {
+      id: "1",
+      title: "Análise de tolerâncias e ajustes",
+      imagem: `${DegradacaoDoPlastico}`,
+      objetivo: "Obter conhecimento sobre aditivação de polímeros.",
+      carga: "16 horas",
+      conteudo:
+        "1. Principais polímeros disponíveis no Brasil: uma visão do mercado. 2. As matérias primas. Homopolímeros, copolímeros, termoplásticos e termofixos. Borrachas e elastômeros. Blendas e compósitos. Reações de polimerização. 3. Formulação: definição. Componentes de uma formulação: aditivos, cargas, agentes de reforço e modificadores. Formas de degradação de polímeros e estabilizantes. Tipos de reações de degradação, cisão de cadeias e reticulação, degradação sem cisão de cadeias, auto-oxidação e despolimerização. Formas independentes de iniciação das reações de degradação: térmica e fotoquímica. Formas associadas de iniciação das reações de degradação: mecânica e termo-mecânica, química, fotoquímica e termo química e Stress-cracking. 4. Estabilizantes e anti-oxidantes: Plastificantes. Lubrificantes e desmoldantes. Agentes anti-estáticos e agentes anti-fogging.Retardantes de chama. Pigmentos e corantes. Agentes de expansão e espumantes. Nucleantes. Modificadores de impacto. Anti-microbianos ou biocidas. 5. Tipos de cargas. Cargas de enchimento. Cargas funcionais. Cargas de reforço, fibras e negro de fumo. 6. Compósitos e nanocompósitos. 7. Preparação das formulações. Mistura intensiva. Extrusora mono e dupla rosca. Preparação de master-batch.",
+    },
+  ];
   const TrainingsItens = [
     {
       id: "1",
       title: "Análise de tolerâncias e ajustes",
+      objetivo: "Obter conhecimento sobre aditivação de polímeros.",
+      carga: "16 horas",
+      conteudo:
+        "1. Principais polímeros disponíveis no Brasil: uma visão do mercado. 2. As matérias primas. Homopolímeros, copolímeros, termoplásticos e termofixos. Borrachas e elastômeros. Blendas e compósitos. Reações de polimerização. 3. Formulação: definição. Componentes de uma formulação: aditivos, cargas, agentes de reforço e modificadores. Formas de degradação de polímeros e estabilizantes. Tipos de reações de degradação, cisão de cadeias e reticulação, degradação sem cisão de cadeias, auto-oxidação e despolimerização. Formas independentes de iniciação das reações de degradação: térmica e fotoquímica. Formas associadas de iniciação das reações de degradação: mecânica e termo-mecânica, química, fotoquímica e termo química e Stress-cracking. 4. Estabilizantes e anti-oxidantes: Plastificantes. Lubrificantes e desmoldantes. Agentes anti-estáticos e agentes anti-fogging.Retardantes de chama. Pigmentos e corantes. Agentes de expansão e espumantes. Nucleantes. Modificadores de impacto. Anti-microbianos ou biocidas. 5. Tipos de cargas. Cargas de enchimento. Cargas funcionais. Cargas de reforço, fibras e negro de fumo. 6. Compósitos e nanocompósitos. 7. Preparação das formulações. Mistura intensiva. Extrusora mono e dupla rosca. Preparação de master-batch.",
     },
     {
       id: "2",
@@ -135,13 +152,52 @@ export default function Trainings() {
           <Header />
         </div>
       </div>
-      <main className="flex items-center w-xl flex-col">
+      <main className="flex items-center w-xl flex-col max-w-4xl mx-6">
         <div>
           <TitlePages title="Treinamentos" />
-
-          <div>
-            {TrainingsItens.map((item) => {
-              return <p key={item.id}> {item.title} </p>;
+          <p className="text-black-900  ">
+            Esses cursos abrangentes são projetados para atender às necessidades
+            variadas de profissionais que desejam aprimorar seus conhecimentos
+            em engenharia de materiais e processos industriais.
+            Independentemente do seu interesse ou objetivo, nossos cursos
+            oferecem uma base sólida e prática para impulsionar seus
+            conhecimentos profissionais na indústria.
+          </p>
+          <div className="flex flex-col items-center my-8 w-full">
+            <div className="flex gap-3  shadow-2.5xl mx-4">
+              <img className=" h-56" src={ImagemSolda} alt="" />
+              <div className="p-3 flex flex-col items-center justify-between flex-1">
+                <p className="text-blue-700 font-bold text-xl ">
+                  Ensaio de Materiais e Produtos
+                </p>
+                <button className="bg-gradient-to-br relative from-blue-500 from-10%  via-blue-800 to-blue-900 to-100% w-full text-WHITE font-semibold p-1">
+                  Enviar
+                </button>
+              </div>
+            </div>
+          </div>
+          <TitlePages title="Conheça nossos cursos disponíveis" />
+          <div className="mt-10">
+            {treinamentosTeste.map((item) => {
+              return (
+                <div  className="mb-4" key={item.id}>
+                  <div className="bg-grey-300 p-6 flex gap-4 rounded-2xl shadow-2.5xl items-center mb-4">
+                    <img className="w-[125px] h-[125px]" src={item.imagem} alt="" />
+                    <div className="flex flex-col gap-1">
+                      <h3 className="text-xl text-black-900 font-bold mb-2">{item.title}</h3>
+                      <span className="text-lg text-black-900 font-bold ">Obejtivo Geral:</span>
+                      <span className="text-sm  font-normal ">{item.objetivo}</span>
+                      <span  className="text-lg text-black-900 font-bold ">Carga horária:</span>
+                      <span  className="text-sm  font-normal ">{item.carga}</span>
+                    </div>
+                  </div>
+                  <div className="bg-gradient-to-br relative from-blue-500 from-10%  via-blue-800 to-blue-900 to-100% p-6 flex flex-col gap-4 rounded-2xl shadow-2.5xl items-start text-WHITE">
+                  <p className="font-semibold ">Conteúdo Programático:</p>
+                  <span className="font-thin text-sm">{item.conteudo}</span>
+                    
+                  </div>
+                </div>
+              );
             })}
           </div>
           <img src="" alt="" />
