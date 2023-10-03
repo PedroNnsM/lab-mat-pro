@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
 import { TitlePages } from "../components/TitlePages";
@@ -145,6 +147,11 @@ export default function Trainings() {
       title: "Tratamento térmicos e termoquímicos de ligas metálicas",
     },
   ];
+  const [open , setOpen] = useState(false)
+
+  function handleOpen(){
+    setOpen(!open)
+  }
   return (
     <div className=" min-h-screen bg-slate-700 flex-col w-full  bg-opacity-40 flex items-center ">
       <div className="flex flex-col items-center bg-gradient-to-br w-full from-blue-500 from-10%  via-blue-800 to-blue-900 to-100% ">
@@ -191,7 +198,7 @@ export default function Trainings() {
                       <span  className="text-sm  font-normal ">{item.carga}</span>
                     </div>
                   </div>
-                  <div className="bg-gradient-to-br relative from-blue-500 from-10%  via-blue-800 to-blue-900 to-100% p-6 flex flex-col gap-4 rounded-2xl shadow-2.5xl items-start text-WHITE">
+                  <div className={`bg-gradient-to-br relative from-blue-500 from-10%  via-blue-800 to-blue-900 to-100% p-6 flex flex-col gap-4 rounded-2xl shadow-2.5xl items-start text-WHITE`}>
                   <p className="font-semibold ">Conteúdo Programático:</p>
                   <span className="font-thin text-sm">{item.conteudo}</span>
                     
