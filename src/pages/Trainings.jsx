@@ -188,7 +188,7 @@ export default function Trainings() {
             {treinamentosTeste.map((item) => {
               return (
                 <div  className="mb-4" key={item.id}>
-                  <div className="bg-grey-300 p-6 flex gap-4 rounded-2xl shadow-2.5xl items-center mb-4">
+                  <div className="bg-grey-300 p-6 flex gap-4 rounded-2xl shadow-2.5xl items-center mb-4 cursor-pointer" onClick={handleOpen}>
                     <img className="w-[125px] h-[125px]" src={item.imagem} alt="" />
                     <div className="flex flex-col gap-1">
                       <h3 className="text-xl text-black-900 font-bold mb-2">{item.title}</h3>
@@ -198,7 +198,7 @@ export default function Trainings() {
                       <span  className="text-sm  font-normal ">{item.carga}</span>
                     </div>
                   </div>
-                  <div className={`bg-gradient-to-br relative from-blue-500 from-10%  via-blue-800 to-blue-900 to-100% p-6 flex flex-col gap-4 rounded-2xl shadow-2.5xl items-start text-WHITE`}>
+                  <div className={open ? "bg-gradient-to-br relative  from-blue-500 from-10%  via-blue-800 to-blue-900 to-100% p-6 flex flex-col gap-4 rounded-2xl shadow-2.5xl items-start text-WHITE" : 'hidden'}>
                   <p className="font-semibold ">Conteúdo Programático:</p>
                   <span className="font-thin text-sm">{item.conteudo}</span>
                     
