@@ -5,12 +5,15 @@ import { Header } from "../components/Header";
 import { TitlePages } from "../components/TitlePages";
 import ImagemSolda from "../assets/img/microscopio.png";
 import DegradacaoDoPlastico from "../assets/img/treinamentos/degradacaoDoPlastico.png";
+import AnaliseDeFalhas from "../assets/img/treinamentos/analiseDeFalhas.png";
+import PecasPlasticas from "../assets/img/treinamentos/pecasPlasticas.png";
+import MatriaisPlasticos from "../assets/img/treinamentos/matriaisPlasticos.png";
 
 export default function Trainings() {
   const treinamentosTeste = [
     {
       id: "1",
-      title: "Análise de tolerâncias e ajustes",
+      title: "Aditivação e Degradação de Plásticos",
       imagem: `${DegradacaoDoPlastico}`,
       objetivo: "Obter conhecimento sobre aditivação de polímeros.",
       carga: "16 horas",
@@ -19,12 +22,21 @@ export default function Trainings() {
     },
     {
       id: "2",
-      title: "Análise de tolerâncias e ajustes",
-      imagem: `${DegradacaoDoPlastico}`,
-      objetivo: "Obter conhecimento sobre aditivação de polímeros.",
-      carga: "16 horas",
+      title: "Falhas em Peças Plásticas Injetadas",
+      imagem: `${PecasPlasticas}`,
+      objetivo: "Obter informações introdutórias a falhas em peças injetadas.",
+      carga: "20 horas",
       conteudo:
-        "1. Principais polímeros disponíveis no Brasil: uma visão do mercado. 2. As matérias primas. Homopolímeros, copolímeros, termoplásticos e termofixos. Borrachas e elastômeros. Blendas e compósitos. Reações de polimerização. 3. Formulação: definição. Componentes de uma formulação: aditivos, cargas, agentes de reforço e modificadores. Formas de degradação de polímeros e estabilizantes. Tipos de reações de degradação, cisão de cadeias e reticulação, degradação sem cisão de cadeias, auto-oxidação e despolimerização. Formas independentes de iniciação das reações de degradação: térmica e fotoquímica. Formas associadas de iniciação das reações de degradação: mecânica e termo-mecânica, química, fotoquímica e termo química e Stress-cracking. 4. Estabilizantes e anti-oxidantes: Plastificantes. Lubrificantes e desmoldantes. Agentes anti-estáticos e agentes anti-fogging.Retardantes de chama. Pigmentos e corantes. Agentes de expansão e espumantes. Nucleantes. Modificadores de impacto. Anti-microbianos ou biocidas. 5. Tipos de cargas. Cargas de enchimento. Cargas funcionais. Cargas de reforço, fibras e negro de fumo. 6. Compósitos e nanocompósitos. 7. Preparação das formulações. Mistura intensiva. Extrusora mono e dupla rosca. Preparação de master-batch.",
+        "1 Teoria sobre o processo de Injeção. O processo de moldagem por injeção e seus controles. 2 Propriedade dos termoplásticos: princípios básicos sobre a ciência dos polímeros. Forças moleculares e ligações químicas nos polímeros; Peso molecular e sua distribuição; Estado físico amorfo e cristalino; Transições térmicas em polímeros; Propriedades físicas: sólido, fundido, orientação molecular. 3 Efeitos das condições de processamento. Temperatura do cilindro de aquecimento; Velocidade de resfriamento da peça; Pressão: pressão de injeção, tempo e pressão de recalque, contra-pressão, velocidade de pressão e rotação da rosca. 4 Orientação molecular. Efeito das condições de transformação sobre: orientação, contração, e das propriedades, efeito sobre a resistência a tração, ao impacto, a tração das peças. 5 Linhas de Solda. Variações produzidas pós-moldagem;Tensões internas nas peças moldadas; Variações dimensionais pós-moldagem; Efeito do tratamento térmico sobre as peças moldadas;",
+    },
+    {
+      id: "3",
+      title: "Introdução a Análise Materiais Plásticos",
+      imagem: `${MatriaisPlasticos}`,
+      objetivo: "Obter informações introdutórias sobre propriedades de polímeros (Materiais Plásticos).",
+      carga: "20 horas",
+      conteudo:
+        "As técnicas a serem abordadas são de Espectroscopia no Infravermelho (FTIR). Calorimetria Exploratória Diferencial (DSC). Análise Termogravimétrica (TGA). Análise Dinâmico Mecânica (DMA Microscopia Eletrônica de Varredura (MEV).",
     },
   ];
   const TrainingsItens = [
