@@ -139,7 +139,6 @@ const parceiros = [
 ];
 
 export default function Home() {
- 
   return (
     <div className=" min-h-screen bg-slate-700 flex-col w-full  bg-opacity-40  ">
       <div className="flex flex-col items-center bg-gradient-to-br relative from-blue-500 from-10%  via-blue-800 to-blue-900 to-100% ">
@@ -239,6 +238,32 @@ export default function Home() {
           </div>
         </div>
         <div className="flex flex-col items-center my-8">
+          <h3 className="mx-auto font-bold text-grey-700 text-2xl  tracking-wider ">
+            Nossos Parceiros
+          </h3>
+          <div className="flex m-4 justify-center items-center  gap-8 max-w-4xl  mt-7 flex-wrap">
+            {parceiros.map((parceiro) => {
+              return <div key={parceiro.id}>{parceiro.imag}</div>;
+            })}
+          </div>
+        </div>
+        <div className="flex flex-col items-center my-8">
+          <h3 className="mx-auto font-bold text-grey-700 text-2xl  tracking-wider ">
+            Localização
+          </h3>
+        </div>
+        <iframe
+          className="w-full h-96"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3943.1024482800103!2d-67.335075!3d-8.7764315!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x922a0baad4d593ff%3A0x98c2b5023f06a052!2sUniversidade%20do%20Estado%20do%20Amazonas!5e0!3m2!1spt-BR!2sca!4v1697108679031!5m2!1spt-BR!2sca"
+          style={{ border: "0" }}
+          allowFullScreen=""
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+        ></iframe>
+        <div className="flex flex-col items-center my-8">
+          <h3 className="mx-auto font-bold mb-6 text-grey-700 text-2xl  tracking-wider ">
+            Contate-nos
+          </h3>
           <div className="flex gap-3  shadow-2.5xl mx-4">
             <img className=" h-56" src={ImagemSolda} alt="" />
             <div className="p-3 flex flex-col items-center justify-between flex-1">
@@ -249,16 +274,6 @@ export default function Home() {
                 Enviar
               </button>
             </div>
-          </div>
-        </div>
-        <div className="flex flex-col items-center my-8">
-          <h3 className="mx-auto font-bold text-grey-700 text-2xl  tracking-wider ">
-            Nossos Parceiros
-          </h3>
-          <div className="flex m-4 justify-center items-center  gap-8 max-w-4xl  mt-7 flex-wrap">
-            {parceiros.map((parceiro) => {
-              return <div key={parceiro.id}>{parceiro.imag}</div>;
-            })}
           </div>
         </div>
       </main>

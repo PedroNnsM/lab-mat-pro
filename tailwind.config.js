@@ -37,7 +37,7 @@ export default {
     },
     backgroundImage: {
         'banner-jpg': "url('/img/ImagemBanner.jpg')",
-        'banner-svg': "url('/img/ImagemBanner.svg')",
+        'banner-svg': "url('/img/ImagemBanner.jpg')",
         'bg-img-dr': "url('/img/bgImgDr.png')",
       },
       boxShadow: {

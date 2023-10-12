@@ -8,6 +8,9 @@ import DegradacaoDoPlastico from "../assets/img/treinamentos/degradacaoDoPlastic
 import AnaliseDeFalhas from "../assets/img/treinamentos/analiseDeFalhas.png";
 import PecasPlasticas from "../assets/img/treinamentos/pecasPlasticas.png";
 import MatriaisPlasticos from "../assets/img/treinamentos/matriaisPlasticos.png";
+import Fundicao from "../assets/img/treinamentos/fundicao.png";
+import LigasDeAluminio from "../assets/img/treinamentos/ligasDeAluminio.png";
+import MetalografiaBasica from "../assets/img/treinamentos/metalografiaBasica.png";
 
 export default function Trainings() {
   const treinamentosTeste = [
@@ -33,10 +36,51 @@ export default function Trainings() {
       id: "3",
       title: "Introdução a Análise Materiais Plásticos",
       imagem: `${MatriaisPlasticos}`,
-      objetivo: "Obter informações introdutórias sobre propriedades de polímeros (Materiais Plásticos).",
+      objetivo:
+        "Obter informações introdutórias sobre propriedades de polímeros (Materiais Plásticos).",
       carga: "20 horas",
       conteudo:
         "As técnicas a serem abordadas são de Espectroscopia no Infravermelho (FTIR). Calorimetria Exploratória Diferencial (DSC). Análise Termogravimétrica (TGA). Análise Dinâmico Mecânica (DMA Microscopia Eletrônica de Varredura (MEV).",
+    },
+    {
+      id: "4",
+      title: "Introdução a Análise de Falhas",
+      imagem: `${AnaliseDeFalhas}`,
+      objetivo:
+        "Curso oferecido para profissionais que trabalham na área de controle de qualidade de produtos metalúrgicos.",
+      carga: "20 horas",
+      conteudo:
+        "1. Falha de um Componente Estrutural; 1.1 Definição de falha em uma estrutura; 1.2 Razões para a falha de uma estrutura; 1.3 O processo de falha; 1.4 A Fratura; 1.5 Funções da análise de falhas; 1.6 Procedimento investigativo. 2.Tipos de Falhas em Serviço; 2.1 Introdução; 2.2 Fratura de Corpos-de-prova (CPs) Ensaiados em Tração; 2.3 Principais tipos de fratura monotônica; 2.3.1 Fratura Dúctil; 2.3.2 Fratura Semifrágil; 2.3.3 Fratura Frágil; 2.3.4 Fratura Intergranular; 2.4 Fratura por Fadiga; 2.4.1 Mecanismos de Iniciação de Trincas ? Características Microscópicas; 2.4.2 Macrofractografia de Falhas por Fadiga; 2.5 Fratura por Fluência. 3. A condução de uma análise de falha; 3.1 Ênfase e Objetivo de uma Análise de Falha. 4. Análises Metalográficas (prática); 4.1 Introdução; 4.2Metalografia dos materiais envolvidos; 4.3Metalografia da região da falha. 5. Ensaios Mecânicos (prática); 5.1 Ensaio de Tração; 5.2 Ensaio de Dureza/microdureza.",
+    },
+    {
+      id: "5",
+      title: "Introdução aos Processos de Fundição",
+      imagem: `${Fundicao}`,
+      objetivo:
+        "Obter informações introdutórias sobre os processos de fundição.",
+      carga: "20 horas",
+      conteudo:
+        "1 Introdução aos Processos de Fundição /Solidificação; 1.1 Conceitos Gerais sobre Ciência dos Materiais; 1.2 Princípios das Transformações de Fases; 1.3 Conceitos Fundamentais da Fusão, Vazamento e Solidificação. 2 Processos em Moldes Permanentes; 2.1 Principais processos de fundição em coquilhas; 2.1.1 Por gravidade; 2.1.2 Baixa pressão; 2.1.3 Alta pressão; 2.1.3.1 Defeitos associados ao processo de fundição sob pressão; 2.2 Processos de fundição por centrifugação; 2.3 Processos de fundição de precisão; 2.4 Tixofundição. 3 Prática de fundição; 3.1 Demonstração prática de fundição em molde metálico.",
+    },
+    {
+      id: "6",
+      title: "Introdução às Ligas de Alumínio",
+      imagem: `${LigasDeAluminio}`,
+      objetivo:
+        "Obter informações introdutórias das características do alumínio e suas ligas.",
+      carga: "20 horas",
+      conteudo:
+        "1. Introdução a estrutura cristalina dos materiais metálicos. 2 Propriedades do Alumínio Puro; 2.1 Ponto de fusão; 2.2 Fluidez; 2.3 Solidificação; 2.4 Oxidação. 3 Influência dos Elementos de Ligas no Alumínio; 3.1 Silício; 3.2 Cobre; 3.3 Magnésio; 3.4 Ferro; 3.5 Outroselementos. 4 Ligas de Alumínio; 4.1 Ligas de alumínio; 4.2 Ligas de alumínio silício; 4.3 Modos de solidificação das ligas de alumínio; 4.4 Tratamentos realizados no alumínio: desgaseificação eescorificação; 5. Introdução as microestruturas do alumínio; 5.1 Soluções sólidas; 5.2 Diagrama de fases alumínio-Silício (Al-Si); 5.2 Microestruturas.",
+    },
+    {
+      id: "7",
+      title: "Metalografia Básica",
+      imagem: `${MetalografiaBasica}`,
+      objetivo:
+        "Apresentar técnicas e cuidados quanto a preparação de amostras para o ensaio metalográfico e identificação de fases. Apresentar informações práticas e fundamentais quanto à microestrutura de materiais.",
+      carga: "15 horas, com 3 horas para aulas práticas",
+      conteudo:
+        "Introdução aos Ensaios Metalográficos: Objetivos; Macrografia; Micrografia; Objetivos das análises. Seleção da região de análise: Localização da amostra; Corte ; Montagem ou embutimento ; Identificação; Lixamento: manual; Polimentos: manual; Armazenamento; Ataques. Visual: Fotografias; Microscopia ótica",
     },
   ];
   const TrainingsItens = [
@@ -214,21 +258,43 @@ export default function Trainings() {
             {treinamentosTeste.map((item) => {
               const isElementoAberto = elementosAbertos[item.id];
               return (
-                <div  className="mb-4" key={item.id}>
-                  <div className="bg-grey-300 p-6 flex gap-4 rounded-2xl shadow-2.5xl items-center mb-4 cursor-pointer" onClick={() => handleToggleElemento(item.id)}>
-                    <img className="w-[125px] h-[125px]" src={item.imagem} alt="" />
+                <div className="mb-4" key={item.id}>
+                  <div
+                    className="bg-grey-300 p-6 flex gap-4 rounded-2xl shadow-2.5xl items-center mb-4 cursor-pointer"
+                    onClick={() => handleToggleElemento(item.id)}
+                  >
+                    <img
+                      className="w-[125px] h-[125px]"
+                      src={item.imagem}
+                      alt=""
+                    />
                     <div className="flex flex-col gap-1">
-                      <h3 className="text-xl text-black-900 font-bold mb-2">{item.title}</h3>
-                      <span className="text-lg text-black-900 font-bold ">Obejtivo Geral:</span>
-                      <span className="text-sm  font-normal ">{item.objetivo}</span>
-                      <span  className="text-lg text-black-900 font-bold ">Carga horária:</span>
-                      <span  className="text-sm  font-normal ">{item.carga}</span>
+                      <h3 className="text-xl text-black-900 font-bold mb-2">
+                        {item.title}
+                      </h3>
+                      <span className="text-lg text-black-900 font-bold ">
+                        Obejtivo Geral:
+                      </span>
+                      <span className="text-sm  font-normal ">
+                        {item.objetivo}
+                      </span>
+                      <span className="text-lg text-black-900 font-bold ">
+                        Carga horária:
+                      </span>
+                      <span className="text-sm  font-normal ">
+                        {item.carga}
+                      </span>
                     </div>
                   </div>
-                  <div className={isElementoAberto  ? "bg-gradient-to-br relative  from-blue-500 from-10%  via-blue-800 to-blue-900 to-100% p-6 flex flex-col gap-4 rounded-2xl shadow-2.5xl items-start text-WHITE" : 'hidden'}>
-                  <p className="font-semibold ">Conteúdo Programático:</p>
-                  <span className="font-thin text-sm">{item.conteudo}</span>
-                    
+                  <div
+                    className={
+                      isElementoAberto
+                        ? "bg-gradient-to-br relative  from-blue-500 from-10%  via-blue-800 to-blue-900 to-100% p-6 flex flex-col gap-4 rounded-2xl shadow-2.5xl items-start text-WHITE"
+                        : "hidden"
+                    }
+                  >
+                    <p className="font-semibold ">Conteúdo Programático:</p>
+                    <span className="font-thin text-sm">{item.conteudo}</span>
                   </div>
                 </div>
               );
