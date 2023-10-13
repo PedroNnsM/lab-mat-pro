@@ -11,6 +11,10 @@ import MatriaisPlasticos from "../assets/img/treinamentos/matriaisPlasticos.png"
 import Fundicao from "../assets/img/treinamentos/fundicao.png";
 import LigasDeAluminio from "../assets/img/treinamentos/ligasDeAluminio.png";
 import MetalografiaBasica from "../assets/img/treinamentos/metalografiaBasica.png";
+import TratamentoTermico from "../assets/img/treinamentos/tratamentoTermico.png";
+import TecnologiaDaSoldagem from "../assets/img/treinamentos/tecnilogiaDaSoldagem.png";
+import MatematicaBasica from "../assets/img/treinamentos/matematicaBasica.png";
+import MetalografiaDoAluminio from "../assets/img/treinamentos/MetalografiaDoAluminio.png";
 
 export default function Trainings() {
   const treinamentosTeste = [
@@ -74,6 +78,16 @@ export default function Trainings() {
     },
     {
       id: "7",
+      title: "Metalografia do Alumínio",
+      imagem: `${MetalografiaDoAluminio}`,
+      objetivo:
+        "Obter conhecimento práticos e teóricos sobre a Metalografia de ligas de alumínio e ",
+      carga: "40 horas (com 12 horas de aulas práticas de metalografia do alumínio).",
+      conteudo:
+        "1. Importância da Metalografia; 1.1 Relação estrutura propriedade e processamento; 1.2 Conceito de estrutura; 1.3 Conceito de processamento; 1.4 Conceito de propriedade ou característica. 2 Como Analisar Estrutura de Metais e Ligas Metálicas; 2.1 Introdução ao diagrama de fases das ligas Al-Si e AlMg. 3 Preparação de Amostras; 3.1 Etapas de preparação da amostra metalográfica; 3.2 Cuidados Especiais; 3.2.1 Deformação; 3.2.2 Aquecimento; 3.2.3 Trincas; 3.3 Reagentes Químicos para Ataque; 3.4 Armazenamento das Amostras. 4. Práticas metalográficas.",
+    },
+    {
+      id: "8",
       title: "Metalografia Básica",
       imagem: `${MetalografiaBasica}`,
       objetivo:
@@ -81,6 +95,36 @@ export default function Trainings() {
       carga: "15 horas, com 3 horas para aulas práticas",
       conteudo:
         "Introdução aos Ensaios Metalográficos: Objetivos; Macrografia; Micrografia; Objetivos das análises. Seleção da região de análise: Localização da amostra; Corte ; Montagem ou embutimento ; Identificação; Lixamento: manual; Polimentos: manual; Armazenamento; Ataques. Visual: Fotografias; Microscopia ótica",
+    },
+    {
+      id: "9",
+      title: "Tratamentos Térmicos e Termoquímicos de Metais",
+      imagem: `${TratamentoTermico}`,
+      objetivo:
+        "Introduzir ao aluno os conceitos de tratamentos térmicos de modo que o tenha conhecimento para selecionar e supervisionar processos de tratamentos térmicos de ferrosos e não-ferrosos.",
+      carga: "15 horas, com 3 horas para aulas práticas",
+      conteudo:
+        "O sistema Ferro Carbono: O elemento ferro; Soluções sólidas de ferro; Diagrama Fe-Fe3C; Pontos relevantes do diagrama Fe-Fe3C; Efeito do resfriamento e aquecimento nas linhas de transformação; Reações invariantes. Decomposição da Austenita e Diagrama TTT; Ferrita e cementita; Perlita; Bainita e ferrita acicular; A transformação martensita; Curvas ITT e CCT. O ensaio de Dureza: Fundamentos teóricos e prática. Tratamentos Térmicos dos Aços: Recozimento; Normalização; Tempera e Temperabilidade; Revenimento; Martêmpera; Austêmpera. Tratamentos Térmicos de Ligas de Alumínio: Endurecimento por precipitação. Análise Microestrutural : Microscopia ótica. Tratamentos termoquímicos: Cementação, nitretação e carbonitretação – Objetivos; Noções de processos; Ciclos térmicos; Microestruturas; Efeitos de variáveis; Aplicações",
+    },
+    {
+      id: "10",
+      title: "Tecnologia da Soldagem Industrial",
+      imagem: `${TecnologiaDaSoldagem}`,
+      objetivo:
+        "Informar a operadores, técnicos que trabalhem com soldagem, os princípios e técnicas de soldagem.",
+      carga: "20 horas.",
+      conteudo:
+        "O sistema Ferro Carbono: O elemento ferro; Soluções sólidas de ferro; Diagrama Fe-Fe3C; Pontos relevantes do diagrama Fe-Fe3C; Efeito do resfriamento e aquecimento nas linhas de transformação; Reações invariantes. Decomposição da Austenita e Diagrama TTT; Ferrita e cementita; Perlita; Bainita e ferrita acicular; A transformação martensita; Curvas ITT e CCT. O ensaio de Dureza: Fundamentos teóricos e prática. Tratamentos Térmicos dos Aços: Recozimento; Normalização; Tempera e Temperabilidade; Revenimento; Martêmpera; Austêmpera. Tratamentos Térmicos de Ligas de Alumínio: Endurecimento por precipitação. Análise Microestrutural : Microscopia ótica. Tratamentos termoquímicos: Cementação, nitretação e carbonitretação – Objetivos; Noções de processos; Ciclos térmicos; Microestruturas; Efeitos de variáveis; Aplicações",
+    },
+    {
+      id: "11",
+      title: "Matemática Básica para Produção",
+      imagem: `${MatematicaBasica}`,
+      objetivo:
+        "Nivelar os conhecimentos acerca da matéria, proporcionando melhor desempenho dos acadêmicos nas disciplinas do Curso.",
+      carga: "20 horas.",
+      conteudo:
+        "Conjuntos numéricos; Produtos notáveis; Frações; Razão; Proporção; Porcentagem; Potenciação; Radiciação; Racionalização; Funções; Equações do 1º grau com uma variável; Equações do 2º Grau ou Equações Quadráticas; Inequações do 1º Grau.",
     },
   ];
   const TrainingsItens = [
