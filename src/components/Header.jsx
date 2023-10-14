@@ -33,18 +33,9 @@ export function Header() {
       name: "treinamentos",
       text: "Treinamentos",
     },
+    
     {
       id: "7",
-      name: "publicacoes",
-      text: "Publicações",
-    },
-    {
-      id: "8",
-      name: "clientes",
-      text: "Clientes",
-    },
-    {
-      id: "9",
       name: "contato",
       text: "Contato",
     },
@@ -132,17 +123,44 @@ export function Header() {
       </nav>
       {open ? (
         <div className="lg:hidden nox-2 pt-2 pb-3 space-y-1 sm:px-3 flex items-center flex-col transition-all duration-500">
-          {navLinks2.map((href) => {
-          return (
-            <NavLink 
-              key={href.id}
-              href={`/${href.name}`}
+          
+            <a 
+              href='/'
               className="text-WHITE p-3 hover:bg-blue-900 rounded-md hover:text-opacity-80 font-bold font-sans transition-all duration-500	"
             >
-              {href.text}
-            </NavLink>
-          );
-        })}
+              Home
+            </a>
+            <a 
+              href='/quem-somos'
+              className="text-WHITE p-3 hover:bg-blue-900 rounded-md hover:text-opacity-80 font-bold font-sans transition-all duration-500	"
+            >
+              Quem somos
+            </a>
+            <a 
+              href='/equipe'
+              className="text-WHITE p-3 hover:bg-blue-900 rounded-md hover:text-opacity-80 font-bold font-sans transition-all duration-500	"
+            >
+              Equipe
+            </a>
+            <a 
+              href='/servicos'
+              className="text-WHITE p-3 hover:bg-blue-900 rounded-md hover:text-opacity-80 font-bold font-sans transition-all duration-500	"
+            >
+              Serviços
+            </a>
+            <a 
+              href='/treinamentos'
+              className="text-WHITE p-3 hover:bg-blue-900 rounded-md hover:text-opacity-80 font-bold font-sans transition-all duration-500	"
+            >
+              Treinamentos
+            </a>
+            <a 
+              href='/contato'
+              className="text-WHITE p-3 hover:bg-blue-900 rounded-md hover:text-opacity-80 font-bold font-sans transition-all duration-500	"
+            >
+              Contato
+            </a>
+         
           </div>
         
       ) : null}
