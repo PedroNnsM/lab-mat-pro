@@ -35,53 +35,12 @@ export function Header() {
     },
     
     {
-      id: "7",
+      id: "6",
       name: "contato",
       text: "Contato",
     },
   ];
-  const navLinks2 = [
-    {
-      id: "1",
-      name: "",
-      text: "Home",
-    },
-    {
-      id: "2",
-      name: "quem-somos",
-      text: "Quem somos",
-    },
-    {
-      id: "3",
-      name: "equipe",
-      text: "Equipe",
-    },
-    {
-      id: "4",
-      name: "servicos",
-      text: "Serviços",
-    },
-    {
-      id: "5",
-      name: "treinamentos",
-      text: "Treinamentos",
-    },
-    {
-      id: "7",
-      name: "publicacoes",
-      text: "Publicações",
-    },
-    {
-      id: "8",
-      name: "clientes",
-      text: "Clientes",
-    },
-    {
-      id: "9",
-      name: "contato",
-      text: "Contato",
-    },
-  ];
+  
 
   const handleMenuOpen = () => {
     setOpen(!open);

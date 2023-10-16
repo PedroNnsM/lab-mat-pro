@@ -6,7 +6,8 @@ export function CardHorizontal({ title, description }) {
       h-56
       `}
     >
-      <h3 className="block mb-4 transition-all duration-500 font-bold text-xl ">
+      <h3 className="block mb-4 transition-all duration-500 font-bold text-xl group-hover:hidden 
+       ">
         {title}
       </h3>
       <span className="hidden font-semibold group-hover:block transition-opacity duration-500 ">
