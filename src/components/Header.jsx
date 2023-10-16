@@ -33,64 +33,14 @@ export function Header() {
       name: "treinamentos",
       text: "Treinamentos",
     },
+    
     {
-      id: "7",
-      name: "publicacoes",
-      text: "Publicações",
-    },
-    {
-      id: "8",
-      name: "clientes",
-      text: "Clientes",
-    },
-    {
-      id: "9",
+      id: "6",
       name: "contato",
       text: "Contato",
     },
   ];
-  const navLinks2 = [
-    {
-      id: "1",
-      name: "",
-      text: "Home",
-    },
-    {
-      id: "2",
-      name: "quem-somos",
-      text: "Quem somos",
-    },
-    {
-      id: "3",
-      name: "equipe",
-      text: "Equipe",
-    },
-    {
-      id: "4",
-      name: "servicos",
-      text: "Serviços",
-    },
-    {
-      id: "5",
-      name: "treinamentos",
-      text: "Treinamentos",
-    },
-    {
-      id: "7",
-      name: "publicacoes",
-      text: "Publicações",
-    },
-    {
-      id: "8",
-      name: "clientes",
-      text: "Clientes",
-    },
-    {
-      id: "9",
-      name: "contato",
-      text: "Contato",
-    },
-  ];
+  
 
   const handleMenuOpen = () => {
     setOpen(!open);
@@ -132,17 +82,44 @@ export function Header() {
       </nav>
       {open ? (
         <div className="lg:hidden nox-2 pt-2 pb-3 space-y-1 sm:px-3 flex items-center flex-col transition-all duration-500">
-          {navLinks2.map((href) => {
-          return (
-            <NavLink 
-              key={href.id}
-              href={`/${href.name}`}
+          
+            <a 
+              href='/'
               className="text-WHITE p-3 hover:bg-blue-900 rounded-md hover:text-opacity-80 font-bold font-sans transition-all duration-500	"
             >
-              {href.text}
-            </NavLink>
-          );
-        })}
+              Home
+            </a>
+            <a 
+              href='/quem-somos'
+              className="text-WHITE p-3 hover:bg-blue-900 rounded-md hover:text-opacity-80 font-bold font-sans transition-all duration-500	"
+            >
+              Quem somos
+            </a>
+            <a 
+              href='/equipe'
+              className="text-WHITE p-3 hover:bg-blue-900 rounded-md hover:text-opacity-80 font-bold font-sans transition-all duration-500	"
+            >
+              Equipe
+            </a>
+            <a 
+              href='/servicos'
+              className="text-WHITE p-3 hover:bg-blue-900 rounded-md hover:text-opacity-80 font-bold font-sans transition-all duration-500	"
+            >
+              Serviços
+            </a>
+            <a 
+              href='/treinamentos'
+              className="text-WHITE p-3 hover:bg-blue-900 rounded-md hover:text-opacity-80 font-bold font-sans transition-all duration-500	"
+            >
+              Treinamentos
+            </a>
+            <a 
+              href='/contato'
+              className="text-WHITE p-3 hover:bg-blue-900 rounded-md hover:text-opacity-80 font-bold font-sans transition-all duration-500	"
+            >
+              Contato
+            </a>
+         
           </div>
         
       ) : null}

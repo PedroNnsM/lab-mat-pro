@@ -36,9 +36,9 @@ export default {
       // => @media (min-width: 1536px) { ... }
     },
     backgroundImage: {
-        'banner-jpg': "url('/img/ImagemBanner.jpg')",
-        'banner-svg': "url('/img/ImagemBanner.jpg')",
-        'bg-img-dr': "url('/img/bgImgDr.png')",
+        'banner-jpg': "url('src/assets/img/ImagemBanner.jpg')",
+        'banner-svg': "url('src/assets/img/ImagemBanner.svg')",
+        'bg-img-dr': "url('src/assets/img/bgImgDr.png')",
       },
       boxShadow: {
         "3xl": "0px 0px 30px  rgba(0, 0, 0, 0.3)",
