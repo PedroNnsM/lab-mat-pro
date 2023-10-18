@@ -20,6 +20,10 @@ import Masp from "../assets/img/treinamentos/masp.png";
 import Soldagem from "../assets/img/treinamentos/soldagem.png";
 import Corrosao from "../assets/img/treinamentos/corrosao.png";
 import QuimicaFundamental from "../assets/img/treinamentos/quimicaFundamental.png";
+import MetrologiaBasica from "../assets/img/treinamentos/metrologiaBasica.png";
+import GerenciaDeRiscos from "../assets/img/treinamentos/gerenciaDeRiscos.png";
+import EnsaiosMecanicos from "../assets/img/treinamentos/ensaiosMecanicos.png";
+import DesenhoTecnico from "../assets/img/treinamentos/desenhoTecnico.png";
 
 export default function Trainings() {
   const treinamentosTeste = [
@@ -87,7 +91,8 @@ export default function Trainings() {
       imagem: `${MetalografiaDoAluminio}`,
       objetivo:
         "Obter conhecimento práticos e teóricos sobre a Metalografia de ligas de alumínio e ",
-      carga: "40 horas (com 12 horas de aulas práticas de metalografia do alumínio).",
+      carga:
+        "40 horas (com 12 horas de aulas práticas de metalografia do alumínio).",
       conteudo:
         "1. Importância da Metalografia; 1.1 Relação estrutura propriedade e processamento; 1.2 Conceito de estrutura; 1.3 Conceito de processamento; 1.4 Conceito de propriedade ou característica. 2 Como Analisar Estrutura de Metais e Ligas Metálicas; 2.1 Introdução ao diagrama de fases das ligas Al-Si e AlMg. 3 Preparação de Amostras; 3.1 Etapas de preparação da amostra metalográfica; 3.2 Cuidados Especiais; 3.2.1 Deformação; 3.2.2 Aquecimento; 3.2.3 Trincas; 3.3 Reagentes Químicos para Ataque; 3.4 Armazenamento das Amostras. 4. Práticas metalográficas.",
     },
@@ -181,8 +186,49 @@ export default function Trainings() {
       conteudo:
         "Estrutura Atômica. Equações Químicas e Estequiometria. Ligações Químicas. Reações de Oxi-Redução. Compostos do Carbono. Química de Materiais e Processos.",
     },
+    {
+      id: "17",
+      title: "Metrologia Básica",
+      imagem: `${MetrologiaBasica}`,
+      objetivo:
+        "Dar condições ao educando de se relacionar tecnicamente adotando conceitos metrológicos corretos, além de capacitá-lo para desenvolver atividades de medição e calibração das principais grandezas dentro dos princípios adequados de confiabilidade e Rastreabilidade metrológicas.",
+      carga: "60 horas.",
+      conteudo:
+        "METROLOGIA: O ato da Medição; O sistema de medição; Os erros de medição; As incertezas em medições diretas; A calibração de instrumentos; O resultado da medição; As incertezas em medições indiretas; A propagação do erro. CONTROLE GEOMÉTRICO: Medição de comprimentos; Blocos padrão; Paquímetros; Micrômetros; Medição diferencial; Instrumentos auxiliares de medição; Calibradores; Máquinas de medir; Medição por Coordenadas; Automação do controle geométrico.",
+    },
+    {
+      id: "18",
+      title: "Gerência de Riscos",
+      imagem: `${GerenciaDeRiscos}`,
+      objetivo:
+        "Qualificar os profissionais da produção e área técnica em geral, possibilitando o melhor desempenho de suas funções nas atividades laborais, conforme os preceitos da Segurança do Trabalho interação sustentável com o Meio Ambiente.",
+      carga: "20 horas ( 20 a 25 alunos).",
+      conteudo:
+        "1. Conceituações e noções gerais; 1.1- Perigos e riscos – Incidentes e Acidentes; 1.2- Uso do termo Risco e seus significados.; 1.3- Classificação dos Riscos Ambientais; 1.4- Gerenciamento do Risco. 2. Técnicas de Análise de Riscos; 2.1 – Classificação: Quantitativas e Qualitativas, Indutivas e Dedutivas; 2.2 – Técnicas de Análise de Riscos – Apresentação: Série de Riscos, Técnica de Incidentes Críticos, What If / Check List, Análise Preliminar de Riscos (APR), Análise de Modos de Falha e Efeitos (FMEA)HAZOP, 2.3 – Mapa de Riscos. 3. Metodologias de abordagem de situações críticas; 3.1- Análise de Causa e Efeito; 3.2 – Matriz de priorização GUT; 3.3 – Classificação pelo princípio de Pareto; 3.4 – Classificação das Ações: Imediatas, Corretivas, Preventivas, Preditivas.",
+    },
+    {
+      id: "19",
+      title: "Ensaios Mecânicos de Materiais",
+      imagem: `${EnsaiosMecanicos}`,
+      objetivo:
+        "Transmitir conceitos e metodologia das propriedades mecânicas, bem como noções dos ensaios de tração, dureza e microdureza de materiais.",
+      carga:
+        "32 horas (com 12 horas de aulas práticas de ensaios de tração e microdureza)",
+      conteudo:
+        "1. Introdução aos ensaios mecânicos; 1.1 Propriedades mecânicas; 1.2 Finalidade dos ensaios mecânicos; 1.3 Vantagens da normalização dos métodos de ensaios; 1.4 Classificação dos ensaios dos materiais; 1.5 Relação estrutura-propriedade dos materiais. 2. Ensaio de tração; 2.1 O ensaio de tração; 2.2 Parâmetros físicos determinados pelo ensaio de tração; 2.3 Deformação elástica e plástica; 2.4 Instabilidade plástica e estricção; 2.5 Curva de engenharia versus curva real; 2.6 Confecção dos corpos de prova; 2.7 Efeito da taxa de deformação; 2.8 Efeito da presença de entalhes; 2.9 Efeito da velocidade de ensaio. 3. Ensaio de dureza; 3.1 Importância dos ensaios de dureza e classificação; 3.2 Dureza Brinell; 3.3 Dureza Rockwell; 3.4 Microdureza Vickers; 3.5 Correlação entre a dureza Brinell e limite de resistência; 3.6 Microdureza Knoop.",
+    },
+    {
+      id: "20",
+      title: "Interpretação de Desenho Técnico",
+      imagem: `${DesenhoTecnico}`,
+      objetivo:
+        "Transmitir o conhecimento das características, padronizações, especificações e simbologias do Desenho Técnico, a fim de possibilitar a correta leitura das informações contidas nos desenhos de projeto, necessárias para a fabricação e produção de peças e componentes, assim como sua aferição das conformidades dimensionais, morfológicas e de materiais.",
+      carga: "20 horas (20 a 25 alunos)",
+      conteudo:
+        "1. Introdução ao Desenho Técnico; 1.1 História do Desenho e tipos de desenho; 1.2 Equipamentos tradicionais e ferramentas computacionais; 1.3 Elementos Fundamentais do Desenho; 1.4 Projeções Ortogonais; 1.5 Escalas Usuais, Tipos de Linhas e Planos de Trabalho. 2. Elaboração do Desenho Técnico; 2.1 Vistas Ortográficas; 2.2 Vistas Ortográficas Externas; 2.3 Vistas Ortográficas Auxiliares; 2.4 Vistas Ortográficas Seccionais (Cortes); 2.5 Corte Pleno; 2.6 Meio Corte; 2.7 Corte Parcial; 2.8 Regras de Dimensionamento (Cotagem); 2.9 Vistas Axonométricas – Perspectivas. 3. Especficações e Simbologias do Desenho Técnico; 3.1 Acabamento de superfícies; 3.2 Tolerâncias Dimensionais; 3.3 Tolerâncias Geométricas; 3.4 Tolerâncias de Forma e Posição; 3.5 Simbologia de Soldagem; 3.6 Representação de Conjuntos Montados",
+    },
   ];
- 
+
   const [elementosAbertos, setElementosAbertos] = useState({});
 
   function handleToggleElemento(id) {
