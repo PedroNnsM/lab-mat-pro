@@ -15,6 +15,11 @@ import TratamentoTermico from "../assets/img/treinamentos/tratamentoTermico.png"
 import TecnologiaDaSoldagem from "../assets/img/treinamentos/tecnilogiaDaSoldagem.png";
 import MatematicaBasica from "../assets/img/treinamentos/matematicaBasica.png";
 import MetalografiaDoAluminio from "../assets/img/treinamentos/MetalografiaDoAluminio.png";
+import ControleEstatistico from "../assets/img/treinamentos/controleEstatistico.png";
+import Masp from "../assets/img/treinamentos/masp.png";
+import Soldagem from "../assets/img/treinamentos/soldagem.png";
+import Corrosao from "../assets/img/treinamentos/corrosao.png";
+import QuimicaFundamental from "../assets/img/treinamentos/quimicaFundamental.png";
 
 export default function Trainings() {
   const treinamentosTeste = [
@@ -126,136 +131,58 @@ export default function Trainings() {
       conteudo:
         "Conjuntos numéricos; Produtos notáveis; Frações; Razão; Proporção; Porcentagem; Potenciação; Radiciação; Racionalização; Funções; Equações do 1º grau com uma variável; Equações do 2º Grau ou Equações Quadráticas; Inequações do 1º Grau.",
     },
-  ];
-  const TrainingsItens = [
-    {
-      id: "1",
-      title: "Análise de tolerâncias e ajustes",
-      objetivo: "Obter conhecimento sobre aditivação de polímeros.",
-      carga: "16 horas",
-      conteudo:
-        "1. Principais polímeros disponíveis no Brasil: uma visão do mercado. 2. As matérias primas. Homopolímeros, copolímeros, termoplásticos e termofixos. Borrachas e elastômeros. Blendas e compósitos. Reações de polimerização. 3. Formulação: definição. Componentes de uma formulação: aditivos, cargas, agentes de reforço e modificadores. Formas de degradação de polímeros e estabilizantes. Tipos de reações de degradação, cisão de cadeias e reticulação, degradação sem cisão de cadeias, auto-oxidação e despolimerização. Formas independentes de iniciação das reações de degradação: térmica e fotoquímica. Formas associadas de iniciação das reações de degradação: mecânica e termo-mecânica, química, fotoquímica e termo química e Stress-cracking. 4. Estabilizantes e anti-oxidantes: Plastificantes. Lubrificantes e desmoldantes. Agentes anti-estáticos e agentes anti-fogging.Retardantes de chama. Pigmentos e corantes. Agentes de expansão e espumantes. Nucleantes. Modificadores de impacto. Anti-microbianos ou biocidas. 5. Tipos de cargas. Cargas de enchimento. Cargas funcionais. Cargas de reforço, fibras e negro de fumo. 6. Compósitos e nanocompósitos. 7. Preparação das formulações. Mistura intensiva. Extrusora mono e dupla rosca. Preparação de master-batch.",
-    },
-    {
-      id: "2",
-      title: "Análise química de metais ferroso e não-ferrosos",
-    },
-    {
-      id: "3",
-      title: "Análise química em ligas de alumínio",
-    },
-    {
-      id: "4",
-      title: "Controle estatístico do processo",
-    },
-    {
-      id: "5",
-      title: "Curso aditivação e degradação de polímeros",
-    },
-    {
-      id: "6",
-      title: "Curso corrosão, fundamentos, monitoração e controle",
-    },
-    {
-      id: "7",
-      title: "Curso de falhas em peças injetadas ",
-    },
-    {
-      id: "8",
-      title: "Curso introdução de desenho técnico",
-    },
-    {
-      id: "9",
-      title: "Curso introdução a análise de falhas em metais",
-    },
-    {
-      id: "10",
-      title: "Curso introdução aos processos de fundição",
-    },
-    {
-      id: "11",
-      title: "Ensaios mecânicos de materiais",
-    },
     {
       id: "12",
-      title: "Gerenciamento de riscos",
+      title: "Controle Estatístico do Processo",
+      imagem: `${ControleEstatistico}`,
+      objetivo:
+        "O objetivo é verificar, por meio do gráfico, se o processo está sob controle, ou seja, isento de causas especiais. Este gráfico determina estatisticamente uma faixa denominada limites de controle que é limitada pela linha superior (limite superior de controle) e uma linha inferior (limite inferior de controle), além de uma linha média.",
+      carga: "20 horas.",
+      conteudo:
+        "1. Introdução. 2. Gráficos ou Cartas de Controle. 3. Fase Preparatória e Elaboração dos Gráficos. 4 Gráficos de Controle por Variáveis. 5. Gráficos de Controle por Atributo; 6. Cartas de Controle para Pequenos Lotes; 7. Gráficos de Controle Multivariados; 8. Gráficos de Pré-Controle; 9. Exercícios.",
     },
     {
       id: "13",
-      title: "Gestão de qualidade",
+      title: "Metodologia de Análise e Solução de Problemas - MASP",
+      imagem: `${Masp}`,
+      objetivo:
+        "Desenvolver de competências relativas à Qualidade e seus conceitos, possibilitando a formação de uma cultura individual e organizacional de análise de problemas de acordo com as técnicas de qualidade.",
+      carga: "20 horas.",
+      conteudo:
+        "1. Metodologia de Análise e Solução de Problemas – MASP; 1.1. Conceituação de Problema; 1.2. Ciclo PDCA – Etapas, Relação de PDCA e MASP, Ciclo DMAIC. 2. As Sete Ferramentas da Qualidade; 2.1- Importância e utilização; 2.2- Descrição e estudo das ferramentas - I) Brainstorming; II) Estratificação; III) Folha de Verificação; IV) Histograma; V) Diagrama de Causa e Efeito; VI) Matriz de Priorização GUT; VII) Diagrama de Pareto; 2.3- Exercícios práticos. 3. Análise de Modo de Falhas – FMEA; 3.1- Princípios fundamentais para o uso do FMEA; 3.2- Tipos de FMEA; 3.3- Identificação de riscos; 3.4- Avaliação de Severidade, Ocorrência e Detecção; 3.5- Determinação do Número de Prioridade de Risco – NPR; 3.6- Elaboração do formulário - Exemplos práticos.",
     },
     {
       id: "14",
-      title: "Indústria 4.0: Materiais em impressão 3D",
+      title: "Soldagem de Componentes Eletrônicos",
+      imagem: `${Soldagem}`,
+      objetivo:
+        "Desenvolver de competências relativas à qualidade e seus conceitos, sobre soldagem de componentes eletrônicos",
+      carga: "20 horas.",
+      conteudo:
+        "Introdução; Materiais Utilizados em Soldagem de Componentes; Química da Soldagem; Soldabilidade de componentes; Microestruturas da soldagem; Tecnologia das pastas de soldagem; Controle da atmosfera na soldagem de componentes; Análise de falhas em juntas soldadas de componentes.",
     },
     {
       id: "15",
-      title: "Introdução a análise de falhas em polímeros",
+      title: "Corrosão Industrial: Fundamentos, Monitoração e Controle",
+      imagem: `${Corrosao}`,
+      objetivo:
+        "Desenvolver de competências relativas à qualidade e seus conceitos sobre corrosão industrial.",
+      carga: "20 horas.",
+      conteudo:
+        "Corrosão: Introdução, Oxidação-redução, Potencial de eletrodo: Diagrama de Purbaix, Pilhas eletroquímicas, Formas de corrosão. Corrosão: mecanismos básicos, Heterogeneidades responsáveis por corrosão eletroquímica, corrosão galvânica, corrosão eletrolítica, corrosão seletiva: grafítica e desincificação, corrosão induzida por microorganismos, velocidade de corrosão, oxidação e redução em temperaturas elevadas. Corrosão associadas a solicitações mecânicas, água: ação corrosiva, corrosão em concreto, Métodos para combate a corrosão. Revestimentos: Limpeza e preparo de superfícies, Revestimentos metálicos, revestimentos não-metálicos inorgânicos, revestimentos não-metálicos orgânicos. Proteção catódica e anódica.",
     },
     {
       id: "16",
-      title: "Introdução às ligas de alumínio",
-    },
-    {
-      id: "17",
-      title: "Matemática básica para chão de fábrica",
-    },
-    {
-      id: "18",
-      title: "Metalografia básica",
-    },
-    {
-      id: "19",
-      title: "Metalografia de ligas de cobre",
-    },
-    {
-      id: "20",
-      title: "Metalografia do alumínio",
-    },
-
-    {
-      id: "21",
-      title: "Metodolodia de análise e solução de problemas (MASP)",
-    },
-    {
-      id: "22",
-      title: "Metrologia avançada",
-    },
-    {
-      id: "23",
-      title: "Metrologia básica",
-    },
-
-    {
-      id: "24",
-      title: "Modelagem e impressão 3D",
-    },
-
-    {
-      id: "25",
-      title: "Programa 8S’s na prática",
-    },
-    {
-      id: "26",
-      title: "Química fundamental",
-    },
-    {
-      id: "27",
-      title: "Soldagem de componentes eletrônicos",
-    },
-    {
-      id: "28",
-      title: "Tecnologia da usinagem",
-    },
-    {
-      id: "29",
-      title: "Tratamento térmicos em ligas de alumínio",
-    },
-    {
-      id: "30",
-      title: "Tratamento térmicos e termoquímicos de ligas metálicas",
+      title: "Química Fundamental",
+      imagem: `${QuimicaFundamental}`,
+      objetivo:
+        "Transmitir ao aluno conceitos básicos dos conhecimentos da química fundamental",
+      carga: "20 horas.",
+      conteudo:
+        "Estrutura Atômica. Equações Químicas e Estequiometria. Ligações Químicas. Reações de Oxi-Redução. Compostos do Carbono. Química de Materiais e Processos.",
     },
   ];
+ 
   const [elementosAbertos, setElementosAbertos] = useState({});
 
   function handleToggleElemento(id) {
