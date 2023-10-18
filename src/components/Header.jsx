@@ -3,7 +3,6 @@ import Logo from "../assets/Logo.svg";
 import { FiMenu } from "react-icons/fi";
 import { RiCloseFill } from "react-icons/ri";
 import { BsWhatsapp } from "react-icons/bs";
-import {  NavLink } from "react-router-dom";
 
 export function Header() {
   const [open, setOpen] = useState();
@@ -33,14 +32,13 @@ export function Header() {
       name: "treinamentos",
       text: "Treinamentos",
     },
-    
+
     {
       id: "6",
       name: "contato",
       text: "Contato",
     },
   ];
-  
 
   const handleMenuOpen = () => {
     setOpen(!open);
@@ -49,7 +47,9 @@ export function Header() {
 
   return (
     <header className="flex  flex-col  justify-center items-center max-w-6xl  ">
-      <a target="_blank" rel="noreferrer"
+      <a
+        target="_blank"
+        rel="noreferrer"
         href="https://api.whatsapp.com/send/?phone=92982653945&text&type=phone_number&app_absent=0"
         className="fixed top-[40%] right-2 bg-green-300 p-2.5 rounded-full shadow-2.5xl z-20 hover:scale-110"
       >
@@ -82,46 +82,43 @@ export function Header() {
       </nav>
       {open ? (
         <div className="lg:hidden nox-2 pt-2 pb-3 space-y-1 sm:px-3 flex items-center flex-col transition-all duration-500">
-          
-            <a 
-              href='/'
-              className="text-WHITE p-3 hover:bg-blue-900 rounded-md hover:text-opacity-80 font-bold font-sans transition-all duration-500	"
-            >
-              Home
-            </a>
-            <a 
-              href='/quem-somos'
-              className="text-WHITE p-3 hover:bg-blue-900 rounded-md hover:text-opacity-80 font-bold font-sans transition-all duration-500	"
-            >
-              Quem somos
-            </a>
-            <a 
-              href='/equipe'
-              className="text-WHITE p-3 hover:bg-blue-900 rounded-md hover:text-opacity-80 font-bold font-sans transition-all duration-500	"
-            >
-              Equipe
-            </a>
-            <a 
-              href='/servicos'
-              className="text-WHITE p-3 hover:bg-blue-900 rounded-md hover:text-opacity-80 font-bold font-sans transition-all duration-500	"
-            >
-              Serviços
-            </a>
-            <a 
-              href='/treinamentos'
-              className="text-WHITE p-3 hover:bg-blue-900 rounded-md hover:text-opacity-80 font-bold font-sans transition-all duration-500	"
-            >
-              Treinamentos
-            </a>
-            <a 
-              href='/contato'
-              className="text-WHITE p-3 hover:bg-blue-900 rounded-md hover:text-opacity-80 font-bold font-sans transition-all duration-500	"
-            >
-              Contato
-            </a>
-         
-          </div>
-        
+          <a
+            href="/"
+            className="text-WHITE p-3 hover:bg-blue-900 rounded-md hover:text-opacity-80 font-bold font-sans transition-all duration-500	"
+          >
+            Home
+          </a>
+          <a
+            href="/quem-somos"
+            className="text-WHITE p-3 hover:bg-blue-900 rounded-md hover:text-opacity-80 font-bold font-sans transition-all duration-500	"
+          >
+            Quem somos
+          </a>
+          <a
+            href="/equipe"
+            className="text-WHITE p-3 hover:bg-blue-900 rounded-md hover:text-opacity-80 font-bold font-sans transition-all duration-500	"
+          >
+            Equipe
+          </a>
+          <a
+            href="/servicos"
+            className="text-WHITE p-3 hover:bg-blue-900 rounded-md hover:text-opacity-80 font-bold font-sans transition-all duration-500	"
+          >
+            Serviços
+          </a>
+          <a
+            href="/treinamentos"
+            className="text-WHITE p-3 hover:bg-blue-900 rounded-md hover:text-opacity-80 font-bold font-sans transition-all duration-500	"
+          >
+            Treinamentos
+          </a>
+          <a
+            href="/contato"
+            className="text-WHITE p-3 hover:bg-blue-900 rounded-md hover:text-opacity-80 font-bold font-sans transition-all duration-500	"
+          >
+            Contato
+          </a>
+        </div>
       ) : null}
     </header>
   );

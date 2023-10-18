@@ -24,6 +24,13 @@ import MetrologiaBasica from "../assets/img/treinamentos/metrologiaBasica.png";
 import GerenciaDeRiscos from "../assets/img/treinamentos/gerenciaDeRiscos.png";
 import EnsaiosMecanicos from "../assets/img/treinamentos/ensaiosMecanicos.png";
 import DesenhoTecnico from "../assets/img/treinamentos/desenhoTecnico.png";
+import Impressao3D2 from "../assets/img/treinamentos/impressao3D-2.png";
+import Tolerancia from "../assets/img/treinamentos/tolerancia.png";
+import GestaoDeQualidade from "../assets/img/treinamentos/gestaoDeQualidade.png";
+import Programa8S from "../assets/img/treinamentos/programa8S.png";
+import Impressao3D from "../assets/img/treinamentos/impressao3D.png";
+import LeanEnterprise from "../assets/img/treinamentos/leanEnterprise.png";
+import GestaoDeProjetos from "../assets/img/treinamentos/gestaoDeProjetos.png";
 
 export default function Trainings() {
   const treinamentosTeste = [
@@ -226,6 +233,76 @@ export default function Trainings() {
       carga: "20 horas (20 a 25 alunos)",
       conteudo:
         "1. Introdução ao Desenho Técnico; 1.1 História do Desenho e tipos de desenho; 1.2 Equipamentos tradicionais e ferramentas computacionais; 1.3 Elementos Fundamentais do Desenho; 1.4 Projeções Ortogonais; 1.5 Escalas Usuais, Tipos de Linhas e Planos de Trabalho. 2. Elaboração do Desenho Técnico; 2.1 Vistas Ortográficas; 2.2 Vistas Ortográficas Externas; 2.3 Vistas Ortográficas Auxiliares; 2.4 Vistas Ortográficas Seccionais (Cortes); 2.5 Corte Pleno; 2.6 Meio Corte; 2.7 Corte Parcial; 2.8 Regras de Dimensionamento (Cotagem); 2.9 Vistas Axonométricas – Perspectivas. 3. Especficações e Simbologias do Desenho Técnico; 3.1 Acabamento de superfícies; 3.2 Tolerâncias Dimensionais; 3.3 Tolerâncias Geométricas; 3.4 Tolerâncias de Forma e Posição; 3.5 Simbologia de Soldagem; 3.6 Representação de Conjuntos Montados",
+    },
+    {
+      id: "21",
+      title: "Indústria 4.0: Impressão 3D",
+      imagem: `${Impressao3D2}`,
+      objetivo:
+        "Apresentar a Indústria 4.0, propiciando ao aluno a introdução ao tema e a obtenção da base conceitual das tecnologias habilitadoras que suportam a Indústria 4.0. Introduzir técnicas de impressão 3D.",
+      carga: "30 horas (20 alunos)",
+      conteudo:
+        "1. Introdução a indústria 4.0: Evolução Industrial, Internet das Coisas, Big Data, Robótica Avançada, Segurança Digital, Computação em Nuvem, Manufatura Digital, Manufatura Aditiva, Integração de Sistemas. 2. Impressão 3D: Constituição de uma impressora 3D, Verificar o funcionamento de impressora 3D e suas possibilidades de fabricação, Aprender a analisar qualidade de uma impressora, Marcas e modelos disponíveis no mercado, Materiais aplicados na impressão 3D, Entender como funciona o processo de preparação do modelo, geração de arquivo para impressão 3D, Dicas de modelagem para economizar e ter maior qualidade, Quais são os principais programas de modelagem utilizados para a impressão 3D, As técnicas de acabamento mais comuns, Aprender a orçar serviços de impressão.",
+    },
+    {
+      id: "22",
+      title: "Análise de Tolerâncias e Ajustes",
+      imagem: `${Tolerancia}`,
+      objetivo:
+        "Transmitir o conhecimento sobre a metodologia, especificações e simbologias das tolerâncias dimensionais e geométricas a fim de possibilitar para a escolha correta do tipo de ajuste mecânico a ser adotado dentro de um projeto.",
+      carga: "20 horas (20 a 25 alunos)",
+      conteudo:
+        "1. Tolerâncias Dimensionais e Ajustes; 1.1 Sistemas de ajustes; 1.2 Tipos de dimensões em um ajuste; 1.3 Dimensões limites; 1.4 Tolerância, conceituação; 1.5 Sistemas Furo-Base e Eixo-Base; Linha Zero e Afastamentos; 1.6 Tipos de ajustes; Folga, Interferência e Incertos; 1.7 Parâmetros de análise; Tolerância Fundamental, Campos de Tolerância e Afastamentos; 1.8 Regras de cálculo para determinação de afastamento; 1.9 Análise de ajustes. 2. Tolerâncias Geométricas de Forma; 2.1 Utilização; 2.2 Simbologia gráfica; 2.3 Superfícies de Referência. 2.4 Tolerâncias de Forma para Elementos Isolados: 2.4.1 Tolerâncias de Linhas - Retilineidade, Circularidade, Forma de linha qualquer; 2.4.2 Tolerâncias de Superfície  Planicidade, Cilindricidade, Forma de superfície qualquer. 3. Tolerâncias Geométricas de Orientação e Posição; 3.1 Tolerâncias de Orientação  Paralelismo, Perpendicularidade, Inclinação; 3.2 Tolerâncias de Posição - Localização, Concentricidade/coaxialidade, Simetria, Batimento.",
+    },
+    {
+      id: "23",
+      title: "Gestão da Qualidade",
+      imagem: `${GestaoDeQualidade}`,
+      objetivo:
+        "Desenvolver uma visão sistêmica do produto,processo e serviços dentro dos requisitos da Qualidade, despertando a capacidade de visualizar e melhorar continuamente processos e serviços prestados, estimulando a capacidade individual de ser um facilitador/colaborador dentro de um Sistema de Gestão da Qualidade.",
+      carga: "20 horas (20 a 25 alunos)",
+      conteudo:
+        "1. O que é Qualidade; 1.1- Evolução e Fases; 1.2- Conceituação moderna da Qualidade e seus autores – Deming, Juran, Crosby, Figenbaum, Ishikawa. 2. Sistema de Gestão da Qualidade; 2.1- Sistemas e processos padronizados. Ciclo PDCA; 2.2 - Normas da Qualidade – Família NBR ISO 9000; 2.3 - NBR ISO 9001 – Sistema de Gestão da Qualidade; 2.4 - Processo de Certificação Normalizada – Importância de adoção da Norma; 2.5- Sistema de Gestão Ambiental – Sustentabilidade ; 2.6- Metabolismo Industrial; 2.7- Sistema de Gestão Integrada – SGI. 3. Filosofia da Qualidade Total; 3.1- TQC – Total Quality Control; 3.2- TQM – Total Quality Management; 3.3- Confiabilidade de produtos e serviços; 3.4- Confiabilidade e fator humano; 3.5- Ferramentas de análise e gerenciamento da Qualidade; 3.6- Melhoria Contínua – Kaizen.",
+    },
+    {
+      id: "24",
+      title: "Programa 8S’s na prática",
+      imagem: `${Programa8S}`,
+      objetivo:
+        "Transmitir o conhecimento sobre a metodologia 8S, buscando estruturar as bases da cultura individual e organizacional orientada para os princípios da Qualidade de excelência e melhoria contínua.",
+      carga: "20 horas (20 a 25 alunos)",
+      conteudo:
+        "1. A metodologia dos 5S’s.; 1.1- Criação e história; 1.2- Importância da mudança para a evolução; 1.3- Os 5S’s como diferencial de evolução individual; 1.4 - O que é o Programa 5S’s; Conceituação de Senso. 2. A metodologia dos 8S’s; 2.1 – Significados e Objetivos do Programa 8S’s; 2.2 – O que o 8S’s vem acrescentar ao 5S’s; 2.3 – Estrutura da metodologia, Sensos: Shikari Yaro (Senso de Determinação e União), Shido (Senso de Treinamento), Seiri (Senso de Utilização), Seiton (Senso de Ordenação), Seiso (Senso de Limpeza), Seiketsu (Senso de Saúde), Shitsuke (Senso de Autodisciplina), Setsuyaku (Senso de combate ao desperdício). 3. Implantação do Programa 8S’s; 3.1- Etapas para a implantação; 3.2 - Diagnóstico e avaliação de continuidade; 3.3- Abordagem sobre desperdício; 3.4- Melhoria contínua - Kaizen",
+    },
+    {
+      id: "25",
+      title: "Modelagem e Impressão 3D",
+      imagem: `${Impressao3D}`,
+      objetivo:
+        "Abordar a modelagem básica 3D em geral, partindo de modelagem de peças simples até dos processos mais técnicos e profissionais em modelagem 3D CAD, abordando técnicas e ferramentas com projetos passo a passo.",
+      carga: "30 horas (20 alunos)",
+      conteudo:
+        "1. Introdução a indústria 4.0: Evolução Industrial, Internet das Coisas, Big Data, Robótica Avançada, Segurança Digital, Computação em Nuvem, Manufatura Digital, Manufatura Aditiva, Integração de Sistemas. 2. Impressão 3D: Constituição de uma impressora 3D, verificar o funcionamento de impressora 3D e suas possibilidades de fabricação, aprender a analisar qualidade de uma impressora, marcas e modelos disponíveis no mercado, materiais aplicados na impressão 3D, entender como funciona o processo de preparação do modelo, geração de arquivo para impressão 3D,dicas de modelagem para economizar e ter maior qualidade, quais são os principais programas de modelagem utilizados para a impressão 3D, as técnicas de acabamento mais comuns, aprender a orçar serviços de impressão.",
+    },
+    {
+      id: "26",
+      title: "Lean Enterprise",
+      imagem: `${LeanEnterprise}`,
+      objetivo:
+        "O Programa elaborado por Professores da Escola Superior de Tecnologia da UEA, consiste em uma imersão nos conceitos e ferramentas do pensamento LEAN, que buscam a melhoria contínua nos processos da empresa, agregando valor, aumentando a satisfação do cliente e reduzindo as perdas dentro do sistema.",
+      carga: "40 horas (20 alunos)",
+      conteudo:
+        "1. Início da jornada Lean. 2. Pensamento Enxuto. 3. Pessoas, o Coração do Enxuto. 4. Mapeando o Fluxo de Valor 5. Simulação de Negócios. 6. Cadeia de Suprimento Lean. 7. Engenharia Lean. 8. Ferramentas de Qualidade. 9. Bases do Six Sigma. 10. A Influência da Variabilidade e Pensamento A3.",
+    },
+    {
+      id: "27",
+      title: "Noções Básicas de Gestão de Projetos",
+      imagem: `${GestaoDeProjetos}`,
+      objetivo:
+        "Conhecer na prática as etapas de um projeto através da elaboração e acompanhamento de um projeto real. Definição de projeto. O ciclo de vida do projeto. Tipos de projetos. Gerenciamentos de projetos e o gerente de projetos. Fatores humanos envolvidos. Gerenciamento do Risco. Orçamento do projeto. Alocação de recursos. Monitoração e sistemas de informação. Indicadores de desempenho do projeto. Projeto integrado.",
+      carga: "40 horas",
+      conteudo:
+        "1. Definição de projeto. 2: Gerenciamento de projetos e o gerente de projetos. PMI. PMBok. 3. Fatores humanos envolvidos em projetos. 4. Desenvolvimento prático do projeto utilizando o PM Canvas. 5: Declaração do escopo do projeto. 6: Recursos do projeto, estimativa de duração de atividades/cronograma. 7: Critérios de qualidade, riscos e orçamento do projeto.  8: Alocação de recursos, monitoraçãoTes e sistemas de informação do andamento do projeto. Módulo 9: Sistemas de comunicação em projetos, indicadores de desempenho e integração do projeto. Módulo 10: Finalização do projeto prático e socialização com participantes.",
     },
   ];
 
