@@ -24,11 +24,11 @@ import MetrologiaBasica from "../assets/img/treinamentos/metrologiaBasica.png";
 import GerenciaDeRiscos from "../assets/img/treinamentos/gerenciaDeRiscos.png";
 import EnsaiosMecanicos from "../assets/img/treinamentos/ensaiosMecanicos.png";
 import DesenhoTecnico from "../assets/img/treinamentos/desenhoTecnico.png";
-import Impressao3D2 from "../assets/img/treinamentos/impressao3D2.png";
+import Impressao3D2 from "../assets/img/treinamentos/impressaoImagemDois.png";
 import Tolerancia from "../assets/img/treinamentos/tolerancia.png";
 import GestaoDeQualidade from "../assets/img/treinamentos/gestaoDeQualidade.png";
 import Programa8S from "../assets/img/treinamentos/programa8S.png";
-import Impressao3D from "../assets/img/treinamentos/impressao3D.png";
+import Impressao3D from "../assets/img/treinamentos/impressao.png";
 import LeanEnterprise from "../assets/img/treinamentos/leanEnterprise.png";
 import GestaoDeProjetos from "../assets/img/treinamentos/gestaoDeProjetos.png";
 
