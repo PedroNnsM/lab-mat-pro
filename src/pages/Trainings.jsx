@@ -28,7 +28,7 @@ import Impressao3D2 from "../assets/img/treinamentos/impressaoImagemDois.png";
 import Tolerancia from "../assets/img/treinamentos/tolerancia.png";
 import GestaoDeQualidade from "../assets/img/treinamentos/gestaoDeQualidade.png";
 import Programa8S from "../assets/img/treinamentos/programa8S.png";
-import Impressao3D from "../assets/img/treinamentos/impressao.png";
+import Impressao3D from "../assets/img/treinamentos/imagem.png";
 import LeanEnterprise from "../assets/img/treinamentos/leanEnterprise.png";
 import GestaoDeProjetos from "../assets/img/treinamentos/gestaoDeProjetos.png";
 
