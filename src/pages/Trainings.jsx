@@ -367,7 +367,7 @@ export default function Trainings() {
                         {item.title}
                       </h3>
                       <span className="text-lg text-black-900 font-bold ">
-                        Obejtivo Geral:
+                        Objetivo Geral:
                       </span>
                       <span className="text-sm  font-normal ">
                         {item.objetivo}
