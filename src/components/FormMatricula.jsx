@@ -3,7 +3,7 @@ import { User, Envelope, DeviceMobileCamera } from "@phosphor-icons/react";
 
 export default function FormMatricula() {
   return (
-    <div className="w-full max-w-6xl  mx-4 mb-5 border-spacing-1 ">
+    <div className="w-full max-w-6xl  mx-4 my-6 border-spacing-1 ">
       <div className="flex gap-3  shadow-2.5xl rounded-lg">
         <img className=" w-[40%]" src={ImagemSolda} alt="" />
         <div className="p-3 flex flex-col items-center justify-between flex-1 mx-10">

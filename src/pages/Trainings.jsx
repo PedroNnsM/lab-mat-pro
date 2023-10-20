@@ -385,6 +385,7 @@ export default function Trainings() {
         </div>
       </main>
       <FormMatricula />
+      <button className="bg-gradient-to-br relative from-blue-500 from-10%  via-blue-800 to-blue-900 to-100% w-1/4 mb-6 text-WHITE font-semibold text-2xl py-4 rounded-lg hover:brightness-90"> Voltar para o topo</button>
       <Footer />
     </div>
   );
