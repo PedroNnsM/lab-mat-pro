@@ -95,7 +95,7 @@ export default function Team() {
           <Header />
         </div>
       </div>
-      <section className="flex max-w-5xl flex-col mx-6">
+      <section className="flex max-w-6xl flex-col mx-6">
         <TitlePages title="Equipe" />
         {team.map((person) => {
           return (

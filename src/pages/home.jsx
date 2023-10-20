@@ -254,12 +254,13 @@ export default function Home() {
         </div>
         <iframe
           className="w-full h-96"
-          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3943.1024482800103!2d-67.335075!3d-8.7764315!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x922a0baad4d593ff%3A0x98c2b5023f06a052!2sUniversidade%20do%20Estado%20do%20Amazonas!5e0!3m2!1spt-BR!2sca!4v1697108679031!5m2!1spt-BR!2sca"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.0113157218975!2d-60.017234900000005!3d-3.0916466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x926c1aa5ab5c0415%3A0xf94cde9065387a9a!2sEscola%20Superior%20De%20Tecnologia%20-%20EST%2FUEA!5e0!3m2!1spt-BR!2sca!4v1697716715466!5m2!1spt-BR!2sca"
           style={{ border: "0" }}
           allowFullScreen=""
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
+        
         <div className="flex flex-col items-center my-8">
           <h3 className="mx-auto font-bold mb-6 text-grey-700 text-2xl  tracking-wider ">
             Contate-nos

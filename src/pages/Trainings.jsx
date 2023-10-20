@@ -3,7 +3,6 @@ import { useState } from "react";
 import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
 import { TitlePages } from "../components/TitlePages";
-import ImagemSolda from "../assets/img/microscopio.png";
 import DegradacaoDoPlastico from "../assets/img/treinamentos/degradacaoDoPlastico.png";
 import AnaliseDeFalhas from "../assets/img/treinamentos/analiseDeFalhas.png";
 import PecasPlasticas from "../assets/img/treinamentos/pecasPlasticas.png";
@@ -31,6 +30,7 @@ import Programa8S from "../assets/img/treinamentos/programa8S.png";
 import Impressao3D from "../assets/img/treinamentos/imagem.png";
 import LeanEnterprise from "../assets/img/treinamentos/leanEnterprise.png";
 import GestaoDeProjetos from "../assets/img/treinamentos/gestaoDeProjetos.png";
+import FormMatricula from "../components/FormMatricula";
 
 export default function Trainings() {
   const treinamentosTeste = [
@@ -319,11 +319,11 @@ export default function Trainings() {
   return (
     <div className=" min-h-screen bg-slate-700 flex-col w-full  bg-opacity-40 flex items-center ">
       <div className="flex flex-col items-center bg-gradient-to-br w-full from-blue-500 from-10%  via-blue-800 to-blue-900 to-100% ">
-        <div className="w-xl">
+        <div className="w-xl" id="topo">
           <Header />
         </div>
       </div>
-      <main className="flex items-center w-xl flex-col max-w-4xl mx-6">
+      <main className="flex items-center w-xl flex-col max-w-6xl mx-6">
         <div>
           <TitlePages title="Treinamentos" />
           <p className="text-black-900  ">
@@ -334,19 +334,7 @@ export default function Trainings() {
             oferecem uma base sólida e prática para impulsionar seus
             conhecimentos profissionais na indústria.
           </p>
-          <div className="flex flex-col items-center my-8 w-full">
-            <div className="flex gap-3  shadow-2.5xl mx-4">
-              <img className=" h-56" src={ImagemSolda} alt="" />
-              <div className="p-3 flex flex-col items-center justify-between flex-1">
-                <p className="text-blue-700 font-bold text-xl ">
-                  Ensaio de Materiais e Produtos
-                </p>
-                <button className="bg-gradient-to-br relative from-blue-500 from-10%  via-blue-800 to-blue-900 to-100% w-full text-WHITE font-semibold p-1">
-                  Enviar
-                </button>
-              </div>
-            </div>
-          </div>
+
           <TitlePages title="Conheça nossos cursos disponíveis" />
           <div className="mt-10">
             {treinamentosTeste.map((item) => {
@@ -394,14 +382,13 @@ export default function Trainings() {
               );
             })}
           </div>
-          <img src="" alt="" />
-        </div>
-        <div>
-          <img src="" alt="" />
-          <img src="" alt="" />
-          <img src="" alt="" />
         </div>
       </main>
+      <FormMatricula />
+
+      <button className="bg-gradient-to-br relative from-blue-500 from-10%  via-blue-800 to-blue-900 to-100% w-1/4 mb-10 text-WHITE font-semibold text-2xl py-4 rounded-lg hover:brightness-90">
+        <a href="#topo"> Voltar para o topo</a>
+      </button>
       <Footer />
     </div>
   );
