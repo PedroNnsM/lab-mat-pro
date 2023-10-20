@@ -319,7 +319,7 @@ export default function Trainings() {
   return (
     <div className=" min-h-screen bg-slate-700 flex-col w-full  bg-opacity-40 flex items-center ">
       <div className="flex flex-col items-center bg-gradient-to-br w-full from-blue-500 from-10%  via-blue-800 to-blue-900 to-100% ">
-        <div className="w-xl">
+        <div className="w-xl" id="topo">
           <Header />
         </div>
       </div>
@@ -385,7 +385,10 @@ export default function Trainings() {
         </div>
       </main>
       <FormMatricula />
-      <button className="bg-gradient-to-br relative from-blue-500 from-10%  via-blue-800 to-blue-900 to-100% w-1/4 mb-6 text-WHITE font-semibold text-2xl py-4 rounded-lg hover:brightness-90"> Voltar para o topo</button>
+
+      <button className="bg-gradient-to-br relative from-blue-500 from-10%  via-blue-800 to-blue-900 to-100% w-1/4 mb-10 text-WHITE font-semibold text-2xl py-4 rounded-lg hover:brightness-90">
+        <a href="#topo"> Voltar para o topo</a>
+      </button>
       <Footer />
     </div>
   );
