@@ -323,7 +323,7 @@ export default function Trainings() {
           <Header />
         </div>
       </div>
-      <main className="flex items-center w-xl flex-col max-w-4xl mx-6">
+      <main className="flex items-center w-xl flex-col max-w-6xl mx-6">
         <div>
           <TitlePages title="Treinamentos" />
           <p className="text-black-900  ">
