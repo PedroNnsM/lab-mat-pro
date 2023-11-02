@@ -14,6 +14,7 @@ import { Caloi } from "../assets/Caloi";
 import { Audax } from "../assets/audax";
 import { Eletronorte } from "../assets/Eletronorte";
 import { EUALogo } from "../assets/EUALogo";
+import { Carrousel } from "../components/Carrousel";
 
 const CardItensHeader = [
   {
@@ -182,9 +183,9 @@ export default function Home() {
       </div>
       <section className="h-full max-w-6xl flex flex-col text-center mx-auto bg-WHITE mt-[150px] relative">
         <div className="max-w-xl flex flex-col mx-auto ">
-          <h2 className="mx-10 font-bold  text-2xl text-blue-900">
-            Especialização e treinamento em Engenharia de Materiais e
-            Metalurgica
+          <h2 className="mx-4 font-bold  text-2xl text-blue-900">
+            Soluções em desenvolvimento industrial na área de Engenharia de
+            Materiais e Metalúrgica
           </h2>
         </div>{" "}
         <div
@@ -193,15 +194,7 @@ export default function Home() {
 
         "
         >
-          {itensBanner.map((banner) => {
-            return (
-              <CardBanner
-                key={banner.id}
-                title={banner.title}
-                description={banner.description}
-              />
-            );
-          })}
+          <Carrousel />
         </div>
       </section>
       <main>
@@ -260,7 +253,7 @@ export default function Home() {
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
-        
+
         <div className="flex flex-col items-center my-8">
           <h3 className="mx-auto font-bold mb-6 text-grey-700 text-2xl  tracking-wider ">
             Contate-nos
