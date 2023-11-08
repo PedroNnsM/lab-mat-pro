@@ -1,4 +1,4 @@
-import { BsArrowRightCircleFill, BsArrowLeftCircleFill } from "react-icons/bs";
+import { Carousel, IconButton } from "@material-tailwind/react";
 
 export function Carrousel() {
   const fotos = [
@@ -24,28 +24,12 @@ export function Carrousel() {
     },
   ];
   return (
-    <div className="flex items-center justify-center mx-4 max-w-6xl  max-h-[400px] relative">
-      <BsArrowLeftCircleFill className="absolute" />
-      {fotos.map((item, idx) => {
-        return (
-          <img
-            className="w-full h-full"
-            src={item.img}
-            alt={item.alt}
-            key={idx}
-          />
-        );
-      })}
-      <BsArrowRightCircleFill />
-      <span className="">
-        {fotos.map((_, idx) => {
-          return (
-            <button key={idx} onClick={null}>
-              {" "}
-            </button>
-          );
+    <div className="overflow-hidden">
+      <div className="flex">
+        {fotos.map((item, index) => {
+          return <img src={item.img} alt={item.alt} key={index} />;
         })}
-      </span>
+      </div>
     </div>
   );
 }

@@ -4,7 +4,6 @@ import { FaMicroscope } from "react-icons/fa";
 import { TbCertificate } from "react-icons/tb";
 import { BiSearchAlt } from "react-icons/bi";
 import CardHeader from "../components/CardHeader";
-import { CardBanner } from "../components/CardBanner";
 import { Footer } from "../components/Footer";
 import { CardHorizontal } from "../components/CardHorizontal";
 
@@ -43,26 +42,7 @@ const CardItensHeader = [
   },
 ];
 
-const itensBanner = [
-  {
-    id: "1",
-    title: "Análise de materiais",
-    description:
-      "Os processos metalúrgicos produzem e transformam os metais em produtos para o nosso uso.",
-  },
-  {
-    id: "2",
-    title: "Desenvolvimento de processos metalúrgicos",
-    description:
-      "Os processos metalúrgicos produzem e transformam os metais em produtos para o nosso uso.",
-  },
-  {
-    id: "3",
-    title: "Desenvolvimento de processos metalúrgicos",
-    description:
-      "Os processos metalúrgicos produzem e transformam os metais em produtos para o nosso uso.",
-  },
-];
+
 
 const itensHorizontalServicos = [
   {
@@ -188,14 +168,9 @@ export default function Home() {
             Materiais e Metalúrgica
           </h2>
         </div>{" "}
-        <div
-          className="flex mt-24 flex-col items-center justify-center mx-auto gap-4
-        md:flex-row md:gap-8 md:justify-between md:mx-6
-
-        "
-        >
+        
           <Carrousel />
-        </div>
+        
       </section>
       <main>
         <div className="flex flex-col items-center my-8">
