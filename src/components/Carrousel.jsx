@@ -1,4 +1,4 @@
-import { Carousel, IconButton } from "@material-tailwind/react";
+import { BsFillArrowRightCircleFill, BsFillArrowLeftCircleFill } from "react-icons/bs";
 
 export function Carrousel() {
   const fotos = [
@@ -24,11 +24,19 @@ export function Carrousel() {
     },
   ];
   return (
-    <div className="overflow-hidden">
+    <div className="overflow-hidden relative">
       <div className="flex">
         {fotos.map((item, index) => {
           return <img src={item.img} alt={item.alt} key={index} />;
         })}
+      </div>
+      <div className="">
+        <button>
+          <BsFillArrowLeftCircleFill />
+        </button>
+        <button>
+          <BsFillArrowRightCircleFill />
+        </button>
       </div>
     </div>
   );
