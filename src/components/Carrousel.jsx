@@ -49,7 +49,7 @@ export function Carrousel() {
   };
 
   return (
-    <div className="overflow-hidden relative">
+    <div className="overflow-hidden relative ">
       <div
         className={`flex transition ease-out duration-75 `}
         style={{
