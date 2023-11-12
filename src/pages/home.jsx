@@ -1,12 +1,13 @@
+import CardHeader from "../components/CardHeader";
+import { Footer } from "../components/Footer";
+import { CardHorizontal } from "../components/CardHorizontal";
 import { Header } from "../components/Header";
 
+import { SlGraduation } from "react-icons/sl";
 import { FaMicroscope } from "react-icons/fa";
 import { TbCertificate } from "react-icons/tb";
 import { BiSearchAlt } from "react-icons/bi";
-import CardHeader from "../components/CardHeader";
-import { CardBanner } from "../components/CardBanner";
-import { Footer } from "../components/Footer";
-import { CardHorizontal } from "../components/CardHorizontal";
+import { MdOutlineArticle, MdQueryStats } from "react-icons/md";
 
 import { Vetores } from "../assets/vetores";
 import ImagemSolda from "../assets/img/microscopio.png";
@@ -14,6 +15,7 @@ import { Caloi } from "../assets/Caloi";
 import { Audax } from "../assets/audax";
 import { Eletronorte } from "../assets/Eletronorte";
 import { EUALogo } from "../assets/EUALogo";
+import { Carrousel } from "../components/Carrousel";
 
 const CardItensHeader = [
   {
@@ -42,53 +44,6 @@ const CardItensHeader = [
   },
 ];
 
-const itensBanner = [
-  {
-    id: "1",
-    title: "Análise de materiais",
-    description:
-      "Os processos metalúrgicos produzem e transformam os metais em produtos para o nosso uso.",
-  },
-  {
-    id: "2",
-    title: "Desenvolvimento de processos metalúrgicos",
-    description:
-      "Os processos metalúrgicos produzem e transformam os metais em produtos para o nosso uso.",
-  },
-  {
-    id: "3",
-    title: "Desenvolvimento de processos metalúrgicos",
-    description:
-      "Os processos metalúrgicos produzem e transformam os metais em produtos para o nosso uso.",
-  },
-];
-
-const itensHorizontalServicos = [
-  {
-    id: "1",
-    title: "Engenharia Reversa",
-    description:
-      "A engenharia reversa é o processo de descobrir os princípios tecnológicos de um dispositivo ou equipamento.",
-  },
-  {
-    id: "2",
-    title: "Análise de elementos Finitos (MEF)",
-    description:
-      "Possibilita a determinação dos esforços em qualquer tipo de projeto e processo de fabricação.",
-  },
-  {
-    id: "3",
-    title: "Integridade Estrutural API 579 e BS 7910",
-    description:
-      "Nossos especialistas são altamente experientes no desenvolvimento e aplicações de técnicas FFS, particularmente para evitar fraturas frágeis e dúcteis.",
-  },
-  {
-    id: "4",
-    title: "Análise de falhas",
-    description:
-      "Nossos especialistas são altamente experientes no desenvolvimento e aplicações de técnicas FFS, particularmente para evitar fraturas frágeis e dúcteis.",
-  },
-];
 const itensHorizontalCursos = [
   {
     id: "1",
@@ -181,44 +136,38 @@ export default function Home() {
         </div>
       </div>
       <section className="h-full max-w-6xl flex flex-col text-center mx-auto bg-WHITE mt-[150px] relative">
-        <div className="max-w-xl flex flex-col mx-auto ">
-          <h2 className="mx-10 font-bold  text-2xl text-blue-900">
-            Especialização e treinamento em Engenharia de Materiais e
-            Metalurgica
+        <div className=" flex flex-col mx-4 gap-5">
+          <h2 className=" font-bold  text-2xl text-blue-900 ">
+            Soluções em desenvolvimento industrial na área de Engenharia de
+            Materiais e Metalúrgica
           </h2>
-        </div>{" "}
-        <div
-          className="flex mt-24 flex-col items-center justify-center mx-auto gap-4
-        md:flex-row md:gap-8 md:justify-between md:mx-6
-
-        "
-        >
-          {itensBanner.map((banner) => {
-            return (
-              <CardBanner
-                key={banner.id}
-                title={banner.title}
-                description={banner.description}
-              />
-            );
-          })}
+          <Carrousel />
         </div>
       </section>
       <main>
         <div className="flex flex-col items-center my-8">
           <h3 className="mx-auto font-bold text-grey-700 text-2xl  tracking-wider ">
-            Nossos serviços
+            Nossos laboratórios em números
           </h3>
-          <div className="mt-5 grid grid-cols-4 w-full">
-            {itensHorizontalServicos.map((banner) => {
-              return (
-                <CardHorizontal
-                  key={banner.id}
-                  title={banner.title}
-                  description={banner.description}
-                />
-              );
-            })}
+          <div className="mt-5 flex justify-between w-full max-w-xl mx-4">
+            <div className="flex items-center justify-center flex-col max-w-xl ">
+              <MdOutlineArticle className="text-blue-900 text-5xl text-center" />
+              <p className="text-3xl font-bold mt-2 text-blue-900">+250</p>
+              <p className="font-medium text-blue-900 text-xl">Artigos</p>
+              <p className="font-medium text-blue-900 text-xl">publicados</p>
+            </div>
+            <div className="flex items-center justify-center flex-col max-w-xl ">
+              <SlGraduation className="text-blue-900 text-5xl text-center" />
+              <p className="text-3xl font-bold mt-2 text-blue-900">+300</p>
+              <p className="font-medium text-blue-900 text-xl">Alunos</p>
+              <p className="font-medium text-blue-900 text-xl">Capacitados</p>
+            </div>
+            <div className="flex items-center justify-center flex-col max-w-xl ">
+              <MdQueryStats className="text-blue-900 text-5xl text-center" />
+              <p className="text-3xl font-bold mt-2 text-blue-900">+45</p>
+              <p className="font-medium text-blue-900 text-xl">Projetos</p>
+              <p className="font-medium text-blue-900 text-xl">realizados</p>
+            </div>
           </div>
         </div>
         <div className="flex flex-col items-center my-8">
@@ -260,7 +209,7 @@ export default function Home() {
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
-        
+
         <div className="flex flex-col items-center my-8">
           <h3 className="mx-auto font-bold mb-6 text-grey-700 text-2xl  tracking-wider ">
             Contate-nos
