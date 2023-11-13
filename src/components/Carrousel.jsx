@@ -1,8 +1,8 @@
 import { useState } from "react";
 import {
-  BsFillArrowRightCircleFill,
-  BsFillArrowLeftCircleFill,
-} from "react-icons/bs";
+  IoIosArrowForward,
+  IoIosArrowBack,
+} from "react-icons/io";
 
 export function Carrousel() {
   const fotos = [
@@ -49,9 +49,10 @@ export function Carrousel() {
   };
 
   return (
-    <div className="overflow-hidden relative ">
+    <div className="overflow-hidden relative max-w-3xl opacity-90 rounded-lg after:absolute after:top-0 after:left-0 after:w-full after:h-full after:bg-blue-500 after:opacity-25  ">
+        
       <div
-        className={`flex transition ease-out duration-75 `}
+        className={`flex transition ease-out duration-75  `}
         style={{
           transform: `translateX(-${current * 100}%)`,
         }}
@@ -59,7 +60,7 @@ export function Carrousel() {
         {fotos.map((item) => {
           return (
             <img
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover "
               src={item.img}
               alt={item.alt}
               key={item.id}
@@ -70,10 +71,10 @@ export function Carrousel() {
       </div>
       <div className="absolute top-0 h-full w-full justify-between items-center flex z-10 text-WHITE px-4 text-3xl">
         <button onClick={previousSlide}>
-          <BsFillArrowLeftCircleFill />
+          <IoIosArrowBack />
         </button>
         <button onClick={nextSlide}>
-          <BsFillArrowRightCircleFill />
+          <IoIosArrowForward />
         </button>
       </div>
       <div className=" absolute bottom-0 py-4 flex justify-center w-full gap-3">
