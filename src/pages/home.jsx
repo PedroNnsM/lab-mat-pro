@@ -136,10 +136,10 @@ export default function Home() {
         </div>
       </div>
       <section className="h-full max-w-6xl flex flex-col text-center mx-auto bg-WHITE mt-[150px] relative">
-        <div className=" flex flex-col mx-4 gap-5">
+        <div className=" flex flex-col mx-4 gap-5 items-center">
           <h2 className=" font-bold  text-2xl text-blue-900 ">
-            Soluções em desenvolvimento industrial na área de Engenharia de
-            Materiais e Metalúrgica
+            Soluções em desenvolvimento industrial na área de
+            <br /> Engenharia de Materiais e Metalúrgica
           </h2>
           <Carrousel />
         </div>
