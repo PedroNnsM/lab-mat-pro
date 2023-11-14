@@ -1,6 +1,5 @@
 import CardHeader from "../components/CardHeader";
 import { Footer } from "../components/Footer";
-import { CardHorizontal } from "../components/CardHorizontal";
 import { Header } from "../components/Header";
 
 import { SlGraduation } from "react-icons/sl";
@@ -41,33 +40,6 @@ const CardItensHeader = [
       "Soluções avançadas para atender às necessidades específicas da sua indústria.",
     img: <BiSearchAlt size={40} />,
     color: "bg-blue-500",
-  },
-];
-
-const itensHorizontalCursos = [
-  {
-    id: "1",
-    title: "Engenharia Reversa",
-    description:
-      "A engenharia reversa é o processo de descobrir os princípios tecnológicos de um dispositivo ou equipamento.",
-  },
-  {
-    id: "2",
-    title: "Análise de elementos Finitos (MEF)",
-    description:
-      "Possibilita a determinação dos esforços em qualquer tipo de projeto e processo de fabricação.",
-  },
-  {
-    id: "3",
-    title: "Integridade Estrutural API 579 e BS 7910",
-    description:
-      "Nossos especialistas são altamente experientes no desenvolvimento e aplicações de técnicas FFS, particularmente para evitar fraturas frágeis e dúcteis.",
-  },
-  {
-    id: "4",
-    title: "Análise de falhas",
-    description:
-      "Nossos especialistas são altamente experientes no desenvolvimento e aplicações de técnicas FFS, particularmente para evitar fraturas frágeis e dúcteis.",
   },
 ];
 
@@ -145,11 +117,11 @@ export default function Home() {
         </div>
       </section>
       <main>
-        <div className="flex flex-col items-center my-8">
+        <div className="flex flex-col items-center my-8 mx-4">
           <h3 className="mx-auto font-bold text-grey-700 text-2xl  tracking-wider ">
             Nossos laboratórios em números
           </h3>
-          <div className="mt-5 flex justify-between w-full max-w-xl mx-4">
+          <div className="mt-5 flex justify-between w-full max-w-xl ">
             <div className="flex items-center justify-center flex-col max-w-xl ">
               <MdOutlineArticle className="text-blue-900 text-5xl text-center" />
               <p className="text-3xl font-bold mt-2 text-blue-900">+250</p>
@@ -170,20 +142,34 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col items-center my-8">
-          <h3 className="mx-auto font-bold text-grey-700 text-2xl  tracking-wider ">
-            Nossos Cursos
-          </h3>
-          <div className="mt-5 grid grid-cols-4 w-full">
-            {itensHorizontalCursos.map((banner) => {
-              return (
-                <CardHorizontal
-                  key={banner.id}
-                  title={banner.title}
-                  description={banner.description}
-                />
-              );
-            })}
+        <div className="flex flex-col items-center my-8 mx-4">
+          <div className="mt-5 grid grid-cols-2 gap-4 mx-4 max-w-4xl w-full">
+            <div className="bg-bg-banner-apresentacao-1 flex justify-center items-center w-full h-full">
+              <img
+                className="w-[60%]"
+                src="https://i.ibb.co/dLFmF2q/Portf-lio-Engenharia-de-Materiais-2.png"
+                alt="Logo Lab Mat Pro"
+              />
+            </div>
+            <div className="relative  after:absolute after:top-0 after:left-0 after:w-full after:h-full after:bg-blue-500 after:opacity-25">
+              <img
+                src="https://i.ibb.co/kJq0bQm/DSCF0489-1.png"
+                alt="Uma pessoa atuando com a analise do material"
+              />
+            </div>
+            <div className="bg-bg-banner-apresentacao-2 flex justify-center items-center w-full h-full">
+              <img
+                className="w-[60%]"
+                src="https://i.ibb.co/dbKcXnC/Group.png"
+                alt="Laboratorio de pesquisa e desenvolvimento"
+              />
+            </div>
+            <div  className="relative  after:absolute after:top-0 after:left-0 after:w-full after:h-full after:bg-blue-500 after:opacity-25">
+              <img
+                src="https://i.ibb.co/1npgRMh/DSCF0618.png"
+                alt="Uma pessoa operando uma maquima"
+              />
+            </div>
           </div>
         </div>
         <div className="flex flex-col items-center my-8">

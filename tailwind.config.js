@@ -40,6 +40,8 @@ export default {
         'banner-jpg': "url('src/assets/img/ImagemBanner.jpg')",
         'banner-svg': "url('src/assets/img/ImagemBanner.svg')",
         'bg-img-dr': "url('src/assets/img/bgImgDr.png')",
+        'bg-banner-apresentacao-1': "url('https://i.ibb.co/mTnK5C3/Apresenta-o-comercial.png')",
+        'bg-banner-apresentacao-2': "url('https://i.ibb.co/M83PTKV/Apresenta-o-comercial3-1.png')",
       },
       boxShadow: {
         "3xl": "0px 0px 30px  rgba(0, 0, 0, 0.3)",
