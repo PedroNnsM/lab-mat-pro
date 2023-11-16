@@ -9,12 +9,12 @@ import { BiSearchAlt } from "react-icons/bi";
 import { MdOutlineArticle, MdQueryStats } from "react-icons/md";
 
 import { Vetores } from "../assets/vetores";
-import ImagemSolda from "../assets/img/microscopio.png";
 import { Caloi } from "../assets/Caloi";
 import { Audax } from "../assets/audax";
 import { Eletronorte } from "../assets/Eletronorte";
 import { EUALogo } from "../assets/EUALogo";
 import { Carrousel } from "../components/Carrousel";
+import FormContato from "../components/FormContato";
 
 const CardItensHeader = [
   {
@@ -143,32 +143,88 @@ export default function Home() {
           </div>
         </div>
         <div className="flex flex-col items-center my-8 mx-4">
-          <div className="mt-5 grid grid-cols-2 gap-4 mx-4 max-w-4xl w-full">
-            <div className="bg-bg-banner-apresentacao-1 flex justify-center items-center w-full h-full">
-              <img
-                className="w-[60%]"
-                src="https://i.ibb.co/dLFmF2q/Portf-lio-Engenharia-de-Materiais-2.png"
-                alt="Logo Lab Mat Pro"
-              />
+          <div>
+            <div className="mt-5 grid grid-cols-2 gap-4 mx-4 max-w-6xl w-full text-WHITE text-justify font-semibold group  transition duration-300 ease-out hover:ease-in">
+              <div
+                className="bg-bg-banner-apresentacao-1 flex justify-center rounded-lg items-center w-full h-full  transition duration-300 ease-out hover:ease-in group-hover:bg-gradient-to-br from-blue-500 from-10%  via-blue-800 to-blue-900 to-100% px-6"
+                style={{
+                  transition: "all",
+                }}
+              >
+                <img
+                  className="w-[60%] group-hover:hidden transition duration-300 ease-out hover:ease-in"
+                  src="https://i.ibb.co/dLFmF2q/Portf-lio-Engenharia-de-Materiais-2.png"
+                  alt="Logo Lab Mat Pro"
+                />
+                <p className="hidden group-hover:block transition duration-300 ease-out hover:ease-in">
+                  <strong> LabMatPro</strong> é um laboratório referência do
+                  norte do Brasil, líder em análises metalográficas, equipado
+                  com tecnologia de ponta que abrange todas as etapas do
+                  processo, desde o corte preciso de amostras até a análise
+                  microscópica detalhada. Nossa equipe altamente qualificada
+                  oferece preparação de amostras de alto nível, identificando
+                  falhas em soldas e oportunidades de melhoria em processamentos
+                  metálicos. Comprometidos com a qualidade e a inovação, estamos
+                  prontos para atender às necessidades complexas da indústria e
+                  da pesquisa, fornecendo resultados confiáveis e soluções
+                  excepcionais.
+                </p>
+              </div>
+              <div className="relative rounded-lg after:absolute after:top-0 after:left-0 after:w-full after:h-full after:rounded-lg after:bg-blue-500 after:opacity-25 transition duration-300 ease-out hover:ease-in">
+                <img
+                  className=" group-hover:hidden transition duration-300 ease-out hover:ease-in"
+                  src="https://i.ibb.co/kJq0bQm/DSCF0489-1.png"
+                  alt="Uma pessoa atuando com a analise do material"
+                />
+                <img
+                  className=" hidden group-hover:block pt-1 transition duration-300 ease-out hover:ease-in"
+                  src="https://i.ibb.co/jyMhY4g/DSCF0464-1.png"
+                  alt="Uma pessoa atuando com a analise do material"
+                />
+              </div>
             </div>
-            <div className="relative  after:absolute after:top-0 after:left-0 after:w-full after:h-full after:bg-blue-500 after:opacity-25">
-              <img
-                src="https://i.ibb.co/kJq0bQm/DSCF0489-1.png"
-                alt="Uma pessoa atuando com a analise do material"
-              />
-            </div>
-            <div className="bg-bg-banner-apresentacao-2 flex justify-center items-center w-full h-full">
-              <img
-                className="w-[60%]"
-                src="https://i.ibb.co/dbKcXnC/Group.png"
-                alt="Laboratorio de pesquisa e desenvolvimento"
-              />
-            </div>
-            <div  className="relative  after:absolute after:top-0 after:left-0 after:w-full after:h-full after:bg-blue-500 after:opacity-25">
-              <img
-                src="https://i.ibb.co/1npgRMh/DSCF0618.png"
-                alt="Uma pessoa operando uma maquima"
-              />
+            <div className="mt-5 grid grid-cols-2 gap-4 mx-4 max-w-6xl w-full text-WHITE text-justify font-semibold group transition duration-300 ease-out hover:ease-in">
+              <div
+                className="bg-bg-banner-apresentacao-1 flex justify-center rounded-lg items-center w-full h-full  transition duration-300 ease-out hover:ease-in group-hover:bg-gradient-to-br from-blue-500 from-10%  via-blue-800 to-blue-900 to-100% px-6"
+                style={{
+                  transition: "all",
+                }}
+              >
+                <img
+                  className="w-[60%] group-hover:hidden transition duration-300 ease-out hover:ease-in"
+                  src="https://i.ibb.co/dbKcXnC/Group.png"
+                  alt="Laboratorio de pesquisa e desenvolvimento"
+                />
+                <p className="hidden group-hover:block transition duration-300 ease-out hover:ease-in">
+                  <strong>
+                    {" "}
+                    P&D Laboratório de Pesquisa e Desenvolvimento
+                  </strong>{" "}
+                  é o epicentro de inovação no Polo Industrial de Manaus. Aqui,
+                  uma equipe especializada colabora com profissionais da
+                  indústria para dar vida a projetos de desenvolvimento de
+                  materiais e processos. Equipado com tecnologia de ponta,
+                  oferecemos a capacidade de realizar ensaios mecânicos de
+                  dureza e microdureza, ensaios dinâmicos mecânicos (DMA),
+                  análises químicas e climáticas, além de fornecer acesso
+                  exclusivo ao microscópio eletrônico de varredura (MEV), um dos
+                  poucos disponíveis na região norte do país. Nossa missão é
+                  impulsionar a inovação, auxiliando nossos clientes a alcançar
+                  excelência em seus projetos de desenvolvimento.
+                </p>
+              </div>
+              <div className="relative  after:absolute after:top-0 rounded-lg after:left-0 after:w-full after:h-full after:rounded-lg after:bg-blue-500 after:opacity-25 transition duration-300 ease-out hover:ease-in">
+                <img
+                  className="  group-hover:hidden transition duration-300 ease-out hover:ease-in"
+                  src="https://i.ibb.co/1npgRMh/DSCF0618.png"
+                  alt="Uma pessoa operando uma maquima"
+                />
+                <img
+                  className=" hidden group-hover:block pt-1 transition duration-300 ease-out hover:ease-in"
+                  src="https://i.ibb.co/p2TBrFb/DSCF0654.png"
+                  alt="Uma pessoa atuando com a analise do material"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -200,17 +256,7 @@ export default function Home() {
           <h3 className="mx-auto font-bold mb-6 text-grey-700 text-2xl  tracking-wider ">
             Contate-nos
           </h3>
-          <div className="flex gap-3  shadow-2.5xl mx-4">
-            <img className=" h-56" src={ImagemSolda} alt="" />
-            <div className="p-3 flex flex-col items-center justify-between flex-1">
-              <p className="text-blue-700 font-bold text-xl ">
-                Ensaio de Materiais e Produtos
-              </p>
-              <button className="bg-gradient-to-br relative from-blue-500 from-10%  via-blue-800 to-blue-900 to-100% w-full text-WHITE font-semibold p-1">
-                Enviar
-              </button>
-            </div>
-          </div>
+          <FormContato />
         </div>
       </main>
       <Footer />
