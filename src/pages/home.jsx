@@ -9,12 +9,12 @@ import { BiSearchAlt } from "react-icons/bi";
 import { MdOutlineArticle, MdQueryStats } from "react-icons/md";
 
 import { Vetores } from "../assets/vetores";
-import ImagemSolda from "../assets/img/microscopio.png";
 import { Caloi } from "../assets/Caloi";
 import { Audax } from "../assets/audax";
 import { Eletronorte } from "../assets/Eletronorte";
 import { EUALogo } from "../assets/EUALogo";
 import { Carrousel } from "../components/Carrousel";
+import FormContato from "../components/FormContato";
 
 const CardItensHeader = [
   {
@@ -256,17 +256,7 @@ export default function Home() {
           <h3 className="mx-auto font-bold mb-6 text-grey-700 text-2xl  tracking-wider ">
             Contate-nos
           </h3>
-          <div className="flex gap-3  shadow-2.5xl mx-4">
-            <img className=" h-56" src={ImagemSolda} alt="" />
-            <div className="p-3 flex flex-col items-center justify-between flex-1">
-              <p className="text-blue-700 font-bold text-xl ">
-                Ensaio de Materiais e Produtos
-              </p>
-              <button className="bg-gradient-to-br relative from-blue-500 from-10%  via-blue-800 to-blue-900 to-100% w-full text-WHITE font-semibold p-1">
-                Enviar
-              </button>
-            </div>
-          </div>
+          <FormContato />
         </div>
       </main>
       <Footer />
