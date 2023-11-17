@@ -254,7 +254,7 @@ export default function Home() {
 
         <div className="flex flex-col items-center my-8">
           <h3 className="mx-auto font-bold mb-6 text-grey-700 text-2xl  tracking-wider ">
-            Contate-nos
+          Fale conosco
           </h3>
           <FormContato />
         </div>
