@@ -117,7 +117,7 @@ export default function Home() {
         </div>
       </section>
       <main>
-        <div className="flex flex-col items-center my-8 mx-4">
+        <section className="flex flex-col items-center my-8 mx-4">
           <h3 className="mx-auto font-bold text-grey-700 text-2xl  tracking-wider ">
             Nossos laboratórios em números
           </h3>
@@ -141,8 +141,8 @@ export default function Home() {
               <p className="font-medium text-blue-900 text-xl">realizados</p>
             </div>
           </div>
-        </div>
-        <div className="flex flex-col items-center my-8 mx-4">
+        </section>
+        <section className="flex flex-col items-center my-8 mx-4">
           <div>
             <div className="mt-5 grid grid-cols-2 gap-4 mx-4 max-w-6xl w-full text-WHITE text-justify font-semibold group  transition duration-300 ease-out hover:ease-in">
               <div
@@ -227,8 +227,27 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </div>
-        <div className="flex flex-col items-center my-8">
+        </section>
+        <section className="flex flex-col items-center my-8 mx-4">
+          <h3 className="mx-auto font-bold text-grey-700 text-2xl  tracking-wider ">
+            Conheça nossos serviços e soluções para a indústria
+          </h3>
+          <div className="grid grid-cols-2 gap-6 w-full max-w-6xl mx-4">
+            <a
+              href="/servicos"
+              className="bg-[url('https://i.ibb.co/vLPJb3X/Apresenta-o-comercial2-2.png')] w-full h-36 flex justify-center items-center rounded-3xl text-WHITE text-3xl font-semibold"
+            >
+              Serviços para a indústria
+            </a>
+            <a
+              href="/treinamentos"
+              className="bg-[url('https://i.ibb.co/hZSfxKM/Apresenta-o-comercial2.png')] w-full h-36 flex justify-center items-center rounded-3xl text-WHITE text-3xl font-semibold"
+            >
+              Cursos e Treinamentos
+            </a>
+          </div>
+        </section>
+        <section className="flex flex-col items-center my-8">
           <h3 className="mx-auto font-bold text-grey-700 text-2xl  tracking-wider ">
             Nossos Parceiros
           </h3>
@@ -237,7 +256,7 @@ export default function Home() {
               return <div key={parceiro.id}>{parceiro.imag}</div>;
             })}
           </div>
-        </div>
+        </section>
         <div className="flex flex-col items-center my-8">
           <h3 className="mx-auto font-bold text-grey-700 text-2xl  tracking-wider ">
             Localização
@@ -254,7 +273,7 @@ export default function Home() {
 
         <div className="flex flex-col items-center my-8">
           <h3 className="mx-auto font-bold mb-6 text-grey-700 text-2xl  tracking-wider ">
-          Fale conosco
+            Fale conosco
           </h3>
           <FormContato />
         </div>
