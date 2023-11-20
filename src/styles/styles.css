@@ -1,0 +1,9 @@
+
+
+.group-hover-transition {
+  transition: all 300ms ease-out;
+}
+
+.group-hover-transition:hover {
+  transition: all 300ms ease-in;
+}

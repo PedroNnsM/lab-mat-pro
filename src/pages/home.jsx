@@ -15,6 +15,7 @@ import { Eletronorte } from "../assets/Eletronorte";
 import { EUALogo } from "../assets/EUALogo";
 import { Carrousel } from "../components/Carrousel";
 import FormContato from "../components/FormContato";
+import "../styles/styles.css";
 
 const CardItensHeader = [
   {
@@ -144,19 +145,14 @@ export default function Home() {
         </section>
         <section className="flex flex-col items-center my-8 mx-4">
           <div>
-            <div className="mt-5 grid grid-cols-2 gap-4 mx-4 max-w-6xl w-full text-WHITE text-justify font-semibold group  transition duration-300 ease-out hover:ease-in">
-              <div
-                className="bg-bg-banner-apresentacao-1 flex justify-center rounded-lg items-center w-full h-full  transition duration-300 ease-out hover:ease-in group-hover:bg-gradient-to-br from-blue-500 from-10%  via-blue-800 to-blue-900 to-100% px-6"
-                style={{
-                  transition: "all",
-                }}
-              >
+            <div className="mt-5 grid grid-cols-2 gap-4 mx-4 max-w-6xl w-full text-WHITE text-justify font-semibold group">
+              <div className="bg-bg-banner-apresentacao-1 flex justify-center rounded-lg items-center w-full h-full group-hover:bg-gradient-to-br from-blue-500 from-10% via-blue-800 to-blue-900 to-100% px-6 transition duration-300 ease-out hover:ease-in">
                 <img
-                  className="w-[60%] group-hover:hidden transition duration-300 ease-out hover:ease-in"
+                  className="w-[60%] group-hover:hidden transition duration-300 ease-out hover:ease-in group-hover-transition"
                   src="https://i.ibb.co/dLFmF2q/Portf-lio-Engenharia-de-Materiais-2.png"
                   alt="Logo Lab Mat Pro"
                 />
-                <p className="hidden group-hover:block transition duration-300 ease-out hover:ease-in">
+                <p className="hidden group-hover:block transition duration-300 ease-out hover:ease-in group-hover-transition">
                   <strong> LabMatPro</strong> é um laboratório referência do
                   norte do Brasil, líder em análises metalográficas, equipado
                   com tecnologia de ponta que abrange todas as etapas do
@@ -172,17 +168,18 @@ export default function Home() {
               </div>
               <div className="relative rounded-lg after:absolute after:top-0 after:left-0 after:w-full after:h-full after:rounded-lg after:bg-blue-500 after:opacity-25 transition duration-300 ease-out hover:ease-in">
                 <img
-                  className=" group-hover:hidden transition duration-300 ease-out hover:ease-in"
+                  className="group-hover:hidden transition duration-300 ease-out hover:ease-in"
                   src="https://i.ibb.co/kJq0bQm/DSCF0489-1.png"
-                  alt="Uma pessoa atuando com a analise do material"
+                  alt="Uma pessoa atuando com a análise do material"
                 />
                 <img
-                  className=" hidden group-hover:block pt-1 transition duration-300 ease-out hover:ease-in"
+                  className="hidden group-hover:block pt-1 transition duration-300 ease-out hover:ease-in"
                   src="https://i.ibb.co/jyMhY4g/DSCF0464-1.png"
-                  alt="Uma pessoa atuando com a analise do material"
+                  alt="Uma pessoa atuando com a análise do material"
                 />
               </div>
             </div>
+
             <div className="mt-5 grid grid-cols-2 gap-4 mx-4 max-w-6xl w-full text-WHITE text-justify font-semibold group transition duration-300 ease-out hover:ease-in">
               <div
                 className="bg-bg-banner-apresentacao-1 flex justify-center rounded-lg items-center w-full h-full  transition duration-300 ease-out hover:ease-in group-hover:bg-gradient-to-br from-blue-500 from-10%  via-blue-800 to-blue-900 to-100% px-6"
