@@ -146,7 +146,7 @@ export default function Home() {
           <div>
             <div className="mt-5 grid grid-cols-2 gap-4 mx-4 max-w-6xl w-full text-WHITE text-justify font-semibold group  transition duration-300 ease-out hover:ease-in">
               <div
-                className="bg-bg-banner-apresentacao-1 flex justify-center rounded-lg items-center w-full h-full  transition duration-300 ease-out hover:ease-in group-hover:bg-gradient-to-br from-blue-500 from-10%  via-blue-800 to-blue-900 to-100% px-6"
+                className="bg-bg-banner-apresentacao-1 relative flex justify-center rounded-lg items-center w-full h-full  transition duration-300 ease-out hover:ease-in group-hover:bg-gradient-to-br from-blue-500 from-10%  via-blue-800 to-blue-900 to-100% px-6"
                 style={{
                   transition: "all",
                 }}
@@ -156,7 +156,7 @@ export default function Home() {
                   src="https://i.ibb.co/dLFmF2q/Portf-lio-Engenharia-de-Materiais-2.png"
                   alt="Logo Lab Mat Pro"
                 />
-                <p className="hidden group-hover:block transition duration-300 ease-out hover:ease-in">
+                <p className="opacity-0 absolute group-hover:opacity-100 transition duration-500 ease-out hover:ease-in px-4 ">
                   <strong> LabMatPro</strong> é um laboratório referência do
                   norte do Brasil, líder em análises metalográficas, equipado
                   com tecnologia de ponta que abrange todas as etapas do
@@ -185,7 +185,7 @@ export default function Home() {
             </div>
             <div className="mt-5 grid grid-cols-2 gap-4 mx-4 max-w-6xl w-full text-WHITE text-justify font-semibold group transition duration-300 ease-out hover:ease-in">
               <div
-                className="bg-bg-banner-apresentacao-1 flex justify-center rounded-lg items-center w-full h-full  transition duration-300 ease-out hover:ease-in group-hover:bg-gradient-to-br from-blue-500 from-10%  via-blue-800 to-blue-900 to-100% px-6"
+                className="bg-bg-banner-apresentacao-1 flex justify-center rounded-lg items-center w-full h-full  transition duration-300 ease-out hover:ease-in group-hover:bg-gradient-to-br from-blue-500 from-10%  via-blue-800 to-blue-900 to-100% px-6 relative"
                 style={{
                   transition: "all",
                 }}
@@ -195,11 +195,8 @@ export default function Home() {
                   src="https://i.ibb.co/dbKcXnC/Group.png"
                   alt="Laboratorio de pesquisa e desenvolvimento"
                 />
-                <p className="hidden group-hover:block transition duration-300 ease-out hover:ease-in">
-                  <strong>
-                    {" "}
-                    P&D Laboratório de Pesquisa e Desenvolvimento
-                  </strong>{" "}
+                <p className="opacity-0 absolute group-hover:opacity-100 transition duration-500 ease-out hover:ease-in mx-4">
+                  <strong>P&D Laboratório de Pesquisa e Desenvolvimento</strong>
                   é o epicentro de inovação no Polo Industrial de Manaus. Aqui,
                   uma equipe especializada colabora com profissionais da
                   indústria para dar vida a projetos de desenvolvimento de
@@ -220,7 +217,7 @@ export default function Home() {
                   alt="Uma pessoa operando uma maquima"
                 />
                 <img
-                  className=" hidden group-hover:block pt-1 transition duration-300 ease-out hover:ease-in"
+                  className=" hidden group-hover:block pt-1 transition duration-500 ease-out hover:ease-in"
                   src="https://i.ibb.co/p2TBrFb/DSCF0654.png"
                   alt="Uma pessoa atuando com a analise do material"
                 />
@@ -228,11 +225,11 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="flex flex-col items-center my-8 mx-4">
-          <h3 className="mx-auto font-bold text-grey-700 text-2xl  tracking-wider ">
+        <section className="flex flex-col items-center my-12 mx-4">
+          <h3 className="mx-auto font-bold text-grey-700 text-2xl mb-12 tracking-wider ">
             Conheça nossos serviços e soluções para a indústria
           </h3>
-          <div className="grid grid-cols-2 gap-6 w-full max-w-6xl mx-4">
+          <div className="grid grid-cols-2 gap-8 w-full max-w-6xl mx-4">
             <a
               href="/servicos"
               className="bg-[url('https://i.ibb.co/vLPJb3X/Apresenta-o-comercial2-2.png')] w-full h-36 flex justify-center items-center rounded-3xl text-WHITE text-3xl font-semibold"
