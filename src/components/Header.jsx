@@ -14,28 +14,28 @@ export function Header() {
     },
     {
       id: "2",
-      name: "quem-somos",
+      name: "/quem-somos",
       text: "Quem somos",
     },
     {
       id: "3",
-      name: "equipe",
+      name: "/equipe",
       text: "Equipe",
     },
     {
       id: "4",
-      name: "servicos",
+      name: "/servicos",
       text: "Serviços",
     },
     {
       id: "5",
-      name: "treinamentos",
+      name: "/treinamentos",
       text: "Treinamentos",
     },
 
     {
       id: "6",
-      name: "contato",
+      name: "#contato",
       text: "Contato",
     },
   ];
@@ -72,7 +72,7 @@ export function Header() {
           return (
             <a
               key={link.id}
-              href={`/${link.name}`}
+              href={`${link.name}`}
               className="text-WHITE p-3 hover:bg-blue-900 rounded-md hover:text-opacity-80 font-bold font-sans transition-all duration-500	"
             >
               {link.text}
@@ -113,7 +113,7 @@ export function Header() {
             Treinamentos
           </a>
           <a
-            href="/contato"
+            href="#contato"
             className="text-WHITE p-3 hover:bg-blue-900 rounded-md hover:text-opacity-80 font-bold font-sans transition-all duration-500	"
           >
             Contato

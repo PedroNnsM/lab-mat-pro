@@ -23,7 +23,7 @@ export default function FormContato() {
       alert("Preencha todos os campos");
       return;
     }
-    alert("Teste");
+    alert("Ainda estou montando o envio de email, acalama o coraçao <3");
   }
   return (
     <div className="w-full max-w-6xl  mx-4 my-6 border-spacing-1 ">
@@ -68,7 +68,7 @@ export default function FormContato() {
               <input
                 className="outline-0 pointer placeholder:text-blue-900 font-semibold "
                 type="tel"
-                pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}"
+                pattern="[0-9]{2}[0-9]{5}[0-9]{4}"
                 onChange={(e) => setContact(e.target.value)}
                 placeholder="Telefone"
               />
