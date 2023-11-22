@@ -268,7 +268,7 @@ export default function Home() {
           referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
 
-        <div className="flex flex-col items-center my-8">
+        <div className="flex flex-col items-center my-8" id="contato">
           <h3 className="mx-auto font-bold mb-6 text-grey-700 text-2xl  tracking-wider ">
             Fale conosco
           </h3>
