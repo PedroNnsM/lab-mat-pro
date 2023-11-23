@@ -232,13 +232,13 @@ export default function Home() {
           <div className="grid grid-cols-2 gap-8 w-full max-w-6xl mx-4">
             <a
               href="/servicos"
-              className="bg-[url('https://i.ibb.co/vLPJb3X/Apresenta-o-comercial2-2.png')] w-full h-36 flex justify-center items-center rounded-3xl text-WHITE text-3xl font-semibold"
+              className="bg-[url('https://i.ibb.co/vLPJb3X/Apresenta-o-comercial2-2.png')] w-full h-36 flex justify-center items-center rounded-3xl text-WHITE text-3xl font-semibold hover:opacity-80"
             >
               Serviços para a indústria
             </a>
             <a
               href="/treinamentos"
-              className="bg-[url('https://i.ibb.co/hZSfxKM/Apresenta-o-comercial2.png')] w-full h-36 flex justify-center items-center rounded-3xl text-WHITE text-3xl font-semibold"
+              className="bg-[url('https://i.ibb.co/hZSfxKM/Apresenta-o-comercial2.png')] w-full h-36 flex justify-center items-center rounded-3xl text-WHITE text-3xl font-semibold hover:opacity-80"
             >
               Cursos e Treinamentos
             </a>
