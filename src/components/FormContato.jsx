@@ -2,6 +2,7 @@ import { useState } from "react";
 import ImagemSolda from "../assets/img/microscopio.png";
 
 import { User, Envelope, DeviceMobileCamera } from "@phosphor-icons/react";
+import emailjs from "@emailjs/browser";
 
 export default function FormContato() {
   const [name, setName] = useState("");
@@ -12,7 +13,7 @@ export default function FormContato() {
 
   function sendEmail(e) {
     e.preventDefault();
-
+   
     if (
       name === "" ||
       lastName === "" ||
@@ -23,7 +24,33 @@ export default function FormContato() {
       alert("Preencha todos os campos");
       return;
     }
-    alert("Ainda estou montando o envio de email, acalama o coraçao <3");
+ const templateParams = {
+      from_name: name,
+      message: message,
+      email: email,
+      contact: contact,
+      last_name: lastName
+    };
+    emailjs
+      .send(
+        "service_hw2vh77",
+        "template_gk4ndah",
+        templateParams,
+        "fZKYkPstZ36A6ixS3"
+      ).then(
+        (response) => {
+          console.log("email enviado", response.status, response.text);
+          setName("");
+          setLastName("");
+          setEmail("");
+          setContact("");
+          setMessage("");
+          alert('email enviado com sucesso')
+        },
+        (error) => {
+          console.log("erro:", error);
+        }
+      );
   }
   return (
     <div className="w-full max-w-6xl  mx-4 my-6 border-spacing-1 ">
@@ -33,7 +60,11 @@ export default function FormContato() {
           <h3 className="text-blue-700 font-bold text-4xl ">
             Entre em contato
           </h3>
-          <form action="" className="w-full flex flex-col gap-4 " onSubmit={sendEmail}>
+          <form
+            action=""
+            className="w-full flex flex-col gap-4 "
+            onSubmit={sendEmail}
+          >
             <div className="grid grid-cols-2 gap-3">
               <div className="flex items-center gap-4 border pointer ring-inset border-[#6198cf3f] rounded-lg py-3 px-4 w-full shadow-md active:shadow-inner active:shadow-blue-500  ">
                 <User size={18} className="text-blue-900 font-semibold" />
