@@ -13,31 +13,31 @@ export default function FormContato() {
 
   function sendEmail(e) {
     e.preventDefault();
-
-       if (
-         name === "" ||
-         lastName === "" ||
-         email === "" ||
-         contact === "" ||
-         message === ""
-       ) {
-         alert("Preencha todos os campos");
-         return;
-       }
-    const templateParams = {
+   
+    if (
+      name === "" ||
+      lastName === "" ||
+      email === "" ||
+      contact === "" ||
+      message === ""
+    ) {
+      alert("Preencha todos os campos");
+      return;
+    }
+ const templateParams = {
       from_name: name,
       message: message,
       email: email,
+      contact: contact,
+      last_name: lastName
     };
-
     emailjs
       .send(
         "service_hw2vh77",
         "template_gk4ndah",
         templateParams,
         "fZKYkPstZ36A6ixS3"
-      )
-      .then(
+      ).then(
         (response) => {
           console.log("email enviado", response.status, response.text);
           setName("");
@@ -45,6 +45,7 @@ export default function FormContato() {
           setEmail("");
           setContact("");
           setMessage("");
+          alert('email enviado com sucesso')
         },
         (error) => {
           console.log("erro:", error);
