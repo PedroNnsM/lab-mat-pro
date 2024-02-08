@@ -269,9 +269,7 @@ export default function Home() {
         ></iframe>
 
         <div className="flex flex-col items-center my-8" id="contato">
-          <h3 className="mx-auto font-bold mb-6 text-grey-700 text-2xl  tracking-wider ">
-            Fale conosco
-          </h3>
+          
           <FormContato />
         </div>
       </main>

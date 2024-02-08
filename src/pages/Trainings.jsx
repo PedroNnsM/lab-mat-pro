@@ -31,6 +31,7 @@ import Impressao3D from "../assets/img/treinamentos/imagem.png";
 import LeanEnterprise from "../assets/img/treinamentos/leanEnterprise.png";
 import GestaoDeProjetos from "../assets/img/treinamentos/gestaoDeProjetos.png";
 import FormMatricula from "../components/FormMatricula";
+import ButtonReturnToTop from "../components/ButtonReturnToTop";
 
 export default function Trainings() {
   const treinamentosTeste = [
@@ -319,7 +320,7 @@ export default function Trainings() {
   return (
     <div className=" min-h-screen bg-slate-700 flex-col w-full  bg-opacity-40 flex items-center ">
       <div className="flex flex-col items-center bg-gradient-to-br w-full from-blue-500 from-10%  via-blue-800 to-blue-900 to-100% ">
-        <div className="w-xl" id="topo">
+        <div className="w-xl" >
           <Header />
         </div>
       </div>
@@ -335,7 +336,7 @@ export default function Trainings() {
             conhecimentos profissionais na indústria.
           </p>
 
-          <TitlePages title="Conheça nossos cursos disponíveis" />
+          <h2 className="font-bold text-3xl text-blue-900 mt-10"> Conheça nossos cursos disponíveis </h2>
           <div className="mt-10">
             {treinamentosTeste.map((item) => {
               const isElementoAberto = elementosAbertos[item.id];
@@ -386,9 +387,7 @@ export default function Trainings() {
       </main>
       <FormMatricula />
 
-      <button className="bg-gradient-to-br relative from-blue-500 from-10%  via-blue-800 to-blue-900 to-100% w-1/4 mb-10 text-WHITE font-semibold text-2xl py-4 rounded-lg hover:brightness-90">
-        <a href="#topo"> Voltar para o topo</a>
-      </button>
+      <ButtonReturnToTop />
       <Footer />
     </div>
   );

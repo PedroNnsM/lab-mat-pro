@@ -12,6 +12,7 @@ import ImagemKiki from "../assets/img/imagem-kiki.png";
 import ImagemAristides from "../assets/img/imagem-aristides.png";
 import ImagemJuda from "../assets/img/imagem-juda.png";
 import { Footer } from "../components/Footer";
+import ButtonReturnToTop from "../components/ButtonReturnToTop";
 
 export default function Team() {
   const team = [
@@ -95,7 +96,7 @@ export default function Team() {
           <Header />
         </div>
       </div>
-      <section className="flex max-w-6xl flex-col mx-6">
+      <main className="flex max-w-6xl flex-col mx-6">
         <TitlePages title="Equipe" />
         {team.map((person) => {
           return (
@@ -126,7 +127,8 @@ export default function Team() {
             </div>
           );
         })}
-      </section>
+      </main>
+      <ButtonReturnToTop />
       <Footer />
     </div>
   );

@@ -1,4 +1,5 @@
-import mapa from '../assets/img/manaus.png'
+import mapa from "../assets/img/manaus.png";
+import ButtonReturnToTop from "../components/ButtonReturnToTop";
 import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
 import { TitlePages } from "../components/TitlePages";
@@ -27,8 +28,8 @@ export default function About() {
           </div>
           <img src={mapa} width={"350px"} />
         </div>
-        <div className='max-w-4xl mx-6' >
-          <h2 className="font-bold text-4xl text-blue-900">Objetivo</h2>
+        <div className="max-w-4xl mx-6">
+          <h2 className="font-bold text-3xl text-blue-900">Objetivo</h2>
           <p className="mt-3 text-sm  text-blue-900 font-semibold max-w-4xl">
             Com objetivo geral de realizar treinamentos, pesquisas e prestação
             de serviços de consultoria e assessoria nas áreas científicas e
@@ -37,18 +38,20 @@ export default function About() {
             da engenharia.
           </p>
           <div className="flex max-w-4xl gap-2 pt-4">
-            <img className="w-1/2 h-auto"
+            <img
+              className="w-1/2 h-auto"
               src="https://i.ibb.co/0JyRpQm/Rectangle-298.png"
               alt="Estudantes focados olhando suas anotações no notebook"
             />
-            <img className="w-1/2 h-auto"
+            <img
+              className="w-1/2 h-auto"
               src="https://i.ibb.co/chbkwm1/Rectangle-299.png"
               alt="dr. Costa na frente da instalação do laboratório"
             />
           </div>
         </div>
-        <div className='max-w-4xl mx-6'>
-          <h2 className="font-bold text-4xl text-blue-900">Estrutura</h2>
+        <div className="max-w-4xl mx-6">
+          <h2 className="font-bold text-3xl text-blue-900">Estrutura</h2>
           <p className="mt-3 text-sm  text-blue-900 font-semibold max-w-4xl">
             P&D LAB/UEA dispõe de equipamentos em distintas áreas da engenharia,
             capaz de realizar inúmeras análises de matérias, tais como: análise
@@ -68,6 +71,7 @@ export default function About() {
           />
         </div>
       </main>
+      <ButtonReturnToTop />
       <Footer />
     </div>
   );
