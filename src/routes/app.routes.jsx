@@ -11,7 +11,8 @@ import Contact from "../pages/Contact";
 export function AppRoutes() {
   return (
     <Routes>
-      <Route path="/" index element={<Home />} />
+      <Route path="/" element={<Home />} />
+      <Route path="/home" element={<Home />} />
       <Route path="/quem-somos" element={<About />} />
       <Route path="/equipe" element={<Team />} />
       <Route path="/servicos" element={<Services />} />

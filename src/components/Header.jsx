@@ -9,7 +9,7 @@ export function Header() {
   const navLinks = [
     {
       id: "1",
-      name: "",
+      name: "/",
       text: "Home",
     },
     {
@@ -46,7 +46,7 @@ export function Header() {
   };
 
   return (
-    <header className="flex  flex-col  justify-center items-center max-w-6xl  ">
+    <header className="flex  flex-col  justify-center items-center max-w-6xl  " id="topo">
       <a
         target="_blank"
         rel="noreferrer"

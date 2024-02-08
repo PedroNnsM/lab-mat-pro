@@ -10,6 +10,7 @@ import equipamento6 from "../assets/img/equipamento6.png";
 
 import { Equipaments } from "../components/Equipaments";
 import { TitlePages } from "../components/TitlePages";
+import ButtonReturnToTop from "../components/ButtonReturnToTop";
 
 export default function Services() {
   const servicos = [
@@ -76,7 +77,7 @@ export default function Services() {
           <Header />
         </div>
       </div>
-      <section className="flex flex-col items-start max-w-6xl mx-6">
+      <main className="flex flex-col items-start max-w-6xl mx-6">
         <TitlePages title="Serviços" />
         {servicos.map((service) => {
           return (
@@ -89,7 +90,8 @@ export default function Services() {
             />
           );
         })}
-      </section>
+      </main>
+      <ButtonReturnToTop />
       <Footer />
     </div>
   );
